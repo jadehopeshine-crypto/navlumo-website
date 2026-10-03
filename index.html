@@ -16,8 +16,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{--teal:#01544b;--green:#0b8a6a;--ink:#2f3036;--soft:#f6f6f7;--line:#e2e4e8;}
-  body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;}
-  h1,h2,h3,h4,.logo{font-family:'Familjen Grotesk',sans-serif;}
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--ink);background:#fff;}
+  h1,h2,h3,h4,.logo{font-family:'Familjen Grotesk',system-ui,-apple-system,sans-serif;}
   .bg-teal{background:var(--teal);} .bg-green{background:var(--green);}
   .text-teal{color:var(--teal);} .text-green{color:var(--green);}
   .dot::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:currentColor;margin-right:9px;vertical-align:middle;}
@@ -59,11 +59,12 @@
   </div>
 </header>
 
-<!-- ============ HERO (video to be added later) ============ -->
+<!-- ============ HERO WITH VIDEO BANNER ============ -->
 <section class="relative min-h-[640px] flex items-center overflow-hidden">
-  <!-- HERO VIDEO PLACEHOLDER: replace this div with <video autoplay muted loop playsinline> when the video is ready -->
-  <div id="hero-media" class="absolute inset-0" style="background:linear-gradient(110deg,#0d1113 0%,#2a0f0f 55%,#4a1414 100%);"></div>
-  <div class="absolute inset-0 bg-black/35"></div>
+  <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto">
+    <source src="https://sc04.alicdn.com/kf/A42d0d31f68424caa8e579900047e53fem.mp4" type="video/mp4">
+  </video>
+  <div class="absolute inset-0 bg-black/45"></div>
   <div class="relative max-w-[1180px] mx-auto px-5 w-full pt-24">
     <div class="max-w-[560px] text-white">
       <span class="pill dot bg-white/15 text-white">Factory-direct automotive electronics</span>
@@ -102,152 +103,234 @@
 </section>
 
 <!-- ============ WHY WORK WITH US ============ -->
-<section id="about" class="pb-24">
-  <div class="max-w-[1000px] mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+<section id="about" class="py-20 border-t border-[var(--line)]">
+  <div class="max-w-[1180px] mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
     <div>
-      <span class="pill dot bg-green text-white">Why you should work with us</span>
-      <h2 class="mt-4 text-[38px] sm:text-[42px] leading-[1.1] font-semibold">Why you should work with Navlumo</h2>
-      <p class="mt-6 text-[15px] leading-relaxed text-gray-600">We design and supply in-car electronics that are stable, easy to install and ready for your brand, so you can sell with confidence.</p>
-      <a href="#contact" class="btn bg-teal text-white dot mt-9">Get a Quote</a>
+      <span class="pill dot bg-[var(--soft)] text-teal">Why you should work with us</span>
+      <h2 class="mt-4 text-[38px] sm:text-[44px] font-semibold leading-tight">Why you should work with Navlumo</h2>
+      <p class="mt-6 text-[16px] leading-relaxed text-gray-600">We design and supply in-car electronics that are stable, easy to install and ready for your brand, so you can sell with confidence.</p>
+      <div class="mt-8 flex gap-4">
+        <a href="#contact" class="btn bg-teal text-white dot">Get a Quote</a>
+      </div>
     </div>
-    <div class="ph rounded-xl aspect-[5/4]">Image: product / car photo</div>
-  </div>
-</section>
-
-<!-- ============ PRODUCT LINES (teal) ============ -->
-<section id="products" class="bg-teal py-20">
-  <div class="max-w-[1000px] mx-auto px-5 text-center text-white">
-    <h2 class="text-[38px] sm:text-[42px] font-semibold">Choose your product line</h2>
-    <p class="mt-3 text-[16px] text-white/90 max-w-[420px] mx-auto">Core categories for the global aftermarket, all available for wholesale and OEM.</p>
-    <a href="#contact" class="btn bg-green text-white dot mt-7">View All</a>
-    <div class="mt-12 grid md:grid-cols-3 gap-6 text-left">
-      <div class="bg-white text-[var(--ink)] rounded-xl p-6 flex flex-col">
-        <h3 class="text-[19px] font-semibold">Android Car Head Units</h3>
-        <p class="mt-3 text-[28px] font-semibold">Factory Price</p>
-        <p class="mt-3 text-[15px] leading-relaxed text-gray-600 flex-1">Universal and vehicle-specific screens with wireless CarPlay and Android Auto.</p>
-        <a href="#contact" class="btn bg-teal text-white justify-center mt-7">Request Now</a>
-      </div>
-      <div class="bg-white text-[var(--ink)] rounded-xl p-6 flex flex-col">
-        <h3 class="text-[19px] font-semibold">Car Cameras &amp; Dash Cams</h3>
-        <p class="mt-3 text-[28px] font-semibold">Factory Price</p>
-        <p class="mt-3 text-[15px] leading-relaxed text-gray-600 flex-1">Reversing cameras, 360° view systems and dash cams for every vehicle type.</p>
-        <a href="#contact" class="btn bg-teal text-white justify-center mt-7">Request Now</a>
-      </div>
-      <div class="bg-white text-[var(--ink)] rounded-xl p-6 flex flex-col">
-        <h3 class="text-[19px] font-semibold">Digital Instrument Clusters</h3>
-        <p class="mt-3 text-[28px] font-semibold">Factory Price</p>
-        <p class="mt-3 text-[15px] leading-relaxed text-gray-600 flex-1">LCD virtual cockpits that replace the original dashboard gauges.</p>
-        <a href="#contact" class="btn bg-teal text-white justify-center mt-7">Request Now</a>
-      </div>
+    <div class="ph rounded-2xl aspect-[4/3]">
+      <span>Image: product / car photo</span>
     </div>
   </div>
 </section>
 
-<!-- ============ FACTORY (replaces "Meet Our Professionals") ============ -->
-<section class="bg-teal pb-20">
-  <div class="max-w-[1000px] mx-auto px-5">
-    <h2 class="text-white text-[30px] font-semibold">Inside Our Factory</h2>
-    <div class="mt-6 grid sm:grid-cols-2 gap-3">
-      <div class="ph relative rounded-lg aspect-[4/3] items-end justify-start p-5"><div class="text-left"><h4 class="text-white text-[26px] font-semibold">Production Line</h4><p class="text-white/80 text-xs mt-1">Image: production line photo</p></div></div>
-      <div class="ph relative rounded-lg aspect-[4/3] items-end justify-start p-5"><div class="text-left"><h4 class="text-white text-[26px] font-semibold">Quality Testing</h4><p class="text-white/80 text-xs mt-1">Image: QC / aging test photo</p></div></div>
-      <div class="ph relative rounded-lg aspect-[4/3] items-end justify-start p-5"><div class="text-left"><h4 class="text-white text-[26px] font-semibold">R&amp;D Team</h4><p class="text-white/80 text-xs mt-1">Image: engineers photo</p></div></div>
-      <div class="ph relative rounded-lg aspect-[4/3] items-end justify-start p-5"><div class="text-left"><h4 class="text-white text-[26px] font-semibold">Packing &amp; Shipping</h4><p class="text-white/80 text-xs mt-1">Image: warehouse photo</p></div></div>
+<!-- ============ CHOOSE YOUR PRODUCT LINE (3 cards) ============ -->
+<section id="products" class="py-20" style="background:var(--soft)">
+  <div class="max-w-[1180px] mx-auto px-5">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h2 class="text-[38px] sm:text-[44px] font-semibold">Choose your product line</h2>
+        <p class="mt-2 text-gray-600">Core categories for the global aftermarket, all available for wholesale and OEM.</p>
+      </div>
+      <a href="#contact" class="btn bg-teal text-white dot">View All</a>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl p-7 flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="pill bg-teal/10 text-teal">Wholesale</span>
+            <span class="text-sm font-semibold text-gray-500">Factory Price</span>
+          </div>
+          <h3 class="mt-5 text-[22px] font-semibold">Android Car Head Units</h3>
+          <p class="mt-3 text-sm text-gray-600 leading-relaxed">Universal and vehicle-specific screens with wireless CarPlay and Android Auto.</p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-[var(--line)]">
+          <a href="#contact" class="btn bg-teal text-white w-full justify-center">Request Now</a>
+        </div>
+      </div>
+
+      <!-- Card 2 (highlighted green) -->
+      <div class="bg-teal text-white rounded-2xl p-7 flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="pill bg-white/20 text-white">Popular</span>
+            <span class="text-sm font-semibold text-white/80">Factory Price</span>
+          </div>
+          <h3 class="mt-5 text-[22px] font-semibold">Car Cameras &amp; Dash Cams</h3>
+          <p class="mt-3 text-sm text-white/90 leading-relaxed">Reversing cameras, 360&deg; view systems and dash cams for every vehicle type.</p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-white/20">
+          <a href="#contact" class="btn bg-white text-teal w-full justify-center">Request Now</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl p-7 flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="pill bg-teal/10 text-teal">Upgrade</span>
+            <span class="text-sm font-semibold text-gray-500">Factory Price</span>
+          </div>
+          <h3 class="mt-5 text-[22px] font-semibold">Digital Instrument Clusters</h3>
+          <p class="mt-3 text-sm text-gray-600 leading-relaxed">LCD virtual cockpits that replace the original dashboard gauges.</p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-[var(--line)]">
+          <a href="#contact" class="btn bg-teal text-white w-full justify-center">Request Now</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ REDEFINE + STATS ============ -->
-<section id="oem" class="py-24">
-  <div class="max-w-[1000px] mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+<!-- ============ INSIDE OUR FACTORY (4 Dark Cards) ============ -->
+<section class="py-20 bg-[#161c1d] text-white">
+  <div class="max-w-[1180px] mx-auto px-5">
+    <h2 class="text-center text-[38px] sm:text-[44px] font-semibold">Inside Our Factory</h2>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bg-[#202729] rounded-xl overflow-hidden p-3 border border-white/10">
+        <div class="ph aspect-square rounded-lg mb-3"><span>Image: production line photo</span></div>
+        <h4 class="font-semibold px-2 py-1">Production Line</h4>
+      </div>
+      <div class="bg-[#202729] rounded-xl overflow-hidden p-3 border border-white/10">
+        <div class="ph aspect-square rounded-lg mb-3"><span>Image: QC / aging test photo</span></div>
+        <h4 class="font-semibold px-2 py-1">Quality Testing</h4>
+      </div>
+      <div class="bg-[#202729] rounded-xl overflow-hidden p-3 border border-white/10">
+        <div class="ph aspect-square rounded-lg mb-3"><span>Image: engineers photo</span></div>
+        <h4 class="font-semibold px-2 py-1">R&amp;D Team</h4>
+      </div>
+      <div class="bg-[#202729] rounded-xl overflow-hidden p-3 border border-white/10">
+        <div class="ph aspect-square rounded-lg mb-3"><span>Image: warehouse photo</span></div>
+        <h4 class="font-semibold px-2 py-1">Packing &amp; Shipping</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MID BANNER / NUMBER STATS ============ -->
+<section class="py-20">
+  <div class="max-w-[1180px] mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
     <div>
-      <h2 class="text-[34px] sm:text-[38px] leading-[1.15] font-semibold">We build smarter cars, one dashboard at a time</h2>
-      <p class="mt-5 text-[15px] leading-relaxed text-gray-600">From boot logo and UI to packaging and firmware, we customize every detail so the product carries your brand.</p>
-      <!-- Replace XX with your real figures -->
-      <div class="mt-6 flex flex-wrap gap-2">
-        <span class="pill dot bg-green text-white">XX Countries</span>
-        <span class="pill dot bg-green text-white">OEM &amp; ODM</span>
-        <span class="pill dot bg-green text-white">XX Car Models</span>
-        <span class="pill dot bg-green text-white">XX Years Experience</span>
+      <h2 class="text-[36px] sm:text-[42px] font-semibold leading-tight">We build smarter cars, one dashboard at a time</h2>
+      <p class="mt-5 text-gray-600 leading-relaxed">From boot logo and UI to packaging and firmware, we customize every detail so the product carries your brand.</p>
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div><div class="text-3xl font-bold text-teal">XX</div><div class="text-xs text-gray-500 mt-1">Countries</div></div>
+        <div><div class="text-3xl font-bold text-teal">OEM &amp; ODM</div><div class="text-xs text-gray-500 mt-1">Flexible MOQ</div></div>
+        <div><div class="text-3xl font-bold text-teal">XX</div><div class="text-xs text-gray-500 mt-1">Car Models</div></div>
+        <div><div class="text-3xl font-bold text-teal">XX</div><div class="text-xs text-gray-500 mt-1">Years Experience</div></div>
       </div>
     </div>
-    <div class="relative pb-16">
-      <div class="ph rounded-xl aspect-[4/3]">Image: installed screen in car</div>
-      <div class="absolute -bottom-2 left-[-30px] w-[140px] h-[130px] rounded-xl flex items-center justify-center logo text-teal text-[22px] font-semibold" style="background:var(--soft)">Navlumo</div>
+    <div class="ph rounded-2xl aspect-[4/3]"><span>Image: installed screen in car</span></div>
+  </div>
+</section>
+
+<!-- ============ 3 BOTTOM SERVICES ============ -->
+<section id="by-vehicle" class="py-20" style="background:var(--soft)">
+  <div class="max-w-[1180px] mx-auto px-5">
+    <div class="flex items-end justify-between">
+      <div>
+        <span class="pill dot bg-white text-teal">Navlumo</span>
+        <h2 class="mt-3 text-[38px] sm:text-[44px] font-semibold">Our Solutions</h2>
+      </div>
+      <a href="#contact" class="btn bg-teal text-white dot">View More</a>
+    </div>
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <div class="ph aspect-video rounded-xl mb-5"><span>Image: vehicle interior</span></div>
+        <h4 class="text-lg font-semibold">By Vehicle Fit</h4>
+        <p class="text-sm text-gray-600 mt-2">Plug-and-play kits tailored for Toyota, VW, BMW, Ford and 100+ makes.</p>
+        <a href="#contact" class="link-u text-teal text-sm inline-block mt-4">Explore More</a>
+      </div>
+      <div id="oem" class="bg-white rounded-2xl p-6 shadow-sm">
+        <div class="ph aspect-video rounded-xl mb-5"><span>Image: custom box / logo</span></div>
+        <h4 class="text-lg font-semibold">OEM &amp; ODM Branding</h4>
+        <p class="text-sm text-gray-600 mt-2">Custom UI, boot logos, mold development and branded retail packaging.</p>
+        <a href="#contact" class="link-u text-teal text-sm inline-block mt-4">Explore More</a>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <div class="ph aspect-video rounded-xl mb-5"><span>Image: auto lighting</span></div>
+        <h4 class="text-lg font-semibold">Automotive Lighting</h4>
+        <p class="text-sm text-gray-600 mt-2">High-lumen LED headlights, ambient interior kits and fog lamp upgrades.</p>
+        <a href="#contact" class="link-u text-teal text-sm inline-block mt-4">Explore More</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ SERVICES IMAGE CARDS ============ -->
-<section id="by-vehicle" class="pb-24">
-  <div class="max-w-[1000px] mx-auto px-5">
-    <div class="flex items-center justify-between">
-      <h2 class="text-[34px] sm:text-[38px] font-semibold">Our Solutions</h2>
-      <a href="#contact" class="btn bg-teal text-white dot !py-[9px] !text-[14px]">View More</a>
-    </div>
-    <div class="mt-8 grid md:grid-cols-3 gap-5">
-      <div class="ph rounded-lg aspect-[1/1] items-end justify-start p-5"><div class="text-left"><h4 class="text-white text-[18px] font-semibold">By Vehicle Fit</h4><a href="#contact" class="link-u text-amber-300 text-sm inline-block mt-2">Explore More</a></div></div>
-      <div class="ph rounded-lg aspect-[1/1] items-end justify-start p-5"><div class="text-left"><h4 class="text-white text-[18px] font-semibold">OEM &amp; ODM Branding</h4><a href="#contact" class="link-u text-amber-300 text-sm inline-block mt-2">Explore More</a></div></div>
-      <div class="ph rounded-lg aspect-[1/1] items-end justify-start p-5"><div class="text-left"><h4 class="text-white text-[18px] font-semibold">Automotive Lighting</h4><a href="#contact" class="link-u text-amber-300 text-sm inline-block mt-2">Explore More</a></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TESTIMONIAL (replace with a real customer review) ============ -->
-<section id="blog" class="pb-24">
-  <div class="max-w-[1000px] mx-auto px-5 grid md:grid-cols-2 gap-10 items-center">
-    <div class="ph rounded-xl aspect-[4/3.6]">Image: customer / installation photo</div>
+<!-- ============ TESTIMONIAL ============ -->
+<section class="py-20">
+  <div class="max-w-[1180px] mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="ph rounded-2xl aspect-[4/3]"><span>Image: customer / installation photo</span></div>
     <div>
-      <span class="pill dot bg-green text-white">"Reliable products, easy to sell!"</span>
-      <p class="mt-8 text-[15px] leading-relaxed text-gray-600">[Customer review placeholder] Replace this text with a real review from one of your buyers, for example about product quality, installation and after-sales support.</p>
-      <p class="mt-6 text-[22px] font-semibold text-teal">[Customer Name], [Country]</p>
-      <div class="mt-10 flex gap-6 pl-16">
-        <button class="w-8 h-8 border border-teal text-teal rounded-md">&larr;</button>
-        <button class="w-8 h-8 border border-teal text-teal rounded-md">&rarr;</button>
+      <div class="flex gap-1 text-teal text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <h3 class="mt-4 text-[26px] font-semibold">"Reliable products, easy to sell!"</h3>
+      <p class="mt-4 text-gray-600 leading-relaxed italic">[Customer review placeholder] Replace this text with a real review from one of your buyers, for example about product quality, installation and after-sales support.</p>
+      <div class="mt-6 font-semibold">[Customer Name], [Country]</div>
+      <div class="mt-8 flex gap-3">
+        <button class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100">&larr;</button>
+        <button class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100">&rarr;</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ CTA ============ -->
-<section id="contact" class="pb-20">
-  <div class="max-w-[1000px] mx-auto px-5">
-    <div class="bg-teal rounded-xl py-16 px-6 text-center text-white">
-      <h2 class="text-[34px] sm:text-[38px] font-semibold">Become a Navlumo Partner Today!</h2>
-      <p class="mt-4 max-w-[560px] mx-auto text-[15px] leading-relaxed text-white/90">Tell us your market, vehicle models and quantity. We will reply with a catalog and factory quotation.</p>
-      <a href="mailto:sales@navlumo.com?subject=Navlumo%20Wholesale%20Inquiry" class="btn bg-green text-white dot mt-9">Get a Quote</a>
-      <p class="mt-5 text-sm text-white/80">sales@navlumo.com</p>
+<!-- ============ BIG CTA BANNER (Footer Banner) ============ -->
+<section class="py-20 bg-teal text-white">
+  <div class="max-w-[900px] mx-auto px-5 text-center">
+    <h2 class="text-[38px] sm:text-[48px] font-semibold leading-tight">Become a Navlumo Partner Today!</h2>
+    <p class="mt-5 text-[17px] text-white/90">Tell us your market, vehicle models and quantity. We will reply with a catalog and factory quotation.</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="mailto:sales@navlumo.com?subject=Navlumo%20Wholesale%20Inquiry" class="btn bg-white text-teal dot">Get a Quote</a>
+      <a href="mailto:sales@navlumo.com" class="btn bg-white/10 text-white">sales@navlumo.com</a>
     </div>
   </div>
 </section>
 
 <!-- ============ FOOTER ============ -->
-<footer class="border-t border-[var(--line)] py-12">
-  <div class="max-w-[1000px] mx-auto px-5 grid sm:grid-cols-3 gap-8 text-sm text-gray-600">
+<footer id="contact" class="bg-[#121617] text-[#a0a8ab] pt-16 pb-12">
+  <div class="max-w-[1180px] mx-auto px-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
     <div>
-      <div class="logo text-teal text-[22px] font-semibold">Navlumo</div>
-      <p class="mt-3 leading-relaxed">Car head units, cameras, dash cams, digital clusters and automotive lighting.</p>
+      <div class="logo text-white text-2xl font-semibold">Navlumo</div>
+      <p class="mt-4 text-xs leading-relaxed">Factory-direct automotive electronics &amp; lighting for global distributors, wholesalers and installers.</p>
+      <div class="mt-4 text-xs text-teal font-medium">&bull; 20+ Yrs Manufacturing Experience</div>
     </div>
-    <div class="space-y-2">
-      <h4 class="text-[var(--ink)] font-semibold text-base">Pages</h4>
-      <a href="#products" class="block">Product</a><a href="#by-vehicle" class="block">By Vehicle</a>
-      <a href="#oem" class="block">OEM &amp; ODM</a><a href="#about" class="block">About Us</a>
+    <div>
+      <h4 class="text-white font-semibold mb-4">Products</h4>
+      <ul class="space-y-2">
+        <li><a href="#products" class="hover:text-white">Android Head Units</a></li>
+        <li><a href="#products" class="hover:text-white">Car Cameras &amp; 360 AVM</a></li>
+        <li><a href="#products" class="hover:text-white">Dash Cams</a></li>
+        <li><a href="#products" class="hover:text-white">Digital LCD Clusters</a></li>
+        <li><a href="#products" class="hover:text-white">Automotive LED Lighting</a></li>
+      </ul>
     </div>
-    <div class="space-y-2">
-      <h4 class="text-[var(--ink)] font-semibold text-base">Contact</h4>
-      <a href="mailto:sales@navlumo.com" class="block">sales@navlumo.com</a>
-      <a href="mailto:manager@navlumo.com" class="block">manager@navlumo.com</a>
-      <p class="pt-2">Language: <a href="/de/" class="underline">DE</a> · <a href="/es/" class="underline">ES</a> · <a href="/ar/" class="underline">AR</a></p>
+    <div>
+      <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="/" class="hover:text-white">Home</a></li>
+        <li><a href="#by-vehicle" class="hover:text-white">By Vehicle</a></li>
+        <li><a href="#oem" class="hover:text-white">OEM &amp; ODM Service</a></li>
+        <li><a href="#about" class="hover:text-white">About Us</a></li>
+        <li><a href="#contact" class="hover:text-white">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-4">Contact</h4>
+      <p class="text-xs leading-relaxed">Inquiries &amp; Quotations:<br><a href="mailto:sales@navlumo.com" class="text-white font-medium hover:underline">sales@navlumo.com</a></p>
+      <p class="text-xs leading-relaxed mt-3">WhatsApp / Mobile:<br><span class="text-white font-medium">+86 132 6721 4819</span></p>
+      <p class="text-xs text-gray-500 mt-4">&copy; 2026 Navlumo. All rights reserved.</p>
     </div>
   </div>
-  <p class="text-center text-xs text-gray-400 mt-10">© 2026 Navlumo. All rights reserved.</p>
 </footer>
 
 <script>
-  const header = document.getElementById('site-header');
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
-  window.addEventListener('scroll', onScroll); onScroll();
-  document.getElementById('menu-btn').addEventListener('click', () =>
-    document.getElementById('mobile-menu').classList.toggle('hidden'));
+  const hdr = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) hdr.classList.add('scrolled');
+    else hdr.classList.remove('scrolled');
+  });
+  const mBtn = document.getElementById('menu-btn');
+  const mMenu = document.getElementById('mobile-menu');
+  if (mBtn && mMenu) {
+    mBtn.addEventListener('click', () => mMenu.classList.toggle('hidden'));
+  }
 </script>
 </body>
 </html>

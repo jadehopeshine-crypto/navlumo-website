@@ -61,18 +61,19 @@
 
 <!-- ============ HERO WITH VIDEO BANNER ============ -->
 <section class="relative min-h-[640px] flex items-center overflow-hidden">
-  <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto">
+  <video class="absolute inset-0 w-full h-full object-cover object-center md:object-[75%_50%] lg:object-[80%_50%]" autoplay muted loop playsinline preload="auto">
     <source src="https://sc04.alicdn.com/kf/A42d0d31f68424caa8e579900047e53fem.mp4" type="video/mp4">
   </video>
-  <div class="absolute inset-0 bg-black/45"></div>
-  <div class="relative max-w-[1180px] mx-auto px-5 w-full pt-24">
-    <div class="max-w-[560px] text-white">
-      <span class="pill dot bg-white/15 text-white">Factory-direct automotive electronics</span>
-      <h1 class="mt-5 text-[44px] sm:text-[54px] leading-[1.08] font-semibold">Upgrade the Drive Your Customers Deserve</h1>
-      <p class="mt-6 text-[17px] leading-relaxed text-white/90">Car head units, cameras, dash cams and digital clusters built for distributors, retrofit shops and brand owners.</p>
-      <div class="mt-9 flex flex-wrap gap-5">
-        <a href="#contact" class="btn bg-teal text-white dot">Get a Quote</a>
-        <a href="#products" class="btn bg-white text-teal dot">Our Products</a>
+  <!-- Left-to-right gradient overlay: dark on left for text legibility, transparent on right for clear video showcase -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/15 pointer-events-none"></div>
+  <div class="relative max-w-[1240px] mx-auto px-5 sm:px-8 w-full pt-28 pb-16">
+    <div class="max-w-[520px] text-white">
+      <span class="pill dot bg-white/15 text-white backdrop-blur-sm">Factory-direct automotive electronics</span>
+      <h1 class="mt-5 text-[42px] sm:text-[52px] leading-[1.08] font-semibold tracking-tight">Upgrade the Drive Your Customers Deserve</h1>
+      <p class="mt-6 text-[16px] sm:text-[17px] leading-relaxed text-white/90">Car head units, cameras, dash cams and digital clusters built for distributors, retrofit shops and brand owners.</p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#contact" class="btn bg-teal text-white dot shadow-lg">Get a Quote</a>
+        <a href="#products" class="btn bg-white text-teal dot shadow-lg">Our Products</a>
       </div>
     </div>
   </div>

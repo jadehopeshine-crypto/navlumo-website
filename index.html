@@ -66,12 +66,12 @@
   .vehicle-marquee-track{display:flex;width:max-content;gap:12px;animation:vehicle-scroll 72s linear infinite;}
   .vehicle-marquee:hover .vehicle-marquee-track{animation-play-state:paused;}
   .vehicle-marquee-group{display:flex;gap:12px;}
-  .vehicle-make-card{width:152px;height:148px;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:14px;background:#fff;border:1px solid var(--line);border-radius:14px;transition:border-color .2s,box-shadow .2s,transform .2s;}
+  .vehicle-make-card{width:164px;height:158px;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px;background:#fff;border:1px solid var(--line);border-radius:14px;transition:border-color .2s,box-shadow .2s,transform .2s;}
   .vehicle-make-card:hover{border-color:#047461;box-shadow:0 8px 20px rgba(1,84,75,.12);transform:translateY(-2px);}
-  .vehicle-make-card img{width:92px;height:78px;object-fit:contain;}
+  .vehicle-make-card img{width:120px;height:92px;object-fit:contain;transform:scale(1.16);}
   .vehicle-make-card span{font-size:15px;font-weight:600;color:var(--ink);white-space:nowrap;}
   @keyframes vehicle-scroll{to{transform:translateX(calc(-50% - 6px));}}
-  @media (max-width:640px){.vehicle-marquee{margin-left:-20px;margin-right:-20px}.vehicle-make-card{width:132px;height:132px}.vehicle-make-card img{width:78px;height:68px}}
+  @media (max-width:640px){.vehicle-marquee{margin-left:-20px;margin-right:-20px}.vehicle-make-card{width:144px;height:142px}.vehicle-make-card img{width:102px;height:80px}}
 </style>
 </head>
 <body>

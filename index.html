@@ -80,26 +80,53 @@
   </div>
 </section>
 
-<!-- ============ 3 FEATURE CARDS ============ -->
-<section class="py-20">
-  <div class="max-w-[1000px] mx-auto px-5">
-    <h2 class="text-center text-[38px] sm:text-[42px] font-semibold">Get your products on the road, fast</h2>
-    <div class="mt-12 grid md:grid-cols-3 gap-6">
-      <div class="border border-[var(--line)] rounded-xl p-7">
-        <h3 class="text-[19px] font-semibold">Factory-Direct Pricing</h3>
-        <p class="mt-4 text-[15px] leading-relaxed text-gray-600">Buy straight from the production line, with no middleman markup.</p>
-        <a href="#contact" class="link-u text-teal inline-block mt-10">Explore More</a>
+<!-- ============ PRODUCT LINES + VEHICLE MAKES ============ -->
+<section id="products" class="py-20 scroll-mt-[76px]" style="background:var(--soft)">
+  <div class="max-w-[1440px] mx-auto px-5 sm:px-8">
+    <div class="text-center">
+      <h2 class="text-[38px] sm:text-[44px] font-semibold">Explore Our Product Lines</h2>
+      <p class="mt-3 text-[15px] sm:text-[16px] text-gray-600">Automotive electronics for wholesale, vehicle-specific applications and OEM / ODM projects.</p>
+    </div>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+      <article class="bg-white border border-[var(--line)] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-200">
+        <div class="h-[210px] p-5 flex items-center justify-center bg-white"><img src="/assets/products/car-head-unit.png" alt="Android car head unit with touchscreen navigation" class="w-full h-full object-contain" loading="lazy"></div>
+        <div class="p-6 pt-3 flex flex-col flex-1"><h3 class="text-[20px] font-semibold">Car Head Units</h3><p class="mt-3 text-sm leading-relaxed text-gray-600 flex-1">Android car stereos with wireless CarPlay, Android Auto and vehicle-specific fit.</p><a href="/contact/#inquiry" class="link-u text-teal inline-flex items-center gap-2 mt-6 self-start">View Products <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="bg-white border border-[var(--line)] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-200">
+        <div class="h-[210px] p-5 flex items-center justify-center bg-white"><img src="/assets/products/vehicle-camera.png" alt="Compact vehicle camera" class="w-full h-full object-contain" loading="lazy"></div>
+        <div class="p-6 pt-3 flex flex-col flex-1"><h3 class="text-[20px] font-semibold">Vehicle Cameras</h3><p class="mt-3 text-sm leading-relaxed text-gray-600 flex-1">Reverse cameras, front-view cameras and HD vehicle safety camera solutions.</p><a href="/contact/#inquiry" class="link-u text-teal inline-flex items-center gap-2 mt-6 self-start">View Products <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="bg-white border border-[var(--line)] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-200">
+        <div class="h-[210px] p-5 flex items-center justify-center bg-white"><img src="/assets/products/dash-cam.png" alt="Dash cam with display and rear camera" class="w-full h-full object-contain" loading="lazy"></div>
+        <div class="p-6 pt-3 flex flex-col flex-1"><h3 class="text-[20px] font-semibold">Dash Cams</h3><p class="mt-3 text-sm leading-relaxed text-gray-600 flex-1">Front, rear and dual-channel dash cams for passenger and commercial vehicles.</p><a href="/contact/#inquiry" class="link-u text-teal inline-flex items-center gap-2 mt-6 self-start">View Products <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="bg-white border border-[var(--line)] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-200">
+        <div class="h-[210px] p-5 flex items-center justify-center bg-white"><img src="/assets/products/digital-cluster.png" alt="Digital automotive instrument cluster" class="w-full h-full object-contain" loading="lazy"></div>
+        <div class="p-6 pt-3 flex flex-col flex-1"><h3 class="text-[20px] font-semibold">Digital Instrument Clusters</h3><p class="mt-3 text-sm leading-relaxed text-gray-600 flex-1">LCD virtual cockpits designed to replace original dashboard gauges.</p><a href="/contact/#inquiry" class="link-u text-teal inline-flex items-center gap-2 mt-6 self-start">View Products <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="bg-white border border-[var(--line)] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-200">
+        <div class="h-[210px] p-5 flex items-center justify-center bg-white"><img src="/assets/products/automotive-lighting.jpg" alt="High-output automotive LED lighting" class="w-full h-full object-contain" loading="lazy"></div>
+        <div class="p-6 pt-3 flex flex-col flex-1"><h3 class="text-[20px] font-semibold">Automotive Lighting</h3><p class="mt-3 text-sm leading-relaxed text-gray-600 flex-1">LED headlights, work lights, interior ambient lighting and more.</p><a href="/contact/#inquiry" class="link-u text-teal inline-flex items-center gap-2 mt-6 self-start">View Products <span aria-hidden="true">→</span></a></div>
+      </article>
+    </div>
+
+    <div id="by-vehicle" class="mt-20 pt-16 border-t border-[var(--line)] text-center scroll-mt-24">
+      <h2 class="text-[36px] sm:text-[42px] font-semibold">Find Products by Vehicle</h2>
+      <p class="mt-3 text-[15px] text-gray-600">Browse vehicle-specific electronics by make, model and year.</p>
+      <div class="mt-9 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-3">
+        <a href="/contact/#inquiry" class="bg-white border border-[var(--line)] rounded-xl py-6 px-3 hover:border-emerald-700 hover:shadow-md transition"><span class="block text-[18px] font-semibold">Toyota</span></a>
+        <a href="/contact/#inquiry" class="bg-white border border-[var(--line)] rounded-xl py-6 px-3 hover:border-emerald-700 hover:shadow-md transition"><span class="block text-[18px] font-semibold">BMW</span></a>
+        <a href="/contact/#inquiry" class="bg-white border border-[var(--line)] rounded-xl py-6 px-3 hover:border-emerald-700 hover:shadow-md transition"><span class="block text-[16px] font-semibold">Mercedes-Benz</span></a>
+        <a href="/contact/#inquiry" class="bg-white border border-[var(--line)] rounded-xl py-6 px-3 hover:border-emerald-700 hover:shadow-md transition"><span class="block text-[16px] font-semibold">Volkswagen</span></a>
+        <a href="/contact/#inquiry" class="bg-white border border-[var(--line)] rounded-xl py-6 px-3 hover:border-emerald-700 hover:shadow-md transition"><span class="block text-[18px] font-semibold">Audi</span></a>
+        <a href="/contact/#inquiry" class="bg-white border border-[var(--line)] rounded-xl py-6 px-3 hover:border-emerald-700 hover:shadow-md transition"><span class="block text-[18px] font-semibold">Ford</span></a>
+        <a href="/contact/#inquiry" class="bg-white border border-[var(--line)] rounded-xl py-6 px-3 hover:border-emerald-700 hover:shadow-md transition"><span class="block text-[18px] font-semibold">Honda</span></a>
+        <a href="/contact/#inquiry" class="bg-white border border-[var(--line)] rounded-xl py-6 px-3 hover:border-emerald-700 hover:shadow-md transition"><span class="block text-[18px] font-semibold">Nissan</span></a>
+        <a href="/contact/#inquiry" class="bg-white border border-[var(--line)] rounded-xl py-6 px-3 hover:border-emerald-700 hover:shadow-md transition"><span class="block text-[18px] font-semibold">Hyundai</span></a>
+        <a href="/contact/#inquiry" class="bg-white border border-[var(--line)] rounded-xl py-6 px-3 hover:border-emerald-700 hover:shadow-md transition"><span class="block text-[18px] font-semibold">Kia</span></a>
       </div>
-      <div class="rounded-xl p-7" style="background:var(--soft)">
-        <h3 class="text-[19px] font-semibold">Plug &amp; Play Fit</h3>
-        <p class="mt-4 text-[15px] leading-relaxed text-gray-600">Vehicle-specific frames and harnesses for fast, clean installation.</p>
-        <a href="#by-vehicle" class="link-u text-teal inline-block mt-10">Explore More</a>
-      </div>
-      <div class="border border-[var(--line)] rounded-xl p-7">
-        <h3 class="text-[19px] font-semibold">Fast Delivery</h3>
-        <p class="mt-4 text-[15px] leading-relaxed text-gray-600">Quick sampling and steady bulk lead times for your orders.</p>
-        <a href="#contact" class="link-u text-teal inline-block mt-10">Explore More</a>
-      </div>
+      <a href="/contact/#inquiry" class="btn bg-teal text-white dot mt-8">View All Vehicle Makes</a>
     </div>
   </div>
 </section>
@@ -117,66 +144,6 @@
     </div>
     <div class="ph rounded-2xl aspect-[4/3]">
       <span>Image: product / car photo</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CHOOSE YOUR PRODUCT LINE (3 cards) ============ -->
-<section id="products" class="py-20" style="background:var(--soft)">
-  <div class="max-w-[1180px] mx-auto px-5">
-    <div class="flex flex-wrap items-end justify-between gap-4">
-      <div>
-        <h2 class="text-[38px] sm:text-[44px] font-semibold">Choose your product line</h2>
-        <p class="mt-2 text-gray-600">Core categories for the global aftermarket, all available for wholesale and OEM.</p>
-      </div>
-      <a href="#contact" class="btn bg-teal text-white dot">View All</a>
-    </div>
-
-    <div class="mt-12 grid md:grid-cols-3 gap-6">
-      <!-- Card 1 -->
-      <div class="bg-white rounded-2xl p-7 flex flex-col justify-between shadow-sm">
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="pill bg-teal/10 text-teal">Wholesale</span>
-            <span class="text-sm font-semibold text-gray-500">Factory Price</span>
-          </div>
-          <h3 class="mt-5 text-[22px] font-semibold">Android Car Head Units</h3>
-          <p class="mt-3 text-sm text-gray-600 leading-relaxed">Universal and vehicle-specific screens with wireless CarPlay and Android Auto.</p>
-        </div>
-        <div class="mt-8 pt-6 border-t border-[var(--line)]">
-          <a href="#contact" class="btn bg-teal text-white w-full justify-center">Request Now</a>
-        </div>
-      </div>
-
-      <!-- Card 2 (highlighted green) -->
-      <div class="bg-teal text-white rounded-2xl p-7 flex flex-col justify-between shadow-sm">
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="pill bg-white/20 text-white">Popular</span>
-            <span class="text-sm font-semibold text-white/80">Factory Price</span>
-          </div>
-          <h3 class="mt-5 text-[22px] font-semibold">Car Cameras &amp; Dash Cams</h3>
-          <p class="mt-3 text-sm text-white/90 leading-relaxed">Reversing cameras, 360&deg; view systems and dash cams for every vehicle type.</p>
-        </div>
-        <div class="mt-8 pt-6 border-t border-white/20">
-          <a href="#contact" class="btn bg-white text-teal w-full justify-center">Request Now</a>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-2xl p-7 flex flex-col justify-between shadow-sm">
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="pill bg-teal/10 text-teal">Upgrade</span>
-            <span class="text-sm font-semibold text-gray-500">Factory Price</span>
-          </div>
-          <h3 class="mt-5 text-[22px] font-semibold">Digital Instrument Clusters</h3>
-          <p class="mt-3 text-sm text-gray-600 leading-relaxed">LCD virtual cockpits that replace the original dashboard gauges.</p>
-        </div>
-        <div class="mt-8 pt-6 border-t border-[var(--line)]">
-          <a href="#contact" class="btn bg-teal text-white w-full justify-center">Request Now</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -224,7 +191,7 @@
 </section>
 
 <!-- ============ 3 BOTTOM SERVICES ============ -->
-<section id="by-vehicle" class="py-20" style="background:var(--soft)">
+<section id="solutions" class="py-20" style="background:var(--soft)">
   <div class="max-w-[1180px] mx-auto px-5">
     <div class="flex items-end justify-between">
       <div>

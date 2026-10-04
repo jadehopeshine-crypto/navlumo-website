@@ -77,6 +77,10 @@
   .blog-slide.is-active{display:grid;}
   .blog-dot{width:9px;height:9px;border-radius:999px;background:#cfd5d8;transition:width .25s,background .25s;}
   .blog-dot.is-active{width:28px;background:var(--teal);}
+  .testimonial-slide{display:none;animation:blog-fade .45s ease both;}
+  .testimonial-slide.is-active{display:grid;}
+  .testimonial-dot{width:9px;height:9px;border-radius:999px;background:#cfd5d8;transition:width .25s,background .25s;}
+  .testimonial-dot.is-active{width:28px;background:var(--teal);}
   @keyframes vehicle-scroll{to{transform:translateX(calc(-50% - 6px));}}
   @keyframes blog-fade{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
   @media (prefers-reduced-motion:reduce){.blog-slide{animation:none}}
@@ -419,18 +423,69 @@
   </div>
 </section>
 
-<!-- ============ TESTIMONIAL ============ -->
-<section class="py-20">
-  <div class="max-w-[1180px] mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
-    <div class="ph rounded-2xl aspect-[4/3]"><span>Image: customer / installation photo</span></div>
-    <div>
-      <div class="flex gap-1 text-teal text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <h3 class="mt-4 text-[26px] font-semibold">"Reliable products, easy to sell!"</h3>
-      <p class="mt-4 text-gray-600 leading-relaxed italic">[Customer review placeholder] Replace this text with a real review from one of your buyers, for example about product quality, installation and after-sales support.</p>
-      <div class="mt-6 font-semibold">[Customer Name], [Country]</div>
-      <div class="mt-8 flex gap-3">
-        <button class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100">&larr;</button>
-        <button class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100">&rarr;</button>
+<!-- ============ TESTIMONIALS ============ -->
+<section class="py-20" style="background:var(--soft)">
+  <div class="max-w-[1180px] mx-auto px-5">
+    <div class="max-w-[760px]">
+      <span class="pill bg-white text-teal">Customer Reviews</span>
+      <h2 class="section-title mt-4">What Our Partners Say</h2>
+      <p class="section-copy mt-4 text-gray-600">Feedback from automotive distributors and long-term partners in different markets.</p>
+    </div>
+
+    <div id="testimonial-carousel" class="mt-12" aria-roledescription="carousel" aria-label="Customer reviews">
+      <div>
+        <article class="testimonial-slide is-active lg:grid-cols-2 bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="false">
+          <img src="/assets/testimonials/india-customer-review.jpg" alt="Android head unit orders prepared for an India distributor" class="w-full h-[280px] md:h-[360px] lg:h-full lg:min-h-[390px] object-cover" loading="lazy">
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <div class="text-teal text-lg tracking-[0.18em]" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="mt-5 text-[28px] font-semibold leading-snug">&ldquo;Reliable quality, fewer after-sales issues.&rdquo;</h3>
+            <blockquote class="mt-5 text-gray-600 leading-[1.8] italic">&ldquo;We have been sourcing Android head units from Navlumo for 11 years. Product quality has been consistent, and the after-sales rate is much lower than with some of our previous suppliers.&rdquo;</blockquote>
+            <div class="mt-6 text-sm font-semibold uppercase tracking-[0.12em] text-teal">India</div>
+          </div>
+        </article>
+
+        <article class="testimonial-slide lg:grid-cols-2 bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="true">
+          <img src="/assets/testimonials/oem-odm-customer-review.jpg" alt="Customized automotive electronics orders prepared for a Spain distributor" class="w-full h-[280px] md:h-[360px] lg:h-full lg:min-h-[390px] object-cover" loading="lazy">
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <div class="text-teal text-lg tracking-[0.18em]" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="mt-5 text-[28px] font-semibold leading-snug">&ldquo;They understand what distributors really need.&rdquo;</h3>
+            <blockquote class="mt-5 text-gray-600 leading-[1.8] italic">&ldquo;Navlumo helped us customize the boot logo, UI, packaging and product configuration for our brand. Communication was clear and the whole customization process was smooth.&rdquo;</blockquote>
+            <div class="mt-6 text-sm font-semibold uppercase tracking-[0.12em] text-teal">Spain</div>
+          </div>
+        </article>
+
+        <article class="testimonial-slide lg:grid-cols-2 bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="true">
+          <img src="/assets/testimonials/egypt-customer-review.jpg" alt="Customized Android car multimedia system configuration for an Egypt distributor" class="w-full h-[280px] md:h-[360px] lg:h-full lg:min-h-[390px] object-cover" loading="lazy">
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <div class="text-teal text-lg tracking-[0.18em]" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="mt-5 text-[28px] font-semibold leading-snug">&ldquo;They helped us build the right configuration for our market.&rdquo;</h3>
+            <blockquote class="mt-5 text-gray-600 leading-[1.8] italic">&ldquo;Instead of offering only one standard configuration, their team suggested special platform and IC options based on our target price and local market requirements.&rdquo;</blockquote>
+            <div class="mt-6 text-sm font-semibold uppercase tracking-[0.12em] text-teal">Egypt</div>
+          </div>
+        </article>
+
+        <article class="testimonial-slide lg:grid-cols-2 bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="true">
+          <img src="/assets/testimonials/long-term-cooperation-customer-review.jpg" alt="Large automotive electronics shipment for a long-term Israel partner" class="w-full h-[280px] md:h-[360px] lg:h-full lg:min-h-[390px] object-cover" loading="lazy">
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <div class="text-teal text-lg tracking-[0.18em]" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="mt-5 text-[28px] font-semibold leading-snug">&ldquo;Fast support makes long-term cooperation easier.&rdquo;</h3>
+            <blockquote class="mt-5 text-gray-600 leading-[1.8] italic">&ldquo;When we had technical questions, the team responded quickly and provided practical solutions. Stable supply and responsive support are the main reasons we continue ordering.&rdquo;</blockquote>
+            <div class="mt-6 text-sm font-semibold uppercase tracking-[0.12em] text-teal">Israel</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-6 flex items-center justify-between gap-5">
+        <div class="flex items-center gap-2" aria-label="Choose customer review">
+          <button class="testimonial-dot is-active" type="button" aria-label="Show review 1" aria-current="true"></button>
+          <button class="testimonial-dot" type="button" aria-label="Show review 2"></button>
+          <button class="testimonial-dot" type="button" aria-label="Show review 3"></button>
+          <button class="testimonial-dot" type="button" aria-label="Show review 4"></button>
+        </div>
+        <div class="flex gap-3">
+          <button id="testimonial-prev" type="button" class="w-11 h-11 rounded-full border border-[var(--line)] text-teal bg-white flex items-center justify-center hover:bg-gray-50" aria-label="Previous review">&larr;</button>
+          <button id="testimonial-next" type="button" class="w-11 h-11 rounded-full bg-teal text-white flex items-center justify-center hover:opacity-90" aria-label="Next review">&rarr;</button>
+        </div>
       </div>
     </div>
   </div>
@@ -548,6 +603,41 @@
     blogCarousel.addEventListener('focusin', () => clearInterval(blogTimer));
     blogCarousel.addEventListener('focusout', startBlogCarousel);
     startBlogCarousel();
+  }
+  const testimonialCarousel = document.getElementById('testimonial-carousel');
+  if (testimonialCarousel) {
+    const slides = [...testimonialCarousel.querySelectorAll('.testimonial-slide')];
+    const dots = [...testimonialCarousel.querySelectorAll('.testimonial-dot')];
+    const prev = document.getElementById('testimonial-prev');
+    const next = document.getElementById('testimonial-next');
+    let current = 0;
+    let testimonialTimer;
+    const showTestimonial = (index) => {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => {
+        const active = i === current;
+        slide.classList.toggle('is-active', active);
+        slide.setAttribute('aria-hidden', String(!active));
+      });
+      dots.forEach((dot, i) => {
+        const active = i === current;
+        dot.classList.toggle('is-active', active);
+        if (active) dot.setAttribute('aria-current', 'true');
+        else dot.removeAttribute('aria-current');
+      });
+    };
+    const startTestimonials = () => {
+      clearInterval(testimonialTimer);
+      testimonialTimer = setInterval(() => showTestimonial(current + 1), 6500);
+    };
+    prev.addEventListener('click', () => { showTestimonial(current - 1); startTestimonials(); });
+    next.addEventListener('click', () => { showTestimonial(current + 1); startTestimonials(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { showTestimonial(i); startTestimonials(); }));
+    testimonialCarousel.addEventListener('mouseenter', () => clearInterval(testimonialTimer));
+    testimonialCarousel.addEventListener('mouseleave', startTestimonials);
+    testimonialCarousel.addEventListener('focusin', () => clearInterval(testimonialTimer));
+    testimonialCarousel.addEventListener('focusout', startTestimonials);
+    startTestimonials();
   }
 </script>
 </body>

@@ -66,7 +66,17 @@
   #site-header{transition:background .25s;}
   #site-header.scrolled{background:var(--teal);}
   .hero-banner{min-height:640px;height:clamp(640px,72svh,1080px);overflow:hidden;}
-  .hero-video{width:100%;height:100%;object-fit:cover;object-position:center center;}
+  .hero-video{width:100%;height:100%;object-fit:cover;object-position:center center;transform:scale(1.08) translateX(8%);transform-origin:center right;}
+  .hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.78) 30%,rgba(0,0,0,.3) 58%,rgba(0,0,0,.06) 100%);}
+  .hero-copy{max-width:620px!important;}
+  @media (min-width:1600px){
+    .hero-content{max-width:none!important;padding-left:clamp(72px,8vw,300px)!important;padding-right:clamp(40px,5vw,160px)!important;}
+    .hero-copy{max-width:800px!important;}
+    .hero-copy h1{font-size:clamp(52px,2.6vw,64px);line-height:1.05;}
+    .hero-copy p{font-size:20px;line-height:1.7;}
+    .hero-copy .pill{font-size:13px;padding:8px 15px;}
+    .hero-copy .btn{font-size:17px;padding:14px 25px;}
+  }
   .vehicle-marquee{overflow:hidden;position:relative;padding:4px 0 12px;mask-image:linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);}
   .vehicle-marquee-track{display:flex;width:max-content;gap:12px;animation:vehicle-scroll 72s linear infinite;}
   .vehicle-marquee:hover .vehicle-marquee-track{animation-play-state:paused;}
@@ -137,9 +147,9 @@
     </video>
   </div>
   <!-- Left-to-right gradient overlay: dark on left for text legibility, transparent on right for clear video showcase -->
-  <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-black/10 pointer-events-none"></div>
-  <div class="relative max-w-[1240px] mx-auto px-5 sm:px-8 w-full pt-28 pb-16">
-    <div class="max-w-[560px] text-white">
+  <div class="hero-shade absolute inset-0 pointer-events-none"></div>
+  <div class="hero-content relative max-w-[1240px] mx-auto px-5 sm:px-8 w-full pt-28 pb-16">
+    <div class="hero-copy max-w-[560px] text-white">
       <span class="pill dot bg-white/15 text-white backdrop-blur-sm">Factory-direct automotive electronics</span>
       <h1 class="mt-5 text-[40px] sm:text-[48px] leading-[1.1] font-semibold tracking-tight">Your Automotive Electronics Manufacturing Partner</h1>
       <p class="mt-6 text-[16px] sm:text-[17px] leading-relaxed text-white/90">Car head units, vehicle cameras, dash cams, digital clusters, automotive lighting and other automotive electronics &mdash; built for distributors, installers and brand owners worldwide.</p>

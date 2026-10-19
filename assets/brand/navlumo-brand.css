@@ -16,6 +16,28 @@ header .logo::before {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
 }
 
+/* Keep the complete 2244×701 inner-page banner visible at every viewport ratio. */
+.unified-hero {
+  margin-top: 76px;
+  padding-top: 0 !important;
+  background-color: #152220 !important;
+  background-size: contain !important;
+  background-position: center center !important;
+}
+
+@media (max-width: 640px) {
+  .unified-hero {
+    min-height: 520px;
+    align-items: flex-start;
+    background-position: center top !important;
+  }
+
+  .unified-hero > div {
+    padding-top: calc(31.24vw + 2rem) !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
 @media (max-width: 420px) {
   header .logo { gap: 0.5rem; font-size: 1.25rem; }
   header .logo::before {

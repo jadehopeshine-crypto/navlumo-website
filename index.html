@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="/assets/brand/navlumo-brand.css">
+<link rel="icon" type="image/png" href="/assets/brand/navlumo-mark.png?v=2">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navlumo | Factory-Direct Car Head Units, Cameras, Dash Cams & Digital Clusters</title>
-<meta name="description" content="Navlumo supplies Android car head units, car cameras, dash cams, digital instrument clusters and automotive lighting to distributors, retrofit shops and brand owners worldwide.">
+<title>Automotive Electronics Manufacturer &amp; OEM/ODM Supplier | Navlumo</title>
+<meta name="description" content="Navlumo is a Dongguan automotive electronics manufacturer supplying Android head units, CarPlay displays, reversing cameras and dash cams with OEM/ODM support for global distributors and wholesalers.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://navlumo.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Automotive Electronics Manufacturer &amp; OEM/ODM Supplier | Navlumo">
+<meta property="og:description" content="Vehicle-specific in-car electronics, OEM/ODM customization and manufacturing support for distributors, wholesalers and automotive brands worldwide.">
+<meta property="og:url" content="https://navlumo.com/">
+<meta property="og:image" content="https://navlumo.com/assets/about/navlumo-factory-testing-team.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="x-default" href="https://navlumo.com/" />
 <link rel="alternate" hreflang="en" href="https://navlumo.com/" />
 <link rel="alternate" hreflang="de" href="https://navlumo.com/de/" />
@@ -14,6 +24,31 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Navlumo",
+  "url": "https://navlumo.com/",
+  "description": "Dongguan automotive electronics manufacturer and OEM/ODM partner for global distributors, wholesalers and automotive brands.",
+  "email": "sales@navlumo.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dongguan",
+    "addressCountry": "CN"
+  },
+  "areaServed": "Worldwide",
+  "knowsAbout": [
+    "Android car head units",
+    "CarPlay displays",
+    "Reversing cameras",
+    "Dash cams",
+    "Digital instrument clusters",
+    "Automotive lighting",
+    "Automotive electronics OEM and ODM"
+  ]
+}
+</script>
 <style>
   :root{--teal:#01544b;--green:#0b8a6a;--ink:#2f3036;--soft:#f6f6f7;--line:#e2e4e8;}
   body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--ink);background:#fff;}
@@ -25,10 +60,45 @@
   .btn{display:inline-flex;align-items:center;font-weight:600;font-size:15px;border-radius:6px;padding:12px 22px;transition:.2s;}
   .btn:hover{transform:translateY(-1px);opacity:.92;}
   .link-u{border-bottom:1px solid currentColor;padding-bottom:2px;font-weight:500;}
+  .section-title{font-size:36px;line-height:1.15;font-weight:600;}
+  .section-copy{font-size:15px;line-height:1.75;}
+  @media (min-width:640px){.section-title{font-size:40px}.section-copy{font-size:16px}}
   /* Image placeholders - replace with your own photos */
   .ph{background:linear-gradient(135deg,#1c2326,#3a4246);color:#cfd5d8;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;}
   #site-header{transition:background .25s;}
   #site-header.scrolled{background:var(--teal);}
+  .hero-banner{min-height:640px;height:clamp(640px,72svh,1080px);overflow:hidden;}
+  .hero-video{width:100%;height:100%;object-fit:cover;object-position:center center;transform:scale(1.08) translateX(8%);transform-origin:center right;}
+  .hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.78) 30%,rgba(0,0,0,.3) 58%,rgba(0,0,0,.06) 100%);}
+  .hero-copy{max-width:620px!important;}
+  .hero-content{max-width:1180px!important;margin-left:auto;margin-right:auto;padding-left:20px!important;padding-right:20px!important;}
+  @media (min-width:1600px){
+    .hero-copy{max-width:620px!important;}
+    .hero-copy h1{font-size:52px;line-height:1.1;}
+    .hero-copy p{font-size:18px;line-height:1.7;}
+    .hero-copy .pill{font-size:13px;padding:8px 15px;}
+    .hero-copy .btn{font-size:17px;padding:14px 25px;}
+  }
+  .vehicle-marquee{overflow:hidden;position:relative;padding:4px 0 12px;mask-image:linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);}
+  .vehicle-marquee-track{display:flex;width:max-content;gap:12px;animation:vehicle-scroll 72s linear infinite;}
+  .vehicle-marquee:hover .vehicle-marquee-track{animation-play-state:paused;}
+  .vehicle-marquee-group{display:flex;gap:12px;}
+  .vehicle-make-card{width:164px;height:158px;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px;background:#fff;border:1px solid var(--line);border-radius:14px;transition:border-color .2s,box-shadow .2s,transform .2s;}
+  .vehicle-make-card:hover{border-color:#047461;box-shadow:0 8px 20px rgba(1,84,75,.12);transform:translateY(-2px);}
+  .vehicle-make-card img{width:120px;height:92px;object-fit:contain;transform:scale(1.16);}
+  .vehicle-make-card span{font-size:15px;font-weight:600;color:var(--ink);white-space:nowrap;}
+  .blog-slide{display:none;animation:blog-fade .45s ease both;}
+  .blog-slide.is-active{display:grid;}
+  .blog-dot{width:9px;height:9px;border-radius:999px;background:#cfd5d8;transition:width .25s,background .25s;}
+  .blog-dot.is-active{width:28px;background:var(--teal);}
+  .testimonial-slide{display:none;animation:blog-fade .45s ease both;}
+  .testimonial-slide.is-active{display:grid;}
+  .testimonial-dot{width:9px;height:9px;border-radius:999px;background:#cfd5d8;transition:width .25s,background .25s;}
+  .testimonial-dot.is-active{width:28px;background:var(--teal);}
+  @keyframes vehicle-scroll{to{transform:translateX(calc(-50% - 6px));}}
+  @keyframes blog-fade{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.blog-slide{animation:none}}
+  @media (max-width:640px){.vehicle-marquee{margin-left:-20px;margin-right:-20px}.vehicle-make-card{width:144px;height:142px}.vehicle-make-card img{width:102px;height:80px}}
 </style>
 </head>
 <body>
@@ -38,38 +108,64 @@
   <div class="max-w-[1180px] mx-auto px-5 h-[76px] flex items-center justify-between">
     <a href="/" class="logo text-white text-[24px] font-semibold tracking-tight">Navlumo</a>
     <nav class="hidden lg:flex items-center gap-8 text-white text-[15px] font-medium">
-      <a href="/" class="hover:opacity-80">Home</a>
-      <a href="#products" class="hover:opacity-80">Product</a>
-      <a href="#by-vehicle" class="hover:opacity-80">By Vehicle</a>
-      <a href="#oem" class="hover:opacity-80">OEM &amp; ODM</a>
-      <a href="#about" class="hover:opacity-80">About Us</a>
-      <a href="#blog" class="hover:opacity-80">Blog</a>
-      <a href="#contact" class="hover:opacity-80">Contact</a>
+
+      <div class="relative group">
+        <a href="/products/" class="hover:opacity-80 inline-flex items-center gap-1.5 py-7" aria-haspopup="true">Product <span aria-hidden="true" class="text-xs">⌄</span></a>
+        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 absolute top-full left-1/2 -translate-x-1/2 w-[260px] rounded-xl bg-white py-3 text-[14px] font-medium text-gray-700 shadow-xl border border-gray-200 transition-all duration-150">
+          <a href="/products/#android-car-radio" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Android Car Radio</a>
+          <a href="/products/#portable-carplay-screen" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Portable CarPlay Screen</a>
+          <a href="/products/#car-mp5-player" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Car MP5 Player</a>
+          <a href="/products/#dash-cam-car-dvr" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Dash Cam/Car DVR</a>
+          <a href="/products/#car-reversing-aid" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Car Reversing Aid</a>
+          <a href="/products/#automotive-lighting" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Automotive Lighting</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <a href="/by-vehicle/" class="hover:opacity-80 inline-flex items-center gap-1.5 py-7" aria-haspopup="true">By Vehicle <span aria-hidden="true" class="text-xs">⌄</span></a>
+        <div class="vehicle-menu invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 absolute top-full left-1/2 -translate-x-1/2 w-[560px] rounded-xl bg-white p-3 text-[14px] font-medium text-gray-700 shadow-xl border border-gray-200 transition-all duration-150 grid grid-cols-3"></div>
+      </div>
+      <a href="/blog/" class="hover:opacity-80">Blog</a>
+      <a href="/oem-odm/" class="hover:opacity-80">OEM &amp; ODM</a>
+      <a href="/about/" class="hover:opacity-80">About Us</a>
+      <a href="/contact/" class="hover:opacity-80">Contact</a>
     </nav>
     <div class="flex items-center gap-3">
-      <a href="#contact" class="btn bg-white text-teal !py-[10px]">Get a Quote</a>
+      <div class="relative">
+        <button id="language-toggle" type="button" class="h-[44px] min-w-[82px] sm:min-w-[96px] px-3 rounded-md border border-white/50 bg-white/10 text-white flex items-center justify-center gap-2 text-[14px] font-semibold hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/60" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
+          <svg aria-hidden="true" viewBox="0 0 60 36" class="w-6 h-4 rounded-[2px]"><rect width="60" height="36" fill="#012169"/><path d="M0 0l60 36M60 0L0 36" stroke="#fff" stroke-width="8"/><path d="M0 0l60 36M60 0L0 36" stroke="#c8102e" stroke-width="4"/><path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="12"/><path d="M30 0v36M0 18h60" stroke="#c8102e" stroke-width="7"/></svg><span>EN</span>
+          <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3"><path d="M5.5 7.5 10 12l4.5-4.5z"></path></svg>
+        </button>
+        <div id="language-menu" class="hidden absolute top-[52px] right-0 w-[150px] rounded-lg bg-white py-2 shadow-xl border border-gray-200 text-gray-700 overflow-hidden" role="menu" aria-label="Language versions">
+          <a href="/" class="flex items-center gap-3 px-4 py-2.5 bg-gray-50 text-teal font-semibold" role="menuitem" aria-current="page"><svg aria-hidden="true" viewBox="0 0 60 36" class="w-7 h-[17px] rounded-[2px]"><rect width="60" height="36" fill="#012169"/><path d="M0 0l60 36M60 0L0 36" stroke="#fff" stroke-width="8"/><path d="M0 0l60 36M60 0L0 36" stroke="#c8102e" stroke-width="4"/><path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="12"/><path d="M30 0v36M0 18h60" stroke="#c8102e" stroke-width="7"/></svg><span>EN</span></a>
+          <a href="/de/" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50" role="menuitem"><svg aria-hidden="true" viewBox="0 0 60 36" class="w-7 h-[17px] rounded-[2px]"><path fill="#000" d="M0 0h60v12H0z"/><path fill="#dd0000" d="M0 12h60v12H0z"/><path fill="#ffce00" d="M0 24h60v12H0z"/></svg><span>DE</span></a>
+          <a href="/es/" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50" role="menuitem"><svg aria-hidden="true" viewBox="0 0 60 36" class="w-7 h-[17px] rounded-[2px]"><path fill="#aa151b" d="M0 0h60v36H0z"/><path fill="#f1bf00" d="M0 9h60v18H0z"/><rect x="16" y="14" width="4" height="9" rx="1" fill="#aa151b"/></svg><span>ES</span></a>
+          <a href="/ar/" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50" role="menuitem"><svg aria-hidden="true" viewBox="0 0 60 36" class="w-7 h-[17px] rounded-[2px]"><rect width="60" height="36" fill="#006c35"/><path d="M16 15h28M19 19h22M18 26h25M39 24.5l4 1.5-4 1.5" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/></svg><span>AR</span></a>
+        </div>
+      </div>
+      <a href="/contact/#inquiry" class="btn bg-white text-teal !py-[10px]">Get a Quote</a>
       <button id="menu-btn" class="lg:hidden text-white text-2xl px-2" aria-label="Menu">&#9776;</button>
     </div>
   </div>
   <div id="mobile-menu" class="hidden lg:hidden bg-teal text-white px-5 pb-5 space-y-3 text-[15px]">
-    <a href="/" class="block">Home</a><a href="#products" class="block">Product</a>
-    <a href="#by-vehicle" class="block">By Vehicle</a><a href="#oem" class="block">OEM &amp; ODM</a>
-    <a href="#about" class="block">About Us</a><a href="#blog" class="block">Blog</a>
-    <a href="#contact" class="block">Contact</a>
+
+    <div><a href="/products/" class="block font-semibold">Product</a><div class="mt-2 ml-4 pl-4 border-l border-white/25 space-y-2 text-white/85 text-[14px]"><a href="/products/#android-car-radio" class="block">Android Car Radio</a><a href="/products/#portable-carplay-screen" class="block">Portable CarPlay Screen</a><a href="/products/#car-mp5-player" class="block">Car MP5 Player</a><a href="/products/#dash-cam-car-dvr" class="block">Dash Cam/Car DVR</a><a href="/products/#car-reversing-aid" class="block">Car Reversing Aid</a><a href="/products/#automotive-lighting" class="block">Automotive Lighting</a></div></div>
+    <details><summary class="cursor-pointer list-none font-semibold flex items-center justify-between">By Vehicle <span aria-hidden="true">⌄</span></summary><div class="mt-2 ml-4 pl-4 border-l border-white/25 text-white/85 text-[14px]"><a href="/by-vehicle/" class="block mb-3 font-semibold text-white">View All Vehicles →</a><div class="vehicle-menu-mobile grid grid-cols-2 gap-x-4 gap-y-2"></div></div></details><a href="/blog/" class="block">Blog</a>
+    <a href="/oem-odm/" class="block">OEM &amp; ODM</a><a href="/about/" class="block">About Us</a>
+    <a href="/contact/" class="block">Contact</a>
   </div>
 </header>
 
 <!-- ============ HERO WITH VIDEO BANNER ============ -->
-<section class="relative min-h-[640px] flex items-center overflow-hidden bg-black">
+<section class="hero-banner relative flex items-center overflow-hidden bg-black">
   <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <video class="w-full h-full object-cover" style="transform: scale(1.22) translateX(16%); transform-origin: center right;" autoplay muted loop playsinline preload="auto">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto">
       <source src="/assets/hero-video.mp4" type="video/mp4">
     </video>
   </div>
   <!-- Left-to-right gradient overlay: dark on left for text legibility, transparent on right for clear video showcase -->
-  <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-black/10 pointer-events-none"></div>
-  <div class="relative max-w-[1240px] mx-auto px-5 sm:px-8 w-full pt-28 pb-16">
-    <div class="max-w-[560px] text-white">
+  <div class="hero-shade absolute inset-0 pointer-events-none"></div>
+  <div class="hero-content relative max-w-[1240px] mx-auto px-5 sm:px-8 w-full pt-28 pb-16">
+    <div class="hero-copy max-w-[560px] text-white">
       <span class="pill dot bg-white/15 text-white backdrop-blur-sm">Factory-direct automotive electronics</span>
       <h1 class="mt-5 text-[40px] sm:text-[48px] leading-[1.1] font-semibold tracking-tight">Your Automotive Electronics Manufacturing Partner</h1>
       <p class="mt-6 text-[16px] sm:text-[17px] leading-relaxed text-white/90">Car head units, vehicle cameras, dash cams, digital clusters, automotive lighting and other automotive electronics &mdash; built for distributors, installers and brand owners worldwide.</p>
@@ -80,194 +176,343 @@
   </div>
 </section>
 
-<!-- ============ 3 FEATURE CARDS ============ -->
-<section class="py-20">
-  <div class="max-w-[1000px] mx-auto px-5">
-    <h2 class="text-center text-[38px] sm:text-[42px] font-semibold">Get your products on the road, fast</h2>
-    <div class="mt-12 grid md:grid-cols-3 gap-6">
-      <div class="border border-[var(--line)] rounded-xl p-7">
-        <h3 class="text-[19px] font-semibold">Factory-Direct Pricing</h3>
-        <p class="mt-4 text-[15px] leading-relaxed text-gray-600">Buy straight from the production line, with no middleman markup.</p>
-        <a href="#contact" class="link-u text-teal inline-block mt-10">Explore More</a>
+<!-- ============ PRODUCT LINES + VEHICLE MAKES ============ -->
+<section id="products" class="py-20 scroll-mt-[76px]" style="background:var(--soft)">
+  <div class="max-w-[1440px] mx-auto px-5 sm:px-8">
+    <div class="text-center">
+      <h2 class="section-title">Explore Our Product Lines</h2>
+      <p class="section-copy mt-3 text-gray-600">Automotive electronics for wholesale, vehicle-specific applications and OEM / ODM projects.</p>
+    </div>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+      <article class="bg-white border border-[var(--line)] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-200">
+        <div class="h-[210px] p-5 flex items-center justify-center bg-white"><img src="/assets/products/car-head-unit.png" alt="Android car head unit with touchscreen navigation" class="w-full h-full object-contain" loading="lazy"></div>
+        <div class="p-6 pt-3 flex flex-col flex-1"><h3 class="text-[20px] font-semibold">Car Head Units</h3><p class="mt-3 text-sm leading-relaxed text-gray-600 flex-1">Android car stereos with wireless CarPlay, Android Auto and vehicle-specific fit.</p><a href="/contact/#inquiry" class="link-u text-teal inline-flex items-center gap-2 mt-6 self-start">View Products <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="bg-white border border-[var(--line)] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-200">
+        <div class="h-[210px] p-5 flex items-center justify-center bg-white"><img src="/assets/products/vehicle-camera.png" alt="Car reversing camera for parking assistance" class="w-full h-full object-contain" loading="lazy"></div>
+        <div class="p-6 pt-3 flex flex-col flex-1"><h3 class="text-[20px] font-semibold">Car Reversing Aid</h3><p class="mt-3 text-sm leading-relaxed text-gray-600 flex-1">Reversing cameras, dedicated monitors and complete parking assistance kits.</p><a href="/contact/#inquiry" class="link-u text-teal inline-flex items-center gap-2 mt-6 self-start">View Products <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="bg-white border border-[var(--line)] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-200">
+        <div class="h-[210px] p-5 flex items-center justify-center bg-white"><img src="/assets/products/dash-cam.png" alt="Dash cam with display and rear camera" class="w-full h-full object-contain" loading="lazy"></div>
+        <div class="p-6 pt-3 flex flex-col flex-1"><h3 class="text-[20px] font-semibold">Dash Cams</h3><p class="mt-3 text-sm leading-relaxed text-gray-600 flex-1">Front, rear and dual-channel dash cams for passenger and commercial vehicles.</p><a href="/contact/#inquiry" class="link-u text-teal inline-flex items-center gap-2 mt-6 self-start">View Products <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="bg-white border border-[var(--line)] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-200">
+        <div class="h-[210px] p-5 flex items-center justify-center bg-white"><img src="/assets/products/digital-cluster.png" alt="Digital automotive instrument cluster" class="w-full h-full object-contain" loading="lazy"></div>
+        <div class="p-6 pt-3 flex flex-col flex-1"><h3 class="text-[20px] font-semibold">Digital Instrument Clusters</h3><p class="mt-3 text-sm leading-relaxed text-gray-600 flex-1">LCD virtual cockpits designed to replace original dashboard gauges.</p><a href="/contact/#inquiry" class="link-u text-teal inline-flex items-center gap-2 mt-6 self-start">View Products <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="bg-white border border-[var(--line)] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-200">
+        <div class="h-[210px] p-5 flex items-center justify-center bg-white"><img src="/assets/products/automotive-lighting.jpg" alt="High-output automotive LED lighting" class="w-full h-full object-contain" loading="lazy"></div>
+        <div class="p-6 pt-3 flex flex-col flex-1"><h3 class="text-[20px] font-semibold">Automotive Lighting</h3><p class="mt-3 text-sm leading-relaxed text-gray-600 flex-1">LED headlights, work lights, interior ambient lighting and more.</p><a href="/contact/#inquiry" class="link-u text-teal inline-flex items-center gap-2 mt-6 self-start">View Products <span aria-hidden="true">→</span></a></div>
+      </article>
+    </div>
+
+    <div id="by-vehicle" class="mt-20 pt-16 border-t border-[var(--line)] text-center scroll-mt-24">
+      <h2 class="section-title">Find Products by Vehicle</h2>
+      <p class="section-copy mt-3 text-gray-600">Browse vehicle-specific electronics by make, model and year.</p>
+      <div class="vehicle-marquee mt-9" aria-label="Supported vehicle makes">
+        <div class="vehicle-marquee-track">
+          <div class="vehicle-marquee-group">
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/audi.jpg" alt="Audi vehicle logo" loading="lazy"><span>Audi</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/bmw.jpg" alt="BMW vehicle logo" loading="lazy"><span>BMW</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/benz.jpg" alt="Benz vehicle logo" loading="lazy"><span>Benz</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/tesla.jpg" alt="Tesla vehicle logo" loading="lazy"><span>Tesla</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/toyota.jpg" alt="Toyota vehicle logo" loading="lazy"><span>Toyota</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/honda.jpg" alt="Honda vehicle logo" loading="lazy"><span>Honda</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/lexus.jpg" alt="Lexus vehicle logo" loading="lazy"><span>Lexus</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/hyundai.jpg" alt="Hyundai vehicle logo" loading="lazy"><span>Hyundai</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/nissan.jpg" alt="Nissan vehicle logo" loading="lazy"><span>Nissan</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/vw.jpg" alt="VW vehicle logo" loading="lazy"><span>VW</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/kia.jpg" alt="Kia vehicle logo" loading="lazy"><span>Kia</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/ford.jpg" alt="Ford vehicle logo" loading="lazy"><span>Ford</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/volvo.jpg" alt="Volvo vehicle logo" loading="lazy"><span>Volvo</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/mazda.jpg" alt="Mazda vehicle logo" loading="lazy"><span>Mazda</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/chevrolet.jpg" alt="Chevrolet vehicle logo" loading="lazy"><span>Chevrolet</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/buick.jpg" alt="Buick vehicle logo" loading="lazy"><span>Buick</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/suzuki.jpg" alt="Suzuki vehicle logo" loading="lazy"><span>Suzuki</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/mitsubishi.jpg" alt="Mitsubishi vehicle logo" loading="lazy"><span>Mitsubishi</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/peugeot.jpg" alt="Peugeot vehicle logo" loading="lazy"><span>Peugeot</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/fiat.jpg" alt="Fiat vehicle logo" loading="lazy"><span>Fiat</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/jeep.jpg" alt="Jeep vehicle logo" loading="lazy"><span>Jeep</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/renault.jpg" alt="Renault vehicle logo" loading="lazy"><span>Renault</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/subaru.jpg" alt="Subaru vehicle logo" loading="lazy"><span>Subaru</span></a>
+          </div>
+          <div class="vehicle-marquee-group" aria-hidden="true">
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/audi.jpg" alt="" loading="lazy"><span>Audi</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/bmw.jpg" alt="" loading="lazy"><span>BMW</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/benz.jpg" alt="" loading="lazy"><span>Benz</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/tesla.jpg" alt="" loading="lazy"><span>Tesla</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/toyota.jpg" alt="" loading="lazy"><span>Toyota</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/honda.jpg" alt="" loading="lazy"><span>Honda</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/lexus.jpg" alt="" loading="lazy"><span>Lexus</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/hyundai.jpg" alt="" loading="lazy"><span>Hyundai</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/nissan.jpg" alt="" loading="lazy"><span>Nissan</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/vw.jpg" alt="" loading="lazy"><span>VW</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/kia.jpg" alt="" loading="lazy"><span>Kia</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/ford.jpg" alt="" loading="lazy"><span>Ford</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/volvo.jpg" alt="" loading="lazy"><span>Volvo</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/mazda.jpg" alt="" loading="lazy"><span>Mazda</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/chevrolet.jpg" alt="" loading="lazy"><span>Chevrolet</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/buick.jpg" alt="" loading="lazy"><span>Buick</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/suzuki.jpg" alt="" loading="lazy"><span>Suzuki</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/mitsubishi.jpg" alt="" loading="lazy"><span>Mitsubishi</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/peugeot.jpg" alt="" loading="lazy"><span>Peugeot</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/fiat.jpg" alt="" loading="lazy"><span>Fiat</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/jeep.jpg" alt="" loading="lazy"><span>Jeep</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/renault.jpg" alt="" loading="lazy"><span>Renault</span></a>
+            <a href="/contact/#inquiry" class="vehicle-make-card"><img src="/assets/vehicle-makes/subaru.jpg" alt="" loading="lazy"><span>Subaru</span></a>
+          </div>
+        </div>
       </div>
-      <div class="rounded-xl p-7" style="background:var(--soft)">
-        <h3 class="text-[19px] font-semibold">Plug &amp; Play Fit</h3>
-        <p class="mt-4 text-[15px] leading-relaxed text-gray-600">Vehicle-specific frames and harnesses for fast, clean installation.</p>
-        <a href="#by-vehicle" class="link-u text-teal inline-block mt-10">Explore More</a>
-      </div>
-      <div class="border border-[var(--line)] rounded-xl p-7">
-        <h3 class="text-[19px] font-semibold">Fast Delivery</h3>
-        <p class="mt-4 text-[15px] leading-relaxed text-gray-600">Quick sampling and steady bulk lead times for your orders.</p>
-        <a href="#contact" class="link-u text-teal inline-block mt-10">Explore More</a>
-      </div>
+      <a href="/contact/#inquiry" class="btn bg-teal text-white mt-8">View All Vehicle Makes</a>
     </div>
   </div>
 </section>
 
-<!-- ============ WHY WORK WITH US ============ -->
+<!-- ============ ABOUT NAVLUMO ============ -->
 <section id="about" class="py-20 border-t border-[var(--line)]">
-  <div class="max-w-[1180px] mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
-    <div>
-      <span class="pill dot bg-[var(--soft)] text-teal">Why you should work with us</span>
-      <h2 class="mt-4 text-[38px] sm:text-[44px] font-semibold leading-tight">Why you should work with Navlumo</h2>
-      <p class="mt-6 text-[16px] leading-relaxed text-gray-600">We design and supply in-car electronics that are stable, easy to install and ready for your brand, so you can sell with confidence.</p>
-      <div class="mt-8 flex gap-4">
-        <a href="#contact" class="btn bg-teal text-white dot">Get a Quote</a>
+  <div class="max-w-[1180px] mx-auto px-5 grid lg:grid-cols-[1.02fr_.98fr] gap-12 lg:gap-16 items-stretch">
+    <div class="lg:flex lg:flex-col lg:justify-between">
+      <span class="pill bg-[var(--soft)] text-teal self-start">About Navlumo</span>
+      <h2 class="section-title mt-4">Automotive Electronics Manufacturer &amp; OEM/ODM Partner</h2>
+      <div class="section-copy mt-6 space-y-4 text-gray-600">
+        <p>Based in Dongguan, China, Navlumo specializes in Android Head Units, CarPlay Displays, Reversing Cameras, Dash Cams and other in-car electronics.</p>
+        <p>With 15+ years of manufacturing experience, we support global distributors and wholesalers with OEM/ODM customization, reliable quality and responsive technical support.</p>
+      </div>
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-x-5 gap-y-6">
+        <div><strong class="block text-[28px] leading-none text-teal">15+</strong><span class="block mt-2 text-xs leading-snug text-gray-600">Years of Manufacturing Experience</span></div>
+        <div><strong class="block text-[28px] leading-none text-teal">1,000+</strong><span class="block mt-2 text-xs leading-snug text-gray-600">Vehicle-Specific Models</span></div>
+        <div><strong class="block text-[28px] leading-none text-teal">20+</strong><span class="block mt-2 text-xs leading-snug text-gray-600">R&amp;D Team</span></div>
+      </div>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="/about/" class="btn bg-teal text-white">About Navlumo&nbsp; →</a>
+        <a href="/oem-odm/" class="btn border border-[var(--teal)] text-teal bg-white">OEM &amp; ODM&nbsp; →</a>
       </div>
     </div>
-    <div class="ph rounded-2xl aspect-[4/3]">
-      <span>Image: product / car photo</span>
+    <div class="lg:flex lg:flex-col">
+      <img src="/assets/about/navlumo-factory-testing-team.png" alt="Navlumo technicians testing Android car head units in the Dongguan factory" class="w-full aspect-square object-cover rounded-2xl shadow-sm" loading="lazy" width="1254" height="1254">
+      <div class="mt-5 grid grid-cols-5 gap-2 sm:gap-4" aria-label="Quality and compliance certifications">
+        <div class="flex flex-col items-center text-center gap-2">
+          <svg viewBox="0 0 48 48" class="w-10 h-10 text-[#15549a]" aria-hidden="true"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M5 24h38M24 5c6 5 9 12 9 19s-3 14-9 19c-6-5-9-12-9-19s3-14 9-19Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 14h30M9 34h30" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span class="text-[11px] sm:text-xs font-semibold leading-tight">ISO 9001</span>
+        </div>
+        <div class="flex flex-col items-center text-center gap-2">
+          <div class="h-10 flex items-center text-[28px] font-bold tracking-[-.08em] text-gray-900" aria-hidden="true">CE</div>
+          <span class="text-[11px] sm:text-xs font-semibold leading-tight">CE</span>
+        </div>
+        <div class="flex flex-col items-center text-center gap-2">
+          <svg viewBox="0 0 48 48" class="w-10 h-10 text-gray-900" aria-hidden="true"><path d="M29 13a14 14 0 1 0 0 22" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M35 17a10 10 0 0 0 0 14M40 13a16 16 0 0 0 0 22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M27 18a7 7 0 1 0 0 12" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+          <span class="text-[11px] sm:text-xs font-semibold leading-tight">FCC</span>
+        </div>
+        <div class="flex flex-col items-center text-center gap-2">
+          <svg viewBox="0 0 48 48" class="w-10 h-10 text-[#2d9666]" aria-hidden="true"><path d="M40 8C22 9 10 18 10 31c0 6 4 9 10 9 14 0 21-15 20-32Z" fill="currentColor" opacity=".16"/><path d="M40 8C22 9 10 18 10 31c0 6 4 9 10 9 14 0 21-15 20-32ZM13 37c7-9 14-15 24-23" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/><path d="M23 25c1 0 7 1 10 3M27 20c0-2 0-5-1-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="text-[11px] sm:text-xs font-semibold leading-tight">RoHS</span>
+        </div>
+        <div class="flex flex-col items-center text-center gap-2">
+          <svg viewBox="0 0 48 48" class="w-10 h-10 text-gray-900" aria-hidden="true"><circle cx="19" cy="22" r="11" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M8 22h22M19 11c4 3 6 7 6 11s-2 8-6 11c-4-3-6-7-6-11s2-8 6-11Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M27 29h14v9H27zM30 29v-4h8v4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+          <span class="text-[11px] sm:text-xs font-semibold leading-tight">BSCI</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ CHOOSE YOUR PRODUCT LINE (3 cards) ============ -->
-<section id="products" class="py-20" style="background:var(--soft)">
+<!-- ============ NAVLUMO AT A GLANCE ============ -->
+<section id="factory" class="py-20 bg-[#161c1d] text-white scroll-mt-[76px]">
+  <div class="max-w-[1440px] mx-auto px-5 sm:px-8">
+    <div class="max-w-[980px] mx-auto text-center">
+      <h2 class="section-title">Navlumo at a Glance</h2>
+      <p class="section-copy mt-5 text-white/70">Navlumo is a China-based automotive electronics manufacturer and OEM/ODM supplier specializing in Android Head Units, Portable CarPlay Displays, Reversing Cameras, Dash Cams, Instrument Clusters and related in-car electronics. With 15+ years of manufacturing experience, we support global buyers with reliable products, flexible customization and long-term supply solutions.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-5 gap-5 items-stretch">
+      <article class="bg-[#202729] rounded-xl p-6 border border-white/10">
+        <h3 class="text-[18px] font-semibold leading-snug">Identity &amp; Location</h3>
+        <ul class="mt-5 space-y-3 text-[13px] leading-relaxed text-white/70 list-disc pl-4 marker:text-[#48b99b]">
+          <li>Brand: Navlumo</li><li>Base: Dongguan, China</li><li>Experience: 15+ years</li><li>Business type: Manufacturer &amp; OEM/ODM supplier</li>
+        </ul>
+      </article>
+      <article class="bg-[#202729] rounded-xl p-6 border border-white/10">
+        <h3 class="text-[18px] font-semibold leading-snug">Product &amp; MOQ Scope</h3>
+        <ul class="mt-5 space-y-3 text-[13px] leading-relaxed text-white/70 list-disc pl-4 marker:text-[#48b99b]">
+          <li>Android Head Units</li><li>Portable CarPlay Displays</li><li>Reversing Cameras / Dash Cams</li><li>Instrument Clusters / Car Lighting</li><li>MOQ varies by product category</li>
+        </ul>
+      </article>
+      <article class="bg-[#202729] rounded-xl p-6 border border-white/10">
+        <h3 class="text-[18px] font-semibold leading-snug">Manufacturing &amp; Quality</h3>
+        <ul class="mt-5 space-y-3 text-[13px] leading-relaxed text-white/70 list-disc pl-4 marker:text-[#48b99b]">
+          <li>OEM / ODM support</li><li>Strict QC process</li><li>CE / FCC / RoHS compliant</li><li>Stable supply for global buyers</li>
+        </ul>
+      </article>
+      <article class="bg-[#202729] rounded-xl p-6 border border-white/10">
+        <h3 class="text-[18px] font-semibold leading-snug">Buyer Due Diligence</h3>
+        <ul class="mt-5 space-y-3 text-[13px] leading-relaxed text-white/70 list-disc pl-4 marker:text-[#48b99b]">
+          <li>Review product catalog</li><li>Request factory and product videos</li><li>Ask for certification files</li><li>Sample and quotation support available</li>
+        </ul>
+      </article>
+      <article class="bg-[#202729] rounded-xl p-6 border border-white/10">
+        <h3 class="text-[18px] font-semibold leading-snug">Buyers Served</h3>
+        <ul class="mt-5 space-y-3 text-[13px] leading-relaxed text-white/70 list-disc pl-4 marker:text-[#48b99b]">
+          <li>Distributors</li><li>Wholesalers</li><li>Automotive retailers</li><li>Installation shops</li><li>E-commerce sellers</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUTIONS ============ -->
+<section id="solutions" class="py-20" style="background:var(--soft)">
   <div class="max-w-[1180px] mx-auto px-5">
-    <div class="flex flex-wrap items-end justify-between gap-4">
-      <div>
-        <h2 class="text-[38px] sm:text-[44px] font-semibold">Choose your product line</h2>
-        <p class="mt-2 text-gray-600">Core categories for the global aftermarket, all available for wholesale and OEM.</p>
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+      <div class="max-w-[800px]">
+        <span class="pill bg-white text-teal">Solutions</span>
+        <h2 class="section-title mt-4">Solutions Built for the Automotive Aftermarket</h2>
+        <p class="section-copy mt-4 text-gray-600">From vehicle-specific products to OEM/ODM customization, we help automotive businesses source, customize and scale with confidence.</p>
       </div>
-      <a href="#contact" class="btn bg-teal text-white dot">View All</a>
-    </div>
-
-    <div class="mt-12 grid md:grid-cols-3 gap-6">
-      <!-- Card 1 -->
-      <div class="bg-white rounded-2xl p-7 flex flex-col justify-between shadow-sm">
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="pill bg-teal/10 text-teal">Wholesale</span>
-            <span class="text-sm font-semibold text-gray-500">Factory Price</span>
-          </div>
-          <h3 class="mt-5 text-[22px] font-semibold">Android Car Head Units</h3>
-          <p class="mt-3 text-sm text-gray-600 leading-relaxed">Universal and vehicle-specific screens with wireless CarPlay and Android Auto.</p>
-        </div>
-        <div class="mt-8 pt-6 border-t border-[var(--line)]">
-          <a href="#contact" class="btn bg-teal text-white w-full justify-center">Request Now</a>
-        </div>
-      </div>
-
-      <!-- Card 2 (highlighted green) -->
-      <div class="bg-teal text-white rounded-2xl p-7 flex flex-col justify-between shadow-sm">
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="pill bg-white/20 text-white">Popular</span>
-            <span class="text-sm font-semibold text-white/80">Factory Price</span>
-          </div>
-          <h3 class="mt-5 text-[22px] font-semibold">Car Cameras &amp; Dash Cams</h3>
-          <p class="mt-3 text-sm text-white/90 leading-relaxed">Reversing cameras, 360&deg; view systems and dash cams for every vehicle type.</p>
-        </div>
-        <div class="mt-8 pt-6 border-t border-white/20">
-          <a href="#contact" class="btn bg-white text-teal w-full justify-center">Request Now</a>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-2xl p-7 flex flex-col justify-between shadow-sm">
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="pill bg-teal/10 text-teal">Upgrade</span>
-            <span class="text-sm font-semibold text-gray-500">Factory Price</span>
-          </div>
-          <h3 class="mt-5 text-[22px] font-semibold">Digital Instrument Clusters</h3>
-          <p class="mt-3 text-sm text-gray-600 leading-relaxed">LCD virtual cockpits that replace the original dashboard gauges.</p>
-        </div>
-        <div class="mt-8 pt-6 border-t border-[var(--line)]">
-          <a href="#contact" class="btn bg-teal text-white w-full justify-center">Request Now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ INSIDE OUR FACTORY (4 Dark Cards) ============ -->
-<section class="py-20 bg-[#161c1d] text-white">
-  <div class="max-w-[1180px] mx-auto px-5">
-    <h2 class="text-center text-[38px] sm:text-[44px] font-semibold">Inside Our Factory</h2>
-    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="bg-[#202729] rounded-xl overflow-hidden p-3 border border-white/10">
-        <div class="ph aspect-square rounded-lg mb-3"><span>Image: production line photo</span></div>
-        <h4 class="font-semibold px-2 py-1">Production Line</h4>
-      </div>
-      <div class="bg-[#202729] rounded-xl overflow-hidden p-3 border border-white/10">
-        <div class="ph aspect-square rounded-lg mb-3"><span>Image: QC / aging test photo</span></div>
-        <h4 class="font-semibold px-2 py-1">Quality Testing</h4>
-      </div>
-      <div class="bg-[#202729] rounded-xl overflow-hidden p-3 border border-white/10">
-        <div class="ph aspect-square rounded-lg mb-3"><span>Image: engineers photo</span></div>
-        <h4 class="font-semibold px-2 py-1">R&amp;D Team</h4>
-      </div>
-      <div class="bg-[#202729] rounded-xl overflow-hidden p-3 border border-white/10">
-        <div class="ph aspect-square rounded-lg mb-3"><span>Image: warehouse photo</span></div>
-        <h4 class="font-semibold px-2 py-1">Packing &amp; Shipping</h4>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ MID BANNER / NUMBER STATS ============ -->
-<section class="py-20">
-  <div class="max-w-[1180px] mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
-    <div>
-      <h2 class="text-[36px] sm:text-[42px] font-semibold leading-tight">We build smarter cars, one dashboard at a time</h2>
-      <p class="mt-5 text-gray-600 leading-relaxed">From boot logo and UI to packaging and firmware, we customize every detail so the product carries your brand.</p>
-      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6">
-        <div><div class="text-3xl font-bold text-teal">XX</div><div class="text-xs text-gray-500 mt-1">Countries</div></div>
-        <div><div class="text-3xl font-bold text-teal">OEM &amp; ODM</div><div class="text-xs text-gray-500 mt-1">Flexible MOQ</div></div>
-        <div><div class="text-3xl font-bold text-teal">XX</div><div class="text-xs text-gray-500 mt-1">Car Models</div></div>
-        <div><div class="text-3xl font-bold text-teal">XX</div><div class="text-xs text-gray-500 mt-1">Years Experience</div></div>
-      </div>
-    </div>
-    <div class="ph rounded-2xl aspect-[4/3]"><span>Image: installed screen in car</span></div>
-  </div>
-</section>
-
-<!-- ============ 3 BOTTOM SERVICES ============ -->
-<section id="by-vehicle" class="py-20" style="background:var(--soft)">
-  <div class="max-w-[1180px] mx-auto px-5">
-    <div class="flex items-end justify-between">
-      <div>
-        <span class="pill dot bg-white text-teal">Navlumo</span>
-        <h2 class="mt-3 text-[38px] sm:text-[44px] font-semibold">Our Solutions</h2>
-      </div>
-      <a href="#contact" class="btn bg-teal text-white dot">View More</a>
+      <a href="/contact/#inquiry" class="btn bg-teal text-white shrink-0">View More</a>
     </div>
     <div class="mt-12 grid md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-2xl p-6 shadow-sm">
-        <div class="ph aspect-video rounded-xl mb-5"><span>Image: vehicle interior</span></div>
-        <h4 class="text-lg font-semibold">By Vehicle Fit</h4>
-        <p class="text-sm text-gray-600 mt-2">Plug-and-play kits tailored for Toyota, VW, BMW, Ford and 100+ makes.</p>
-        <a href="#contact" class="link-u text-teal text-sm inline-block mt-4">Explore More</a>
+      <article class="bg-white rounded-2xl p-6 shadow-sm flex flex-col">
+        <img src="/assets/solutions/vehicle-specific-solutions.png" alt="Vehicle-specific Android head unit installed in a car dashboard" class="w-full aspect-[3/2] object-cover rounded-xl" loading="lazy">
+        <h3 class="mt-6 text-xl font-semibold">Vehicle-Specific Solutions</h3>
+        <p class="text-sm leading-relaxed text-gray-600 mt-3">Plug-and-play automotive electronics tailored to specific vehicle makes, models and years.</p>
+      </article>
+      <article id="oem" class="bg-white rounded-2xl p-6 shadow-sm flex flex-col scroll-mt-[76px]">
+        <img src="/assets/solutions/oem-odm-solutions.png" alt="Custom branded Android head unit and retail packaging for OEM and ODM projects" class="w-full aspect-[3/2] object-cover rounded-xl" loading="lazy">
+        <h3 class="mt-6 text-xl font-semibold">OEM &amp; ODM Solutions</h3>
+        <p class="text-sm leading-relaxed text-gray-600 mt-3">Flexible customization for hardware, software UI, boot logos, packaging and product configurations.</p>
+      </article>
+      <article class="bg-white rounded-2xl p-6 shadow-sm flex flex-col">
+        <img src="/assets/solutions/market-specific-configuration.png" alt="Automotive electronics circuit board for market-specific hardware configuration" class="w-full aspect-[3/2] object-cover rounded-xl" loading="lazy">
+        <h3 class="mt-6 text-xl font-semibold">Market-Specific Configuration</h3>
+        <p class="text-sm leading-relaxed text-gray-600 mt-3">Tailored platform, IC, DSP and hardware configurations for different markets and product requirements.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG RESOURCES ============ -->
+<section id="blog" class="py-20 border-t border-[var(--line)] scroll-mt-[76px]">
+  <div class="max-w-[1180px] mx-auto px-5">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+      <div class="max-w-[760px]">
+        <span class="pill text-teal" style="background:var(--soft)">Resources</span>
+        <h2 class="section-title mt-4">Automotive Electronics Resources</h2>
+        <p class="section-copy mt-4 text-gray-600">Practical guides, product comparisons and sourcing insights for automotive distributors, wholesalers and aftermarket businesses.</p>
       </div>
-      <div id="oem" class="bg-white rounded-2xl p-6 shadow-sm">
-        <div class="ph aspect-video rounded-xl mb-5"><span>Image: custom box / logo</span></div>
-        <h4 class="text-lg font-semibold">OEM &amp; ODM Branding</h4>
-        <p class="text-sm text-gray-600 mt-2">Custom UI, boot logos, mold development and branded retail packaging.</p>
-        <a href="#contact" class="link-u text-teal text-sm inline-block mt-4">Explore More</a>
+      <a href="/blog/" class="btn bg-teal text-white shrink-0">View All Articles</a>
+    </div>
+
+    <div id="blog-carousel" class="mt-12" aria-roledescription="carousel" aria-label="Featured automotive electronics articles">
+      <div class="relative">
+      <article class="blog-slide is-active md:grid-cols-[360px_1fr] bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="false">
+        <img src="/assets/products/car-head-unit.png" alt="Android head unit for automotive distributors and wholesalers" class="w-full h-full min-h-[240px] object-cover" loading="lazy">
+        <div class="p-7 md:p-10 flex flex-col justify-center">
+          <div class="text-xs font-semibold uppercase tracking-[0.12em] text-teal">Sourcing Guide</div>
+          <h3 class="mt-3 text-2xl font-semibold leading-snug">How to Choose an Android Car Radio Manufacturer in China (2026 Buyer's Guide)</h3>
+          <p class="mt-4 text-gray-600 leading-relaxed">Key factors B2B buyers should review when evaluating product compatibility, quality control, customization capabilities and long-term supply reliability.</p>
+          <a href="/blog/android-car-radio-manufacturer-china/" class="mt-6 font-semibold text-teal self-start">Read More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="blog-slide md:grid-cols-[360px_1fr] bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="true">
+        <img src="/assets/products/vehicle-camera.png" alt="Automotive reversing camera for AHD and CVBS comparison" class="w-full h-full min-h-[240px] object-cover" loading="lazy">
+        <div class="p-7 md:p-10 flex flex-col justify-center">
+          <div class="text-xs font-semibold uppercase tracking-[0.12em] text-teal">Product Comparison</div>
+          <h3 class="mt-3 text-2xl font-semibold leading-snug">AHD vs CVBS Reverse Cameras: What&rsquo;s the Difference?</h3>
+          <p class="mt-4 text-gray-600 leading-relaxed">A practical comparison of image quality, compatibility, installation requirements and suitable applications to help buyers select the right camera range.</p>
+          <a href="/blog/#camera-compatibility" class="mt-6 font-semibold text-teal self-start">Read More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="blog-slide md:grid-cols-[360px_1fr] bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="true">
+        <img src="/assets/solutions/oem-odm-solutions.png" alt="OEM and ODM automotive electronics product and custom packaging" class="w-full h-full min-h-[240px] object-cover" loading="lazy">
+        <div class="p-7 md:p-10 flex flex-col justify-center">
+          <div class="text-xs font-semibold uppercase tracking-[0.12em] text-teal">OEM &amp; ODM</div>
+          <h3 class="mt-3 text-2xl font-semibold leading-snug">OEM vs ODM Automotive Electronics</h3>
+          <p class="mt-4 text-gray-600 leading-relaxed">Understand the differences between OEM and ODM cooperation, from branding and packaging to hardware and software customization.</p>
+          <a href="/blog/#oem-odm-project" class="mt-6 font-semibold text-teal self-start">Read More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
       </div>
-      <div class="bg-white rounded-2xl p-6 shadow-sm">
-        <div class="ph aspect-video rounded-xl mb-5"><span>Image: auto lighting</span></div>
-        <h4 class="text-lg font-semibold">Automotive Lighting</h4>
-        <p class="text-sm text-gray-600 mt-2">High-lumen LED headlights, ambient interior kits and fog lamp upgrades.</p>
-        <a href="#contact" class="link-u text-teal text-sm inline-block mt-4">Explore More</a>
+
+      <div class="mt-6 flex items-center justify-between gap-5">
+        <div class="flex items-center gap-2" aria-label="Choose article">
+          <button class="blog-dot is-active" type="button" aria-label="Show article 1" aria-current="true"></button>
+          <button class="blog-dot" type="button" aria-label="Show article 2"></button>
+          <button class="blog-dot" type="button" aria-label="Show article 3"></button>
+        </div>
+        <div class="flex gap-3">
+          <button id="blog-prev" type="button" class="w-11 h-11 rounded-full border border-[var(--line)] text-teal flex items-center justify-center hover:bg-gray-50" aria-label="Previous article">&larr;</button>
+          <button id="blog-next" type="button" class="w-11 h-11 rounded-full bg-teal text-white flex items-center justify-center hover:opacity-90" aria-label="Next article">&rarr;</button>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ TESTIMONIAL ============ -->
-<section class="py-20">
-  <div class="max-w-[1180px] mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
-    <div class="ph rounded-2xl aspect-[4/3]"><span>Image: customer / installation photo</span></div>
-    <div>
-      <div class="flex gap-1 text-teal text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <h3 class="mt-4 text-[26px] font-semibold">"Reliable products, easy to sell!"</h3>
-      <p class="mt-4 text-gray-600 leading-relaxed italic">[Customer review placeholder] Replace this text with a real review from one of your buyers, for example about product quality, installation and after-sales support.</p>
-      <div class="mt-6 font-semibold">[Customer Name], [Country]</div>
-      <div class="mt-8 flex gap-3">
-        <button class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100">&larr;</button>
-        <button class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100">&rarr;</button>
+<!-- ============ TESTIMONIALS ============ -->
+<section class="py-20" style="background:var(--soft)">
+  <div class="max-w-[1180px] mx-auto px-5">
+    <div class="max-w-[760px]">
+      <span class="pill bg-white text-teal">Customer Reviews</span>
+      <h2 class="section-title mt-4">What Our Partners Say</h2>
+      <p class="section-copy mt-4 text-gray-600">Feedback from automotive distributors and long-term partners in different markets.</p>
+    </div>
+
+    <div id="testimonial-carousel" class="mt-12" aria-roledescription="carousel" aria-label="Customer reviews">
+      <div>
+        <article class="testimonial-slide is-active lg:grid-cols-2 bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="false">
+          <img src="/assets/testimonials/india-customer-review.jpg" alt="Android head unit orders prepared for a United Kingdom distributor" class="w-full h-[280px] md:h-[360px] lg:h-full lg:min-h-[390px] object-cover" loading="lazy">
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <div class="text-teal text-lg tracking-[0.18em]" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="mt-5 text-[28px] font-semibold leading-snug">&ldquo;Reliable quality, fewer after-sales issues.&rdquo;</h3>
+            <blockquote class="mt-5 text-gray-600 leading-[1.8] italic">&ldquo;We have been sourcing Android head units from Navlumo for 11 years. Product quality has been consistent, and the after-sales rate is much lower than with some of our previous suppliers.&rdquo;</blockquote>
+            <div class="mt-6 text-sm font-semibold uppercase tracking-[0.12em] text-teal">United Kingdom</div>
+          </div>
+        </article>
+
+        <article class="testimonial-slide lg:grid-cols-2 bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="true">
+          <img src="/assets/testimonials/oem-odm-customer-review.jpg" alt="Customized automotive electronics orders prepared for a Spain distributor" class="w-full h-[280px] md:h-[360px] lg:h-full lg:min-h-[390px] object-cover" loading="lazy">
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <div class="text-teal text-lg tracking-[0.18em]" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="mt-5 text-[28px] font-semibold leading-snug">&ldquo;They understand what distributors really need.&rdquo;</h3>
+            <blockquote class="mt-5 text-gray-600 leading-[1.8] italic">&ldquo;Navlumo helped us customize the boot logo, UI, packaging and product configuration for our brand. Communication was clear and the whole customization process was smooth.&rdquo;</blockquote>
+            <div class="mt-6 text-sm font-semibold uppercase tracking-[0.12em] text-teal">Spain</div>
+          </div>
+        </article>
+
+        <article class="testimonial-slide lg:grid-cols-2 bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="true">
+          <img src="/assets/testimonials/egypt-customer-review.jpg" alt="Customized Android car multimedia system configuration for an Egypt distributor" class="w-full h-[280px] md:h-[360px] lg:h-full lg:min-h-[390px] object-cover" loading="lazy">
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <div class="text-teal text-lg tracking-[0.18em]" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="mt-5 text-[28px] font-semibold leading-snug">&ldquo;They helped us build the right configuration for our market.&rdquo;</h3>
+            <blockquote class="mt-5 text-gray-600 leading-[1.8] italic">&ldquo;Instead of offering only one standard configuration, their team suggested special platform and IC options based on our target price and local market requirements.&rdquo;</blockquote>
+            <div class="mt-6 text-sm font-semibold uppercase tracking-[0.12em] text-teal">Egypt</div>
+          </div>
+        </article>
+
+        <article class="testimonial-slide lg:grid-cols-2 bg-white rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm" aria-hidden="true">
+          <img src="/assets/testimonials/long-term-cooperation-customer-review.jpg" alt="Large automotive electronics shipment for a long-term Israel partner" class="w-full h-[280px] md:h-[360px] lg:h-full lg:min-h-[390px] object-cover" loading="lazy">
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <div class="text-teal text-lg tracking-[0.18em]" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="mt-5 text-[28px] font-semibold leading-snug">&ldquo;Fast support makes long-term cooperation easier.&rdquo;</h3>
+            <blockquote class="mt-5 text-gray-600 leading-[1.8] italic">&ldquo;When we had technical questions, the team responded quickly and provided practical solutions. Stable supply and responsive support are the main reasons we continue ordering.&rdquo;</blockquote>
+            <div class="mt-6 text-sm font-semibold uppercase tracking-[0.12em] text-teal">Israel</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-6 flex items-center justify-between gap-5">
+        <div class="flex items-center gap-2" aria-label="Choose customer review">
+          <button class="testimonial-dot is-active" type="button" aria-label="Show review 1" aria-current="true"></button>
+          <button class="testimonial-dot" type="button" aria-label="Show review 2"></button>
+          <button class="testimonial-dot" type="button" aria-label="Show review 3"></button>
+          <button class="testimonial-dot" type="button" aria-label="Show review 4"></button>
+        </div>
+        <div class="flex gap-3">
+          <button id="testimonial-prev" type="button" class="w-11 h-11 rounded-full border border-[var(--line)] text-teal bg-white flex items-center justify-center hover:bg-gray-50" aria-label="Previous review">&larr;</button>
+          <button id="testimonial-next" type="button" class="w-11 h-11 rounded-full bg-teal text-white flex items-center justify-center hover:opacity-90" aria-label="Next review">&rarr;</button>
+        </div>
       </div>
     </div>
   </div>
@@ -276,11 +521,11 @@
 <!-- ============ BIG CTA BANNER (Footer Banner) ============ -->
 <section class="py-20 bg-teal text-white">
   <div class="max-w-[900px] mx-auto px-5 text-center">
-    <h2 class="text-[38px] sm:text-[48px] font-semibold leading-tight">Become a Navlumo Partner Today!</h2>
-    <p class="mt-5 text-[17px] text-white/90">Tell us your market, vehicle models and quantity. We will reply with a catalog and factory quotation.</p>
+    <h2 class="section-title">Become a Navlumo Partner Today!</h2>
+    <p class="section-copy mt-5 text-white/90">Get wholesale pricing, product recommendations or discuss your OEM/ODM project.</p>
     <div class="mt-8 flex flex-wrap justify-center gap-4">
-      <a href="mailto:sales@navlumo.com?subject=Navlumo%20Wholesale%20Inquiry" class="btn bg-white text-teal dot">Get a Quote</a>
-      <a href="mailto:sales@navlumo.com" class="btn bg-white/10 text-white">sales@navlumo.com</a>
+      <a href="mailto:sales@navlumo.com?subject=Navlumo%20Wholesale%20Inquiry" class="btn bg-white text-teal">Get a Quote</a>
+      <a href="https://wa.me/8617620780022" target="_blank" rel="noopener noreferrer" class="btn bg-white/10 text-white">Chat on WhatsApp</a>
     </div>
   </div>
 </section>
@@ -291,7 +536,7 @@
     <div>
       <div class="logo text-white text-2xl font-semibold">Navlumo</div>
       <p class="mt-4 text-xs leading-relaxed">Factory-direct automotive electronics &amp; lighting for global distributors, wholesalers and installers.</p>
-      <div class="mt-4 text-xs text-teal font-medium">&bull; 20+ Yrs Manufacturing Experience</div>
+      <div class="mt-4 text-xs text-teal font-medium">&bull; 15+ Years of Manufacturing Experience</div>
     </div>
     <div>
       <h4 class="text-white font-semibold mb-4">Products</h4>
@@ -308,21 +553,30 @@
       <ul class="space-y-2">
         <li><a href="/" class="hover:text-white">Home</a></li>
         <li><a href="#by-vehicle" class="hover:text-white">By Vehicle</a></li>
-        <li><a href="#oem" class="hover:text-white">OEM &amp; ODM Service</a></li>
-        <li><a href="#about" class="hover:text-white">About Us</a></li>
+        <li><a href="/oem-odm/" class="hover:text-white">OEM &amp; ODM Service</a></li>
+        <li><a href="/about/" class="hover:text-white">About Us</a></li>
         <li><a href="#contact" class="hover:text-white">Contact Us</a></li>
       </ul>
     </div>
     <div>
       <h4 class="text-white font-semibold mb-4">Contact</h4>
       <p class="text-xs leading-relaxed">Inquiries &amp; Quotations:<br><a href="mailto:sales@navlumo.com" class="text-white font-medium hover:underline">sales@navlumo.com</a></p>
-      <p class="text-xs leading-relaxed mt-3">WhatsApp / Mobile:<br><span class="text-white font-medium">+86 132 6721 4819</span></p>
+      <p class="text-xs leading-relaxed mt-3">WhatsApp / Mobile:<br><a href="https://wa.me/8617620780022" target="_blank" rel="noopener noreferrer" class="text-white font-medium hover:underline">+86 176 2078 0022</a></p>
       <p class="text-xs text-gray-500 mt-4">&copy; 2026 Navlumo. All rights reserved.</p>
     </div>
   </div>
 </footer>
 
+<a href="https://wa.me/8617620780022" target="_blank" rel="noopener noreferrer" class="fixed right-5 bottom-5 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white shadow-[0_8px_24px_rgba(0,0,0,.25)] flex items-center justify-center transition hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#25D366]/30" aria-label="Chat with Navlumo on WhatsApp" title="Chat on WhatsApp">
+  <svg aria-hidden="true" viewBox="0 0 32 32" fill="currentColor" class="w-8 h-8">
+    <path d="M16.04 3.2A12.7 12.7 0 0 0 5.3 22.67L3.5 29.2l6.69-1.75A12.69 12.69 0 1 0 16.04 3.2Zm0 22.99c-2.01 0-3.98-.54-5.7-1.56l-.41-.24-3.97 1.04 1.06-3.87-.27-.42a10.28 10.28 0 1 1 9.29 5.05Zm5.64-7.7c-.31-.15-1.83-.9-2.11-1.01-.28-.1-.49-.15-.69.16-.2.3-.8 1.01-.98 1.22-.18.2-.36.23-.67.08-.31-.16-1.3-.48-2.48-1.53a9.3 9.3 0 0 1-1.72-2.14c-.18-.31-.02-.47.14-.62.14-.14.31-.36.46-.54.15-.18.2-.31.31-.51.1-.21.05-.39-.03-.54-.08-.16-.69-1.67-.95-2.28-.25-.6-.5-.51-.69-.52h-.59c-.2 0-.54.08-.82.39-.28.31-1.08 1.06-1.08 2.57 0 1.52 1.11 2.98 1.26 3.19.15.2 2.18 3.33 5.28 4.67.74.32 1.31.51 1.76.65.74.23 1.41.2 1.94.12.59-.09 1.83-.75 2.08-1.47.26-.72.26-1.34.18-1.47-.07-.13-.28-.21-.59-.36Z"/>
+  </svg>
+</a>
+
 <script>
+  const vehicleCategories = ['Audi','BMW','Benz','Tesla','Toyota','Honda','Lexus','Hyundai','Nissan','VW','Kia','Ford','Mazda','Chevrolet','Buick','Suzuki','Mitsubishi','Peugeot','Fiat','Jeep','Renault','Subaru'];
+  document.querySelectorAll('.vehicle-menu').forEach(menu => { menu.innerHTML = vehicleCategories.map(brand => `<a href="/by-vehicle/#${brand.toLowerCase()}" class="px-4 py-2.5 hover:bg-gray-50 hover:text-teal">For ${brand}</a>`).join(''); });
+  document.querySelectorAll('.vehicle-menu-mobile').forEach(menu => { menu.innerHTML = vehicleCategories.map(brand => `<a href="/by-vehicle/#${brand.toLowerCase()}">For ${brand}</a>`).join(''); });
   const hdr = document.getElementById('site-header');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) hdr.classList.add('scrolled');
@@ -332,6 +586,94 @@
   const mMenu = document.getElementById('mobile-menu');
   if (mBtn && mMenu) {
     mBtn.addEventListener('click', () => mMenu.classList.toggle('hidden'));
+  }
+  const languageToggle = document.getElementById('language-toggle');
+  const languageMenu = document.getElementById('language-menu');
+  if (languageToggle && languageMenu) {
+    const closeLanguageMenu = () => {
+      languageMenu.classList.add('hidden');
+      languageToggle.setAttribute('aria-expanded', 'false');
+    };
+    languageToggle.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const opening = languageMenu.classList.contains('hidden');
+      languageMenu.classList.toggle('hidden');
+      languageToggle.setAttribute('aria-expanded', String(opening));
+    });
+    document.addEventListener('click', closeLanguageMenu);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeLanguageMenu();
+    });
+  }
+  const blogCarousel = document.getElementById('blog-carousel');
+  if (blogCarousel) {
+    const slides = [...blogCarousel.querySelectorAll('.blog-slide')];
+    const dots = [...blogCarousel.querySelectorAll('.blog-dot')];
+    const prev = document.getElementById('blog-prev');
+    const next = document.getElementById('blog-next');
+    let current = 0;
+    let blogTimer;
+    const showBlogSlide = (index) => {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => {
+        const active = i === current;
+        slide.classList.toggle('is-active', active);
+        slide.setAttribute('aria-hidden', String(!active));
+      });
+      dots.forEach((dot, i) => {
+        const active = i === current;
+        dot.classList.toggle('is-active', active);
+        if (active) dot.setAttribute('aria-current', 'true');
+        else dot.removeAttribute('aria-current');
+      });
+    };
+    const startBlogCarousel = () => {
+      clearInterval(blogTimer);
+      blogTimer = setInterval(() => showBlogSlide(current + 1), 6000);
+    };
+    prev.addEventListener('click', () => { showBlogSlide(current - 1); startBlogCarousel(); });
+    next.addEventListener('click', () => { showBlogSlide(current + 1); startBlogCarousel(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { showBlogSlide(i); startBlogCarousel(); }));
+    blogCarousel.addEventListener('mouseenter', () => clearInterval(blogTimer));
+    blogCarousel.addEventListener('mouseleave', startBlogCarousel);
+    blogCarousel.addEventListener('focusin', () => clearInterval(blogTimer));
+    blogCarousel.addEventListener('focusout', startBlogCarousel);
+    startBlogCarousel();
+  }
+  const testimonialCarousel = document.getElementById('testimonial-carousel');
+  if (testimonialCarousel) {
+    const slides = [...testimonialCarousel.querySelectorAll('.testimonial-slide')];
+    const dots = [...testimonialCarousel.querySelectorAll('.testimonial-dot')];
+    const prev = document.getElementById('testimonial-prev');
+    const next = document.getElementById('testimonial-next');
+    let current = 0;
+    let testimonialTimer;
+    const showTestimonial = (index) => {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => {
+        const active = i === current;
+        slide.classList.toggle('is-active', active);
+        slide.setAttribute('aria-hidden', String(!active));
+      });
+      dots.forEach((dot, i) => {
+        const active = i === current;
+        dot.classList.toggle('is-active', active);
+        if (active) dot.setAttribute('aria-current', 'true');
+        else dot.removeAttribute('aria-current');
+      });
+    };
+    const startTestimonials = () => {
+      clearInterval(testimonialTimer);
+      testimonialTimer = setInterval(() => showTestimonial(current + 1), 6500);
+    };
+    prev.addEventListener('click', () => { showTestimonial(current - 1); startTestimonials(); });
+    next.addEventListener('click', () => { showTestimonial(current + 1); startTestimonials(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { showTestimonial(i); startTestimonials(); }));
+    testimonialCarousel.addEventListener('mouseenter', () => clearInterval(testimonialTimer));
+    testimonialCarousel.addEventListener('mouseleave', startTestimonials);
+    testimonialCarousel.addEventListener('focusin', () => clearInterval(testimonialTimer));
+    testimonialCarousel.addEventListener('focusout', startTestimonials);
+    startTestimonials();
   }
 </script>
 </body>

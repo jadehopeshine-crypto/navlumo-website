@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Automotive Electronics Manufacturer &amp; OEM/ODM Supplier | Navlumo</title>
-<meta name="description" content="Navlumo is a Shenzhen automotive electronics manufacturer supplying Android head units, CarPlay displays, reversing cameras and dash cams with OEM/ODM support for global distributors and wholesalers.">
+<meta name="description" content="Navlumo is a Dongguan automotive electronics manufacturer supplying Android head units, CarPlay displays, reversing cameras and dash cams with OEM/ODM support for global distributors and wholesalers.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://navlumo.com/">
 <meta property="og:type" content="website">
@@ -28,11 +28,11 @@
   "@type": "Organization",
   "name": "Navlumo",
   "url": "https://navlumo.com/",
-  "description": "Shenzhen automotive electronics manufacturer and OEM/ODM partner for global distributors, wholesalers and automotive brands.",
+  "description": "Dongguan automotive electronics manufacturer and OEM/ODM partner for global distributors, wholesalers and automotive brands.",
   "email": "sales@navlumo.com",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Shenzhen",
+    "addressLocality": "Dongguan",
     "addressCountry": "CN"
   },
   "areaServed": "Worldwide",
@@ -106,12 +106,25 @@
   <div class="max-w-[1180px] mx-auto px-5 h-[76px] flex items-center justify-between">
     <a href="/" class="logo text-white text-[24px] font-semibold tracking-tight">Navlumo</a>
     <nav class="hidden lg:flex items-center gap-8 text-white text-[15px] font-medium">
-      <a href="/" class="hover:opacity-80">Home</a>
-      <a href="#products" class="hover:opacity-80">Product</a>
-      <a href="#by-vehicle" class="hover:opacity-80">By Vehicle</a>
-      <a href="#oem" class="hover:opacity-80">OEM &amp; ODM</a>
-      <a href="/about/" class="hover:opacity-80">About Us</a>
+
+      <div class="relative group">
+        <a href="#products" class="hover:opacity-80 inline-flex items-center gap-1.5 py-7" aria-haspopup="true">Product <span aria-hidden="true" class="text-xs">⌄</span></a>
+        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 absolute top-full left-1/2 -translate-x-1/2 w-[260px] rounded-xl bg-white py-3 text-[14px] font-medium text-gray-700 shadow-xl border border-gray-200 transition-all duration-150">
+          <a href="/products/#android-car-radio" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Android Car Radio</a>
+          <a href="/products/#portable-carplay-screen" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Portable CarPlay Screen</a>
+          <a href="/products/#car-mp5-player" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Car MP5 Player</a>
+          <a href="/products/#dash-cam-car-dvr" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Dash Cam/Car DVR</a>
+          <a href="/products/#car-reversing-aid" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Car Reversing Aid</a>
+          <a href="/products/#automotive-lighting" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-teal">Automotive Lighting</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <a href="#by-vehicle" class="hover:opacity-80 inline-flex items-center gap-1.5 py-7" aria-haspopup="true">By Vehicle <span aria-hidden="true" class="text-xs">⌄</span></a>
+        <div class="vehicle-menu invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 absolute top-full left-1/2 -translate-x-1/2 w-[560px] rounded-xl bg-white p-3 text-[14px] font-medium text-gray-700 shadow-xl border border-gray-200 transition-all duration-150 grid grid-cols-3"></div>
+      </div>
       <a href="/blog/" class="hover:opacity-80">Blog</a>
+      <a href="/oem-odm/" class="hover:opacity-80">OEM &amp; ODM</a>
+      <a href="/about/" class="hover:opacity-80">About Us</a>
       <a href="/contact/" class="hover:opacity-80">Contact</a>
     </nav>
     <div class="flex items-center gap-3">
@@ -132,9 +145,10 @@
     </div>
   </div>
   <div id="mobile-menu" class="hidden lg:hidden bg-teal text-white px-5 pb-5 space-y-3 text-[15px]">
-    <a href="/" class="block">Home</a><a href="#products" class="block">Product</a>
-    <a href="#by-vehicle" class="block">By Vehicle</a><a href="#oem" class="block">OEM &amp; ODM</a>
-    <a href="/about/" class="block">About Us</a><a href="/blog/" class="block">Blog</a>
+
+    <div><a href="#products" class="block font-semibold">Product</a><div class="mt-2 ml-4 pl-4 border-l border-white/25 space-y-2 text-white/85 text-[14px]"><a href="/products/#android-car-radio" class="block">Android Car Radio</a><a href="/products/#portable-carplay-screen" class="block">Portable CarPlay Screen</a><a href="/products/#car-mp5-player" class="block">Car MP5 Player</a><a href="/products/#dash-cam-car-dvr" class="block">Dash Cam/Car DVR</a><a href="/products/#car-reversing-aid" class="block">Car Reversing Aid</a><a href="/products/#automotive-lighting" class="block">Automotive Lighting</a></div></div>
+    <details><summary class="cursor-pointer list-none font-semibold flex items-center justify-between">By Vehicle <span aria-hidden="true">⌄</span></summary><div class="vehicle-menu-mobile mt-2 ml-4 pl-4 border-l border-white/25 grid grid-cols-2 gap-x-4 gap-y-2 text-white/85 text-[14px]"></div></details><a href="/blog/" class="block">Blog</a>
+    <a href="/oem-odm/" class="block">OEM &amp; ODM</a><a href="/about/" class="block">About Us</a>
     <a href="/contact/" class="block">Contact</a>
   </div>
 </header>
@@ -260,22 +274,21 @@
       <span class="pill bg-[var(--soft)] text-teal self-start">About Navlumo</span>
       <h2 class="section-title mt-4">Automotive Electronics Manufacturer &amp; OEM/ODM Partner</h2>
       <div class="section-copy mt-6 space-y-4 text-gray-600">
-        <p>Based in Shenzhen, China, Navlumo specializes in Android Head Units, CarPlay Displays, Reversing Cameras, Dash Cams and other in-car electronics.</p>
+        <p>Based in Dongguan, China, Navlumo specializes in Android Head Units, CarPlay Displays, Reversing Cameras, Dash Cams and other in-car electronics.</p>
         <p>With 15+ years of manufacturing experience, we support global distributors and wholesalers with OEM/ODM customization, reliable quality and responsive technical support.</p>
       </div>
-      <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-6">
-        <div><strong class="block text-[28px] leading-none text-teal">15+</strong><span class="block mt-2 text-xs leading-snug text-gray-600">Years Experience</span></div>
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-x-5 gap-y-6">
+        <div><strong class="block text-[28px] leading-none text-teal">15+</strong><span class="block mt-2 text-xs leading-snug text-gray-600">Years of Manufacturing Experience</span></div>
         <div><strong class="block text-[28px] leading-none text-teal">1,000+</strong><span class="block mt-2 text-xs leading-snug text-gray-600">Vehicle-Specific Models</span></div>
         <div><strong class="block text-[28px] leading-none text-teal">20+</strong><span class="block mt-2 text-xs leading-snug text-gray-600">R&amp;D Team</span></div>
-        <div><strong class="block text-[28px] leading-none text-teal">16</strong><span class="block mt-2 text-xs leading-snug text-gray-600">Overseas Warehouses</span></div>
       </div>
       <div class="mt-9 flex flex-wrap gap-4">
         <a href="/about/" class="btn bg-teal text-white">About Navlumo&nbsp; →</a>
-        <a href="#oem" class="btn border border-[var(--teal)] text-teal bg-white">OEM &amp; ODM&nbsp; →</a>
+        <a href="/oem-odm/" class="btn border border-[var(--teal)] text-teal bg-white">OEM &amp; ODM&nbsp; →</a>
       </div>
     </div>
     <div class="lg:flex lg:flex-col">
-      <img src="/assets/about/navlumo-factory-testing-team.png" alt="Navlumo technicians testing Android car head units in the Shenzhen factory" class="w-full aspect-square object-cover rounded-2xl shadow-sm" loading="lazy" width="1254" height="1254">
+      <img src="/assets/about/navlumo-factory-testing-team.png" alt="Navlumo technicians testing Android car head units in the Dongguan factory" class="w-full aspect-square object-cover rounded-2xl shadow-sm" loading="lazy" width="1254" height="1254">
       <div class="mt-5 grid grid-cols-5 gap-2 sm:gap-4" aria-label="Quality and compliance certifications">
         <div class="flex flex-col items-center text-center gap-2">
           <svg viewBox="0 0 48 48" class="w-10 h-10 text-[#15549a]" aria-hidden="true"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M5 24h38M24 5c6 5 9 12 9 19s-3 14-9 19c-6-5-9-12-9-19s3-14 9-19Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 14h30M9 34h30" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
@@ -313,7 +326,7 @@
       <article class="bg-[#202729] rounded-xl p-6 border border-white/10">
         <h3 class="text-[18px] font-semibold leading-snug">Identity &amp; Location</h3>
         <ul class="mt-5 space-y-3 text-[13px] leading-relaxed text-white/70 list-disc pl-4 marker:text-[#48b99b]">
-          <li>Brand: Navlumo</li><li>Base: Shenzhen, China</li><li>Experience: 15+ years</li><li>Business type: Manufacturer &amp; OEM/ODM supplier</li>
+          <li>Brand: Navlumo</li><li>Base: Dongguan, China</li><li>Experience: 15+ years</li><li>Business type: Manufacturer &amp; OEM/ODM supplier</li>
         </ul>
       </article>
       <article class="bg-[#202729] rounded-xl p-6 border border-white/10">
@@ -384,7 +397,7 @@
         <h2 class="section-title mt-4">Automotive Electronics Resources</h2>
         <p class="section-copy mt-4 text-gray-600">Practical guides, product comparisons and sourcing insights for automotive distributors, wholesalers and aftermarket businesses.</p>
       </div>
-      <span class="btn bg-teal text-white shrink-0" aria-label="View all articles, coming soon">View All Articles</span>
+      <a href="/blog/" class="btn bg-teal text-white shrink-0">View All Articles</a>
     </div>
 
     <div id="blog-carousel" class="mt-12" aria-roledescription="carousel" aria-label="Featured automotive electronics articles">
@@ -393,9 +406,9 @@
         <img src="/assets/products/car-head-unit.png" alt="Android head unit for automotive distributors and wholesalers" class="w-full h-full min-h-[240px] object-cover" loading="lazy">
         <div class="p-7 md:p-10 flex flex-col justify-center">
           <div class="text-xs font-semibold uppercase tracking-[0.12em] text-teal">Sourcing Guide</div>
-          <h3 class="mt-3 text-2xl font-semibold leading-snug">How to Choose an Android Head Unit Supplier</h3>
+          <h3 class="mt-3 text-2xl font-semibold leading-snug">How to Choose an Android Car Radio Manufacturer in China (2026 Buyer's Guide)</h3>
           <p class="mt-4 text-gray-600 leading-relaxed">Key factors B2B buyers should review when evaluating product compatibility, quality control, customization capabilities and long-term supply reliability.</p>
-          <span class="mt-6 font-semibold text-teal self-start">Read More <span aria-hidden="true">&rarr;</span></span>
+          <a href="/blog/android-car-radio-manufacturer-china/" class="mt-6 font-semibold text-teal self-start">Read More <span aria-hidden="true">&rarr;</span></a>
         </div>
       </article>
 
@@ -405,7 +418,7 @@
           <div class="text-xs font-semibold uppercase tracking-[0.12em] text-teal">Product Comparison</div>
           <h3 class="mt-3 text-2xl font-semibold leading-snug">AHD vs CVBS Reverse Cameras: What&rsquo;s the Difference?</h3>
           <p class="mt-4 text-gray-600 leading-relaxed">A practical comparison of image quality, compatibility, installation requirements and suitable applications to help buyers select the right camera range.</p>
-          <span class="mt-6 font-semibold text-teal self-start">Read More <span aria-hidden="true">&rarr;</span></span>
+          <a href="/blog/#camera-compatibility" class="mt-6 font-semibold text-teal self-start">Read More <span aria-hidden="true">&rarr;</span></a>
         </div>
       </article>
 
@@ -415,7 +428,7 @@
           <div class="text-xs font-semibold uppercase tracking-[0.12em] text-teal">OEM &amp; ODM</div>
           <h3 class="mt-3 text-2xl font-semibold leading-snug">OEM vs ODM Automotive Electronics</h3>
           <p class="mt-4 text-gray-600 leading-relaxed">Understand the differences between OEM and ODM cooperation, from branding and packaging to hardware and software customization.</p>
-          <span class="mt-6 font-semibold text-teal self-start">Read More <span aria-hidden="true">&rarr;</span></span>
+          <a href="/blog/#oem-odm-project" class="mt-6 font-semibold text-teal self-start">Read More <span aria-hidden="true">&rarr;</span></a>
         </div>
       </article>
       </div>
@@ -521,7 +534,7 @@
     <div>
       <div class="logo text-white text-2xl font-semibold">Navlumo</div>
       <p class="mt-4 text-xs leading-relaxed">Factory-direct automotive electronics &amp; lighting for global distributors, wholesalers and installers.</p>
-      <div class="mt-4 text-xs text-teal font-medium">&bull; 20+ Yrs Manufacturing Experience</div>
+      <div class="mt-4 text-xs text-teal font-medium">&bull; 15+ Years of Manufacturing Experience</div>
     </div>
     <div>
       <h4 class="text-white font-semibold mb-4">Products</h4>
@@ -538,7 +551,7 @@
       <ul class="space-y-2">
         <li><a href="/" class="hover:text-white">Home</a></li>
         <li><a href="#by-vehicle" class="hover:text-white">By Vehicle</a></li>
-        <li><a href="#oem" class="hover:text-white">OEM &amp; ODM Service</a></li>
+        <li><a href="/oem-odm/" class="hover:text-white">OEM &amp; ODM Service</a></li>
         <li><a href="/about/" class="hover:text-white">About Us</a></li>
         <li><a href="#contact" class="hover:text-white">Contact Us</a></li>
       </ul>
@@ -559,6 +572,9 @@
 </a>
 
 <script>
+  const vehicleCategories = ['Audi','BMW','Benz','Tesla','Toyota','Honda','Lexus','Hyundai','Nissan','VW','Kia','Ford','Mazda','Chevrolet','Buick','Suzuki','Mitsubishi','Peugeot','Fiat','Jeep','Renault','Subaru'];
+  document.querySelectorAll('.vehicle-menu').forEach(menu => { menu.innerHTML = vehicleCategories.map(brand => `<a href="/by-vehicle/#${brand.toLowerCase()}" class="px-4 py-2.5 hover:bg-gray-50 hover:text-teal">For ${brand}</a>`).join(''); });
+  document.querySelectorAll('.vehicle-menu-mobile').forEach(menu => { menu.innerHTML = vehicleCategories.map(brand => `<a href="/by-vehicle/#${brand.toLowerCase()}">For ${brand}</a>`).join(''); });
   const hdr = document.getElementById('site-header');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) hdr.classList.add('scrolled');

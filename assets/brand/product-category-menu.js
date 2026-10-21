@@ -1,4 +1,14 @@
 (() => {
+  const connectRenaultCategory = () => {
+    document.querySelectorAll('header a[href="/by-vehicle/#renault"]').forEach((link) => {
+      link.href = "/by-vehicle/renault/";
+    });
+  };
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", connectRenaultCategory, { once: true });
+  } else {
+    connectRenaultCategory();
+  }
   const categories = [
     ["WIFI Core Car Radio 1 DIN", "/products/android-car-radio/#wifi-core-car-radio-1-din"],
     ["WIFI Core Car Radio 2 DIN", "/products/android-car-radio/#wifi-core-car-radio-2-din"],

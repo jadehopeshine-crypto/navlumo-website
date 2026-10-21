@@ -2,8 +2,8 @@
   const categories = [
     ["WIFI Core Car Radio 1 DIN", "/products/android-car-radio/#wifi-core-car-radio-1-din"],
     ["WIFI Core Car Radio 2 DIN", "/products/android-car-radio/#wifi-core-car-radio-2-din"],
-    ["4G Core Car Radio 1 DIN", "/products/android-car-radio/#4g-core-car-radio-1-din"],
-    ["4G Core Car Radio 2 DIN", "/products/android-car-radio/#4g-core-car-radio-2-din"]
+    ["4G LTE Car Radio 1 DIN", "/products/android-car-radio/#4g-lte-car-radio-1-din"],
+    ["4G LTE Car Radio 2 DIN", "/products/android-car-radio/#4g-lte-car-radio-2-din"]
   ];
 
   document.querySelectorAll('header a[href="/products/#android-car-radio"]').forEach((link) => {

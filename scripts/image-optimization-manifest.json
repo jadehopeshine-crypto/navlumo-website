@@ -1,0 +1,1235 @@
+[
+  {
+    "source": "/assets/about/android-car-radio-manufacturer.jpg",
+    "url": "/assets/about/android-car-radio-manufacturer.webp",
+    "originalBytes": 333108,
+    "bytes": 276862,
+    "width": 1400,
+    "height": 788,
+    "variants": [
+      {
+        "url": "/assets/about/android-car-radio-manufacturer-320w.webp",
+        "width": 320,
+        "bytes": 27892
+      },
+      {
+        "url": "/assets/about/android-car-radio-manufacturer-640w.webp",
+        "width": 640,
+        "bytes": 89764
+      },
+      {
+        "url": "/assets/about/android-car-radio-manufacturer-960w.webp",
+        "width": 960,
+        "bytes": 166256
+      }
+    ]
+  },
+  {
+    "source": "/assets/about/navlumo-factory-testing-team.png",
+    "url": "/assets/about/car-radio-manufacturer-testing-team.webp",
+    "originalBytes": 1988072,
+    "bytes": 199664,
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "url": "/assets/about/car-radio-manufacturer-testing-team-320w.webp",
+        "width": 320,
+        "bytes": 26038
+      },
+      {
+        "url": "/assets/about/car-radio-manufacturer-testing-team-640w.webp",
+        "width": 640,
+        "bytes": 76224
+      },
+      {
+        "url": "/assets/about/car-radio-manufacturer-testing-team-960w.webp",
+        "width": 960,
+        "bytes": 138708
+      }
+    ]
+  },
+  {
+    "source": "/assets/about/product-testing-process.png",
+    "url": "/assets/about/product-testing-process.webp",
+    "originalBytes": 1755269,
+    "bytes": 248976,
+    "width": 1182,
+    "height": 1330,
+    "variants": [
+      {
+        "url": "/assets/about/product-testing-process-320w.webp",
+        "width": 320,
+        "bytes": 32350
+      },
+      {
+        "url": "/assets/about/product-testing-process-640w.webp",
+        "width": 640,
+        "bytes": 100724
+      },
+      {
+        "url": "/assets/about/product-testing-process-960w.webp",
+        "width": 960,
+        "bytes": 187216
+      }
+    ]
+  },
+  {
+    "source": "/assets/about/team-international-sales.png",
+    "url": "/assets/about/team-international-sales.webp",
+    "originalBytes": 2197463,
+    "bytes": 102934,
+    "width": 900,
+    "height": 675,
+    "variants": [
+      {
+        "url": "/assets/about/team-international-sales-320w.webp",
+        "width": 320,
+        "bytes": 23428
+      },
+      {
+        "url": "/assets/about/team-international-sales-640w.webp",
+        "width": 640,
+        "bytes": 64088
+      }
+    ]
+  },
+  {
+    "source": "/assets/about/team-quality-inspection.png",
+    "url": "/assets/about/team-quality-inspection.webp",
+    "originalBytes": 2284793,
+    "bytes": 114824,
+    "width": 900,
+    "height": 675,
+    "variants": [
+      {
+        "url": "/assets/about/team-quality-inspection-320w.webp",
+        "width": 320,
+        "bytes": 25274
+      },
+      {
+        "url": "/assets/about/team-quality-inspection-640w.webp",
+        "width": 640,
+        "bytes": 69970
+      }
+    ]
+  },
+  {
+    "source": "/assets/about/team-research-development.jpg",
+    "url": "/assets/about/car-stereo-manufacturer-rd-team.webp",
+    "originalBytes": 54349,
+    "bytes": 55890,
+    "width": 650,
+    "height": 550,
+    "variants": []
+  },
+  {
+    "source": "/assets/about/team-technical-support.png",
+    "url": "/assets/about/team-technical-support.webp",
+    "originalBytes": 2146334,
+    "bytes": 100412,
+    "width": 900,
+    "height": 675,
+    "variants": [
+      {
+        "url": "/assets/about/team-technical-support-320w.webp",
+        "width": 320,
+        "bytes": 22402
+      },
+      {
+        "url": "/assets/about/team-technical-support-640w.webp",
+        "width": 640,
+        "bytes": 61924
+      }
+    ]
+  },
+  {
+    "source": "/assets/about/testing/aging-test.jpg",
+    "url": "/assets/about/testing/aging-test.webp",
+    "originalBytes": 131231,
+    "bytes": 66098,
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  {
+    "source": "/assets/about/testing/appearance-inspection.jpg",
+    "url": "/assets/about/testing/appearance-inspection.webp",
+    "originalBytes": 140977,
+    "bytes": 71724,
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  {
+    "source": "/assets/about/testing/final-function-test.jpg",
+    "url": "/assets/about/testing/final-function-test.webp",
+    "originalBytes": 126002,
+    "bytes": 61232,
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  {
+    "source": "/assets/about/testing/first-article-inspection.jpg",
+    "url": "/assets/about/testing/first-article-inspection.webp",
+    "originalBytes": 145393,
+    "bytes": 77946,
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  {
+    "source": "/assets/about/testing/functional-testing.jpg",
+    "url": "/assets/about/testing/functional-testing.webp",
+    "originalBytes": 126704,
+    "bytes": 64680,
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  {
+    "source": "/assets/about/testing/incoming-material-inspection.jpg",
+    "url": "/assets/about/testing/incoming-material-inspection.webp",
+    "originalBytes": 192686,
+    "bytes": 105490,
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  {
+    "source": "/assets/about/testing/leakage-testing.jpg",
+    "url": "/assets/about/testing/leakage-testing.webp",
+    "originalBytes": 95989,
+    "bytes": 43382,
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  {
+    "source": "/assets/about/testing/oqc-inspection.jpg",
+    "url": "/assets/about/testing/oqc-inspection.webp",
+    "originalBytes": 156593,
+    "bytes": 82332,
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  {
+    "source": "/assets/about/testing/performance-testing.jpg",
+    "url": "/assets/about/testing/performance-testing.webp",
+    "originalBytes": 139012,
+    "bytes": 71408,
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  {
+    "source": "/assets/banners/automotive-electronics-banner.png",
+    "url": "/assets/banners/car-radio-manufacturer-product-range.webp",
+    "originalBytes": 1907810,
+    "bytes": 154962,
+    "width": 2244,
+    "height": 701,
+    "variants": [
+      {
+        "url": "/assets/banners/car-radio-manufacturer-product-range-320w.webp",
+        "width": 320,
+        "bytes": 8680
+      },
+      {
+        "url": "/assets/banners/car-radio-manufacturer-product-range-640w.webp",
+        "width": 640,
+        "bytes": 24296
+      },
+      {
+        "url": "/assets/banners/car-radio-manufacturer-product-range-960w.webp",
+        "width": 960,
+        "bytes": 44782
+      }
+    ]
+  },
+  {
+    "source": "/assets/banners/automotive-electronics-mobile.png",
+    "url": "/assets/banners/car-radio-manufacturer-product-range-mobile.webp",
+    "originalBytes": 2323944,
+    "bytes": 161620,
+    "width": 1190,
+    "height": 1322,
+    "variants": [
+      {
+        "url": "/assets/banners/car-radio-manufacturer-product-range-mobile-320w.webp",
+        "width": 320,
+        "bytes": 24628
+      },
+      {
+        "url": "/assets/banners/car-radio-manufacturer-product-range-mobile-640w.webp",
+        "width": 640,
+        "bytes": 68930
+      },
+      {
+        "url": "/assets/banners/car-radio-manufacturer-product-range-mobile-960w.webp",
+        "width": 960,
+        "bytes": 119152
+      }
+    ]
+  },
+  {
+    "source": "/assets/brand/navlumo-mark.png",
+    "url": "/assets/brand/navlumo-mark.webp",
+    "originalBytes": 505847,
+    "bytes": 2598,
+    "width": 128,
+    "height": 128,
+    "variants": []
+  },
+  {
+    "source": "/assets/products/automotive-lighting.jpg",
+    "url": "/assets/products/automotive-lighting.webp",
+    "originalBytes": 118383,
+    "bytes": 48576,
+    "width": 800,
+    "height": 800,
+    "variants": []
+  },
+  {
+    "source": "/assets/products/car-head-unit.png",
+    "url": "/assets/products/android-car-stereo-manufacturer-head-unit.webp",
+    "originalBytes": 1377254,
+    "bytes": 79200,
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "url": "/assets/products/android-car-stereo-manufacturer-head-unit-320w.webp",
+        "width": 320,
+        "bytes": 11750
+      },
+      {
+        "url": "/assets/products/android-car-stereo-manufacturer-head-unit-640w.webp",
+        "width": 640,
+        "bytes": 30662
+      },
+      {
+        "url": "/assets/products/android-car-stereo-manufacturer-head-unit-960w.webp",
+        "width": 960,
+        "bytes": 55050
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/dash-cam.png",
+    "url": "/assets/products/dash-cam.webp",
+    "originalBytes": 253283,
+    "bytes": 30702,
+    "width": 1000,
+    "height": 1000,
+    "variants": [
+      {
+        "url": "/assets/products/dash-cam-320w.webp",
+        "width": 320,
+        "bytes": 5662
+      },
+      {
+        "url": "/assets/products/dash-cam-640w.webp",
+        "width": 640,
+        "bytes": 14786
+      },
+      {
+        "url": "/assets/products/dash-cam-960w.webp",
+        "width": 960,
+        "bytes": 27840
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/digital-cluster.png",
+    "url": "/assets/products/digital-cluster.webp",
+    "originalBytes": 349568,
+    "bytes": 47666,
+    "width": 1000,
+    "height": 1000,
+    "variants": [
+      {
+        "url": "/assets/products/digital-cluster-320w.webp",
+        "width": 320,
+        "bytes": 8856
+      },
+      {
+        "url": "/assets/products/digital-cluster-640w.webp",
+        "width": 640,
+        "bytes": 24382
+      },
+      {
+        "url": "/assets/products/digital-cluster-960w.webp",
+        "width": 960,
+        "bytes": 44456
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-android-car-radio.jpg",
+    "url": "/assets/products/renault-android-car-radio.webp",
+    "originalBytes": 133157,
+    "bytes": 55594,
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "url": "/assets/products/renault-android-car-radio-320w.webp",
+        "width": 320,
+        "bytes": 9232
+      },
+      {
+        "url": "/assets/products/renault-android-car-radio-640w.webp",
+        "width": 640,
+        "bytes": 21818
+      },
+      {
+        "url": "/assets/products/renault-android-car-radio-960w.webp",
+        "width": 960,
+        "bytes": 38084
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-dacia-accessories.jpg",
+    "url": "/assets/products/renault-dacia-accessories.webp",
+    "originalBytes": 155466,
+    "bytes": 112524,
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "url": "/assets/products/renault-dacia-accessories-320w.webp",
+        "width": 320,
+        "bytes": 14810
+      },
+      {
+        "url": "/assets/products/renault-dacia-accessories-640w.webp",
+        "width": 640,
+        "bytes": 40030
+      },
+      {
+        "url": "/assets/products/renault-dacia-accessories-960w.webp",
+        "width": 960,
+        "bytes": 72932
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-dacia-bluetooth.jpg",
+    "url": "/assets/products/renault-dacia-bluetooth.webp",
+    "originalBytes": 29872,
+    "bytes": 16262,
+    "width": 404,
+    "height": 405,
+    "variants": []
+  },
+  {
+    "source": "/assets/products/renault-dacia-carplay.jpg",
+    "url": "/assets/products/renault-dacia-carplay.webp",
+    "originalBytes": 136096,
+    "bytes": 90720,
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "url": "/assets/products/renault-dacia-carplay-320w.webp",
+        "width": 320,
+        "bytes": 12270
+      },
+      {
+        "url": "/assets/products/renault-dacia-carplay-640w.webp",
+        "width": 640,
+        "bytes": 32766
+      },
+      {
+        "url": "/assets/products/renault-dacia-carplay-960w.webp",
+        "width": 960,
+        "bytes": 59522
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-dacia-feature-carplay-android-auto.png",
+    "url": "/assets/products/renault-dacia-feature-carplay-android-auto.webp",
+    "originalBytes": 1119879,
+    "bytes": 20240,
+    "width": 960,
+    "height": 463,
+    "variants": [
+      {
+        "url": "/assets/products/renault-dacia-feature-carplay-android-auto-320w.webp",
+        "width": 320,
+        "bytes": 4740
+      },
+      {
+        "url": "/assets/products/renault-dacia-feature-carplay-android-auto-640w.webp",
+        "width": 640,
+        "bytes": 12014
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-dacia-feature-ips-screen.png",
+    "url": "/assets/products/renault-dacia-feature-ips-screen.webp",
+    "originalBytes": 1274304,
+    "bytes": 33970,
+    "width": 960,
+    "height": 463,
+    "variants": [
+      {
+        "url": "/assets/products/renault-dacia-feature-ips-screen-320w.webp",
+        "width": 320,
+        "bytes": 8656
+      },
+      {
+        "url": "/assets/products/renault-dacia-feature-ips-screen-640w.webp",
+        "width": 640,
+        "bytes": 20536
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-dacia-feature-rear-camera.png",
+    "url": "/assets/products/renault-dacia-feature-rear-camera.webp",
+    "originalBytes": 1373745,
+    "bytes": 27334,
+    "width": 960,
+    "height": 463,
+    "variants": [
+      {
+        "url": "/assets/products/renault-dacia-feature-rear-camera-320w.webp",
+        "width": 320,
+        "bytes": 6674
+      },
+      {
+        "url": "/assets/products/renault-dacia-feature-rear-camera-640w.webp",
+        "width": 640,
+        "bytes": 15854
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-dacia-feature-swc-canbus.png",
+    "url": "/assets/products/renault-dacia-feature-swc-canbus.webp",
+    "originalBytes": 1298820,
+    "bytes": 35282,
+    "width": 960,
+    "height": 464,
+    "variants": [
+      {
+        "url": "/assets/products/renault-dacia-feature-swc-canbus-320w.webp",
+        "width": 320,
+        "bytes": 8628
+      },
+      {
+        "url": "/assets/products/renault-dacia-feature-swc-canbus-640w.webp",
+        "width": 640,
+        "bytes": 21256
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-dacia-feature-t100-platform.png",
+    "url": "/assets/products/renault-dacia-feature-t100-platform.webp",
+    "originalBytes": 1238383,
+    "bytes": 33866,
+    "width": 960,
+    "height": 463,
+    "variants": [
+      {
+        "url": "/assets/products/renault-dacia-feature-t100-platform-320w.webp",
+        "width": 320,
+        "bytes": 7058
+      },
+      {
+        "url": "/assets/products/renault-dacia-feature-t100-platform-640w.webp",
+        "width": 640,
+        "bytes": 18706
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-dacia-feature-wifi-gps.png",
+    "url": "/assets/products/renault-dacia-feature-wifi-gps.webp",
+    "originalBytes": 1100524,
+    "bytes": 18144,
+    "width": 960,
+    "height": 463,
+    "variants": [
+      {
+        "url": "/assets/products/renault-dacia-feature-wifi-gps-320w.webp",
+        "width": 320,
+        "bytes": 4908
+      },
+      {
+        "url": "/assets/products/renault-dacia-feature-wifi-gps-640w.webp",
+        "width": 640,
+        "bytes": 10818
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-dacia-front.jpg",
+    "url": "/assets/products/renault-dacia-front.webp",
+    "originalBytes": 153784,
+    "bytes": 66248,
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "url": "/assets/products/renault-dacia-front-320w.webp",
+        "width": 320,
+        "bytes": 11630
+      },
+      {
+        "url": "/assets/products/renault-dacia-front-640w.webp",
+        "width": 640,
+        "bytes": 28344
+      },
+      {
+        "url": "/assets/products/renault-dacia-front-960w.webp",
+        "width": 960,
+        "bytes": 46290
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/renault-dacia-install.jpg",
+    "url": "/assets/products/renault-dacia-install.webp",
+    "originalBytes": 239226,
+    "bytes": 130294,
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "url": "/assets/products/renault-dacia-install-320w.webp",
+        "width": 320,
+        "bytes": 15134
+      },
+      {
+        "url": "/assets/products/renault-dacia-install-640w.webp",
+        "width": 640,
+        "bytes": 43200
+      },
+      {
+        "url": "/assets/products/renault-dacia-install-960w.webp",
+        "width": 960,
+        "bytes": 83854
+      }
+    ]
+  },
+  {
+    "source": "/assets/products/vehicle-camera.png",
+    "url": "/assets/products/vehicle-camera.webp",
+    "originalBytes": 361738,
+    "bytes": 34826,
+    "width": 940,
+    "height": 940,
+    "variants": [
+      {
+        "url": "/assets/products/vehicle-camera-320w.webp",
+        "width": 320,
+        "bytes": 7692
+      },
+      {
+        "url": "/assets/products/vehicle-camera-640w.webp",
+        "width": 640,
+        "bytes": 19828
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/camera-connection-options.png",
+    "url": "/assets/solutions/camera-connection-options.webp",
+    "originalBytes": 1764603,
+    "bytes": 77144,
+    "width": 1400,
+    "height": 788,
+    "variants": [
+      {
+        "url": "/assets/solutions/camera-connection-options-320w.webp",
+        "width": 320,
+        "bytes": 9120
+      },
+      {
+        "url": "/assets/solutions/camera-connection-options-640w.webp",
+        "width": 640,
+        "bytes": 25426
+      },
+      {
+        "url": "/assets/solutions/camera-connection-options-960w.webp",
+        "width": 960,
+        "bytes": 45736
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/custom-android-head-unit-displays.png",
+    "url": "/assets/solutions/custom-android-head-unit-displays.webp",
+    "originalBytes": 1995783,
+    "bytes": 138204,
+    "width": 975,
+    "height": 1614,
+    "variants": [
+      {
+        "url": "/assets/solutions/custom-android-head-unit-displays-320w.webp",
+        "width": 320,
+        "bytes": 30556
+      },
+      {
+        "url": "/assets/solutions/custom-android-head-unit-displays-640w.webp",
+        "width": 640,
+        "bytes": 80434
+      },
+      {
+        "url": "/assets/solutions/custom-android-head-unit-displays-960w.webp",
+        "width": 960,
+        "bytes": 135172
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/custom-car-radio-private-label.png",
+    "url": "/assets/solutions/custom-car-radio-private-label.webp",
+    "originalBytes": 1368761,
+    "bytes": 39204,
+    "width": 1400,
+    "height": 788,
+    "variants": [
+      {
+        "url": "/assets/solutions/custom-car-radio-private-label-320w.webp",
+        "width": 320,
+        "bytes": 6138
+      },
+      {
+        "url": "/assets/solutions/custom-car-radio-private-label-640w.webp",
+        "width": 640,
+        "bytes": 14620
+      },
+      {
+        "url": "/assets/solutions/custom-car-radio-private-label-960w.webp",
+        "width": 960,
+        "bytes": 24734
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/customize-android-multimedia-player.png",
+    "url": "/assets/solutions/customize-android-multimedia-player.webp",
+    "originalBytes": 1489919,
+    "bytes": 68614,
+    "width": 1400,
+    "height": 788,
+    "variants": [
+      {
+        "url": "/assets/solutions/customize-android-multimedia-player-320w.webp",
+        "width": 320,
+        "bytes": 9544
+      },
+      {
+        "url": "/assets/solutions/customize-android-multimedia-player-640w.webp",
+        "width": 640,
+        "bytes": 24536
+      },
+      {
+        "url": "/assets/solutions/customize-android-multimedia-player-960w.webp",
+        "width": 960,
+        "bytes": 42144
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/customize-camera-monitor-kits.png",
+    "url": "/assets/solutions/customize-camera-monitor-kits.webp",
+    "originalBytes": 1863785,
+    "bytes": 105450,
+    "width": 1400,
+    "height": 788,
+    "variants": [
+      {
+        "url": "/assets/solutions/customize-camera-monitor-kits-320w.webp",
+        "width": 320,
+        "bytes": 11584
+      },
+      {
+        "url": "/assets/solutions/customize-camera-monitor-kits-640w.webp",
+        "width": 640,
+        "bytes": 32288
+      },
+      {
+        "url": "/assets/solutions/customize-camera-monitor-kits-960w.webp",
+        "width": 960,
+        "bytes": 60194
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/market-specific-configuration.png",
+    "url": "/assets/solutions/market-specific-configuration.webp",
+    "originalBytes": 2663865,
+    "bytes": 234530,
+    "width": 1400,
+    "height": 933,
+    "variants": [
+      {
+        "url": "/assets/solutions/market-specific-configuration-320w.webp",
+        "width": 320,
+        "bytes": 20332
+      },
+      {
+        "url": "/assets/solutions/market-specific-configuration-640w.webp",
+        "width": 640,
+        "bytes": 66550
+      },
+      {
+        "url": "/assets/solutions/market-specific-configuration-960w.webp",
+        "width": 960,
+        "bytes": 131220
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/oem-odm-solutions-your-ui.png",
+    "url": "/assets/solutions/oem-odm-solutions-your-ui.webp",
+    "originalBytes": 1593925,
+    "bytes": 64884,
+    "width": 1400,
+    "height": 933,
+    "variants": [
+      {
+        "url": "/assets/solutions/oem-odm-solutions-your-ui-320w.webp",
+        "width": 320,
+        "bytes": 8556
+      },
+      {
+        "url": "/assets/solutions/oem-odm-solutions-your-ui-640w.webp",
+        "width": 640,
+        "bytes": 21782
+      },
+      {
+        "url": "/assets/solutions/oem-odm-solutions-your-ui-960w.webp",
+        "width": 960,
+        "bytes": 38460
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/oem-odm-solutions.png",
+    "url": "/assets/solutions/oem-odm-solutions.webp",
+    "originalBytes": 1780981,
+    "bytes": 113074,
+    "width": 1400,
+    "height": 933,
+    "variants": [
+      {
+        "url": "/assets/solutions/oem-odm-solutions-320w.webp",
+        "width": 320,
+        "bytes": 12376
+      },
+      {
+        "url": "/assets/solutions/oem-odm-solutions-640w.webp",
+        "width": 640,
+        "bytes": 35828
+      },
+      {
+        "url": "/assets/solutions/oem-odm-solutions-960w.webp",
+        "width": 960,
+        "bytes": 64920
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/rear-camera-manufacturer.png",
+    "url": "/assets/solutions/rear-camera-manufacturer.webp",
+    "originalBytes": 1617595,
+    "bytes": 101402,
+    "width": 975,
+    "height": 1614,
+    "variants": [
+      {
+        "url": "/assets/solutions/rear-camera-manufacturer-320w.webp",
+        "width": 320,
+        "bytes": 16394
+      },
+      {
+        "url": "/assets/solutions/rear-camera-manufacturer-640w.webp",
+        "width": 640,
+        "bytes": 50572
+      },
+      {
+        "url": "/assets/solutions/rear-camera-manufacturer-960w.webp",
+        "width": 960,
+        "bytes": 97864
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/sampling-quality-checks.png",
+    "url": "/assets/solutions/sampling-quality-checks.webp",
+    "originalBytes": 382512,
+    "bytes": 37902,
+    "width": 750,
+    "height": 422,
+    "variants": []
+  },
+  {
+    "source": "/assets/solutions/solutions-by-vehicle-brand.png",
+    "url": "/assets/solutions/solutions-by-vehicle-brand.webp",
+    "originalBytes": 2180979,
+    "bytes": 88870,
+    "width": 1400,
+    "height": 788,
+    "variants": [
+      {
+        "url": "/assets/solutions/solutions-by-vehicle-brand-320w.webp",
+        "width": 320,
+        "bytes": 9200
+      },
+      {
+        "url": "/assets/solutions/solutions-by-vehicle-brand-640w.webp",
+        "width": 640,
+        "bytes": 26642
+      },
+      {
+        "url": "/assets/solutions/solutions-by-vehicle-brand-960w.webp",
+        "width": 960,
+        "bytes": 50100
+      }
+    ]
+  },
+  {
+    "source": "/assets/solutions/vehicle-specific-solutions.png",
+    "url": "/assets/solutions/vehicle-specific-solutions.webp",
+    "originalBytes": 2191772,
+    "bytes": 154904,
+    "width": 1400,
+    "height": 933,
+    "variants": [
+      {
+        "url": "/assets/solutions/vehicle-specific-solutions-320w.webp",
+        "width": 320,
+        "bytes": 16044
+      },
+      {
+        "url": "/assets/solutions/vehicle-specific-solutions-640w.webp",
+        "width": 640,
+        "bytes": 45964
+      },
+      {
+        "url": "/assets/solutions/vehicle-specific-solutions-960w.webp",
+        "width": 960,
+        "bytes": 87140
+      }
+    ]
+  },
+  {
+    "source": "/assets/testimonials/egypt-customer-review.jpg",
+    "url": "/assets/testimonials/egypt-customer-review.webp",
+    "originalBytes": 135165,
+    "bytes": 114154,
+    "width": 1400,
+    "height": 1050,
+    "variants": [
+      {
+        "url": "/assets/testimonials/egypt-customer-review-320w.webp",
+        "width": 320,
+        "bytes": 12496
+      },
+      {
+        "url": "/assets/testimonials/egypt-customer-review-640w.webp",
+        "width": 640,
+        "bytes": 34886
+      },
+      {
+        "url": "/assets/testimonials/egypt-customer-review-960w.webp",
+        "width": 960,
+        "bytes": 65150
+      }
+    ]
+  },
+  {
+    "source": "/assets/testimonials/india-customer-review.jpg",
+    "url": "/assets/testimonials/india-customer-review.webp",
+    "originalBytes": 215409,
+    "bytes": 214694,
+    "width": 1400,
+    "height": 1050,
+    "variants": [
+      {
+        "url": "/assets/testimonials/india-customer-review-320w.webp",
+        "width": 320,
+        "bytes": 22626
+      },
+      {
+        "url": "/assets/testimonials/india-customer-review-640w.webp",
+        "width": 640,
+        "bytes": 66238
+      },
+      {
+        "url": "/assets/testimonials/india-customer-review-960w.webp",
+        "width": 960,
+        "bytes": 121222
+      }
+    ]
+  },
+  {
+    "source": "/assets/testimonials/long-term-cooperation-customer-review.jpg",
+    "url": "/assets/testimonials/long-term-cooperation-customer-review.webp",
+    "originalBytes": 294619,
+    "bytes": 327816,
+    "width": 1400,
+    "height": 1050,
+    "variants": [
+      {
+        "url": "/assets/testimonials/long-term-cooperation-customer-review-320w.webp",
+        "width": 320,
+        "bytes": 29640
+      },
+      {
+        "url": "/assets/testimonials/long-term-cooperation-customer-review-640w.webp",
+        "width": 640,
+        "bytes": 95728
+      },
+      {
+        "url": "/assets/testimonials/long-term-cooperation-customer-review-960w.webp",
+        "width": 960,
+        "bytes": 193524
+      }
+    ]
+  },
+  {
+    "source": "/assets/testimonials/oem-odm-customer-review.jpg",
+    "url": "/assets/testimonials/oem-odm-customer-review.webp",
+    "originalBytes": 229342,
+    "bytes": 238962,
+    "width": 1400,
+    "height": 1050,
+    "variants": [
+      {
+        "url": "/assets/testimonials/oem-odm-customer-review-320w.webp",
+        "width": 320,
+        "bytes": 25316
+      },
+      {
+        "url": "/assets/testimonials/oem-odm-customer-review-640w.webp",
+        "width": 640,
+        "bytes": 74564
+      },
+      {
+        "url": "/assets/testimonials/oem-odm-customer-review-960w.webp",
+        "width": 960,
+        "bytes": 140480
+      }
+    ]
+  },
+  {
+    "source": "/assets/vehicle-makes/audi.jpg",
+    "url": "/assets/vehicle-makes/audi.webp",
+    "originalBytes": 59845,
+    "bytes": 1640,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/benz.jpg",
+    "url": "/assets/vehicle-makes/benz.webp",
+    "originalBytes": 59930,
+    "bytes": 1618,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/bmw.jpg",
+    "url": "/assets/vehicle-makes/bmw.webp",
+    "originalBytes": 61523,
+    "bytes": 2020,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/buick.jpg",
+    "url": "/assets/vehicle-makes/buick.webp",
+    "originalBytes": 70099,
+    "bytes": 2674,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/chevrolet.jpg",
+    "url": "/assets/vehicle-makes/chevrolet.webp",
+    "originalBytes": 61870,
+    "bytes": 1550,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/fiat.jpg",
+    "url": "/assets/vehicle-makes/fiat.webp",
+    "originalBytes": 67193,
+    "bytes": 2210,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/ford.jpg",
+    "url": "/assets/vehicle-makes/ford.webp",
+    "originalBytes": 75441,
+    "bytes": 2704,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/honda.jpg",
+    "url": "/assets/vehicle-makes/honda.webp",
+    "originalBytes": 64118,
+    "bytes": 2042,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/hyundai.jpg",
+    "url": "/assets/vehicle-makes/hyundai.webp",
+    "originalBytes": 66403,
+    "bytes": 2182,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/jeep.jpg",
+    "url": "/assets/vehicle-makes/jeep.webp",
+    "originalBytes": 54340,
+    "bytes": 1422,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/kia.jpg",
+    "url": "/assets/vehicle-makes/kia.webp",
+    "originalBytes": 55642,
+    "bytes": 1374,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/lexus.jpg",
+    "url": "/assets/vehicle-makes/lexus.webp",
+    "originalBytes": 63872,
+    "bytes": 1896,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/mazda.jpg",
+    "url": "/assets/vehicle-makes/mazda.webp",
+    "originalBytes": 60286,
+    "bytes": 1934,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/mitsubishi.jpg",
+    "url": "/assets/vehicle-makes/mitsubishi.webp",
+    "originalBytes": 53016,
+    "bytes": 1202,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/nissan.jpg",
+    "url": "/assets/vehicle-makes/nissan.webp",
+    "originalBytes": 59152,
+    "bytes": 1878,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/peugeot.jpg",
+    "url": "/assets/vehicle-makes/peugeot.webp",
+    "originalBytes": 62307,
+    "bytes": 2046,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/renault.jpg",
+    "url": "/assets/vehicle-makes/renault.webp",
+    "originalBytes": 53491,
+    "bytes": 1296,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/subaru.jpg",
+    "url": "/assets/vehicle-makes/subaru.webp",
+    "originalBytes": 74606,
+    "bytes": 2848,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/suzuki.jpg",
+    "url": "/assets/vehicle-makes/suzuki.webp",
+    "originalBytes": 61100,
+    "bytes": 1818,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/tesla.jpg",
+    "url": "/assets/vehicle-makes/tesla.webp",
+    "originalBytes": 57775,
+    "bytes": 1530,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/toyota.jpg",
+    "url": "/assets/vehicle-makes/toyota.webp",
+    "originalBytes": 68584,
+    "bytes": 2312,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/volvo.jpg",
+    "url": "/assets/vehicle-makes/volvo.webp",
+    "originalBytes": 60280,
+    "bytes": 1864,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  },
+  {
+    "source": "/assets/vehicle-makes/vw.jpg",
+    "url": "/assets/vehicle-makes/vw.webp",
+    "originalBytes": 75064,
+    "bytes": 2770,
+    "width": 160,
+    "height": 160,
+    "variants": []
+  }
+]

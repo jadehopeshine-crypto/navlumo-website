@@ -1,0 +1,26 @@
+{
+  "models": ["U3 Pro", "U6 Pro 3D", "U7 Plus 3D", "U9 Plus 3D"],
+  "rows": [
+    ["Screen Sizes", "9 / 10 inches", "9 / 10 inches", "9.5 / 10.36 / 11.8 / 13.1 inches", "9.5 / 10.36 / 11.8 / 13.1 inches"],
+    ["Internet", "Wi-Fi", "4G + Wi-Fi", "4G + Wi-Fi", "4G + Wi-Fi"],
+    ["Operating System", "Android 16", "Android 16", "Android 16", "Android 16"],
+    ["Platform", "T100", "TS18", "TS105", "QCM6125"],
+    ["CPU", "4-core 1.5 GHz\nA100", "8-core 1.8 GHz\nU8581A", "8-core 2.4 GHz\nUIS7865", "8-core 2.7 GHz\nQCM6125"],
+    ["RAM / Storage", "2 GB + 32 GB\n2 GB + 64 GB", "2 GB + 32 GB\n4 GB + 64 GB\n6 GB + 128 GB", "4 GB + 64 GB\n6 GB + 128 GB\n8 GB + 256 GB", "4 GB + 64 GB\n6 GB + 128 GB\n8 GB + 256 GB\n12 GB + 256 GB"],
+    ["CarPlay & Android Auto", "Wireless", "Wireless", "Wireless", "Wireless"],
+    ["Bluetooth", "Bluetooth 5.0", "Bluetooth 5.4", "Bluetooth 5.4", "Bluetooth 5.4"],
+    ["Resolution", "1280 × 720", "1280 × 720\n2000 × 1200 optional", "1280 × 720\n2000 × 1200 optional", "1280 × 720\n2000 × 1200 optional"],
+    ["Display Panel", "IPS", "QLED", "2K QLED", "2K QLED"],
+    ["USB", "Optional", "Supported", "Supported", "Supported"],
+    ["Full AV Output", "Optional", "Optional", "Optional", "Optional"],
+    ["Mirror Link", "Optional", "Optional", "Optional", "Optional"],
+    ["Amplifier", "YD7388", "TDA7388 / TDA7851", "TDA7850 / TDA7851", "TDA7851"],
+    ["Radio", "QN8035\nFM / RDS", "TDA7708\nAM / FM / RDS", "TDA7708\nAM / FM / RDS", "TDA7708\nAM / FM / RDS"],
+    ["Voice Control", "Supported", "Supported", "Supported", "Supported"],
+    ["DTS", "Optional", "Supported", "Supported", "Supported"],
+    ["DSP", "Supported", "Supported", "Supported", "Supported"],
+    ["GPS", "Supported", "Supported", "Supported", "Supported"],
+    ["360° Camera", "Not supported", "Optional", "Optional", "Optional"],
+    ["3D Real-Time Dynamics", "Optional", "Supported", "Supported", "Supported"]
+  ]
+}

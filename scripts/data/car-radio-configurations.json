@@ -1,5 +1,5 @@
 {
-  "models": ["U3 Pro", "U6 Pro 3D", "U7 Plus 3D", "U9 Plus 3D"],
+  "models": ["T100", "TS18", "TS105", "QCM6125"],
   "rows": [
     ["Screen Sizes", "9 / 10 inches", "9 / 10 inches", "9.5 / 10.36 / 11.8 / 13.1 inches", "9.5 / 10.36 / 11.8 / 13.1 inches"],
     ["Internet", "Wi-Fi", "4G + Wi-Fi", "4G + Wi-Fi", "4G + Wi-Fi"],

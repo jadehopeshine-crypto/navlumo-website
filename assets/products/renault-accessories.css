@@ -11,15 +11,15 @@
 }
 #accessories .accessory-photo {
   position: relative;
-  aspect-ratio: 265 / 195;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: #fff;
 }
 #accessories .accessory-photo img {
-  position: absolute;
   display: block;
-  max-width: none;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 #accessories .accessory-card figcaption {
   padding: 14px 16px 18px;

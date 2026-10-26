@@ -1,0 +1,7 @@
+.renault-product-card { width: 100%; max-width: 360px; margin-top: 28px; border-radius: 12px; }
+.renault-product-card > img { display: block; width: 100%; height: 210px; padding: 16px; object-fit: contain; }
+.renault-product-card > div { padding: 20px; }
+.renault-product-card h2 { font-size: 20px; line-height: 1.35; margin-top: 8px; }
+.renault-product-card p { font-size: 14px; line-height: 1.65; }
+.renault-product-card .btn { font-size: 14px; padding: 10px 16px; margin-top: 18px; }
+@media (max-width: 399px) { .renault-product-card > img { height: 190px; } .renault-product-card > div { padding: 16px; } }

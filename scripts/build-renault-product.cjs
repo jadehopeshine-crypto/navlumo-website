@@ -47,3 +47,5 @@ let vehicle=fs.readFileSync('by-vehicle/index.html','utf8');vehicle=vehicle.repl
 
 // Keep the second Renault product and category entry when regenerating.
 require('./build-dacia-medianav.cjs');
+
+require('./add-vehicle-brand-logos.cjs');

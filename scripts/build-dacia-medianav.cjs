@@ -21,6 +21,8 @@ base=base.replace(/<title>[\s\S]*?<\/title>/,'<title>'+title+' | Navlumo</title>
 base=base.replaceAll('Renault Android Car Radio (Dacia 2013-2017)',title+' (Renault Dacia 2013-2017, push-button model)').replaceAll('Renault Android Car Radio Inquiry', 'Dacia 8 Inch Medianav Car Stereo Inquiry');
 base=base.replace(/href="https:\/\/wa.me\/8617620780022\?text=[^"]*"/g,'href="'+wa+'"');
 base=base.replaceAll('5.4','5.0');
+base=base.replace(/<tr><th scope="row">Screen Sizes<\/th>[\s\S]*?<\/tr>/,row=>row.replace(/<td>[\s\S]*?<\/td>/g,'<td>8 inch</td>'));
+
 fs.mkdirSync(path.join(root,route),{recursive:true});fs.writeFileSync(path.join(root,route,'index.html'),base);
 const categoryPath=path.join(root,'by-vehicle/renault/index.html');let category=fs.readFileSync(categoryPath,'utf8');
 const card='<article class="renault-product-card rounded-2xl border border-[var(--line)] bg-white overflow-hidden" data-product="dacia-medianav"><a class="renault-product-image-link" href="'+route+'"><img src="'+url('front',400)+'" srcset="'+url('front',400)+' 400w, '+url('front',800)+' 800w" sizes="(min-width:1024px) 360px, (min-width:640px) 50vw, 100vw" alt="8 Inch Android Car Radio for Dacia" width="800" height="800" loading="lazy" decoding="async"></a><div><p class="text-sm text-teal"><a href="'+route+'">Product page preview</a></p><h2><a href="'+route+'">'+title+'</a></h2>'+require('./render-renault-card-facts.cjs')()+'<a class="btn bg-teal text-white" href="'+wa+'" target="_blank" rel="noopener noreferrer">Get Quote</a></div></article>';

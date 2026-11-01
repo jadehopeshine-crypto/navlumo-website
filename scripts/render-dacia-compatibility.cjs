@@ -2,7 +2,7 @@ module.exports=(wa)=>{
 const rows=[
  ['Vehicle Model','Renault Duster<br>Dacia Duster<br>Dacia Sandero<br>Dacia Logan'],
  ['Model','for Dacia'],
- ['Original Radio','Support'],
+
  ['Original rear camera','No'],
  ['Steering Wheel Controls','Support'],
  ['Customization','<a href="/oem-odm/">OEM &amp; ODM Options</a>'],

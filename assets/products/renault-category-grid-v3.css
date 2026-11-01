@@ -1,0 +1,21 @@
+main .renault-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 32px; align-items: stretch; }
+main .renault-product-card { display: flex; flex-direction: column; width: 100%; min-width: 0; max-width: none; margin: 0; border-radius: 14px; }
+main .renault-product-card .renault-product-image-link > img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; padding: 16px; object-fit: contain; border-bottom: 1px solid #e2e4e8; background: #fff; }
+main .renault-product-card > div { display: flex; flex-direction: column; flex: 1; padding: 22px; }
+main .renault-product-card h2 { font-size: 20px; line-height: 1.35; margin-top: 10px; }
+main .renault-product-card p { font-size: 14px; line-height: 1.65; }
+main .renault-product-card .btn { display: flex; justify-content: center; width: 100%; font-size: 14px; padding: 12px 16px; margin-top: 22px; }
+@media (max-width: 1023px) { main .renault-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; } }
+@media (max-width: 639px) { main .renault-product-grid { grid-template-columns: minmax(0, 1fr); } main .renault-product-card > div { padding: 20px; } }
+
+main .renault-product-image-link { display: block; }
+main .renault-product-image-link:focus-visible { outline: 3px solid #01544b; outline-offset: -3px; }
+
+main .renault-product-card .product-card-facts { margin-top: 14px; margin-bottom: 0; padding: 0; }
+main .renault-product-card .product-card-description { margin: 0; color: #606b66; font-size: 14px; line-height: 1.65; }
+main .renault-product-card .product-card-specs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 20px 0; }
+main .renault-product-card .product-card-specs dt { color: #7b837e; text-transform: uppercase; font-size: 10px; line-height: 1.4; letter-spacing: .04em; }
+main .renault-product-card .product-card-specs dd { color: #202824; font-size: 15px; font-weight: 500; line-height: 1.5; margin: 5px 0 0; }
+main .renault-product-card .product-card-tags { display: flex; flex-wrap: wrap; gap: 7px; list-style: none; margin: 0 0 18px; padding: 0; }
+main .renault-product-card .product-card-tags li { border: 1px solid #e0e5e2; border-radius: 999px; background: #fafcfb; padding: 4px 10px; font-size: 12px; line-height: 1.5; color: #34453c; }
+main .renault-product-card .btn { margin-top: auto; }

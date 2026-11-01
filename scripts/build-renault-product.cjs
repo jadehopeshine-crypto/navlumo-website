@@ -13,6 +13,7 @@ const renaultSpecs = [
   ['Screen', '8 Inch Touchscreen'],
   ['Resolution', '1280*720'],
   ['Platform', 'T100'],
+  ['RAM / ROM', '2+32GB &amp; 4+64GB'],
   ['Android', '4Core WiFi Version'],
   ['Connect', 'Wireless CarPlay & Android Auto & Bluetooth & Mirror Link'],
   ['Support', 'GPS, FM RDS, APS, Backup Camera, DVR, External MIC Ready, Optional'],

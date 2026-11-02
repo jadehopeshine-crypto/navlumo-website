@@ -4,7 +4,14 @@
     if (!main || document.querySelector('.catalog-sidebar')) return;
     const camera = '/products/rear-view-camera/';
     const android = '/products/android-car-radio/';
-    const groups = [
+    const isVehicle = location.pathname.startsWith('/by-vehicle/');
+    const rootUrl = isVehicle ? '/by-vehicle/' : '/products/';
+    const brands = ['Audi','BMW','Benz','Tesla','Toyota','Honda','Lexus','Hyundai','Nissan','VW','Kia','Ford','Mazda','Chevrolet','Buick','Suzuki','Mitsubishi','Peugeot','Fiat','Jeep','Renault','Subaru','Volvo'];
+    const groups = isVehicle ? brands.map(brand => brand === 'Renault'
+      ? ['Renault / Dacia', '/by-vehicle/renault/', [
+        ['8 Inch Car Radio for Dacia 2013–2017', '/by-vehicle/renault/android-car-radio/'],
+        ['8 Inch Medianav Car Stereo for Dacia', '/by-vehicle/renault/dacia-8-inch-medianav-android-car-stereo/']]]
+      : [brand, `/by-vehicle/#${brand.toLowerCase()}`]) : [
       ['Android Car Radio', android, [
         ['WIFI Core Car Radio 1 DIN', android + '#wifi-core-car-radio-1-din'],
         ['WIFI Core Car Radio 2 DIN', android + '#wifi-core-car-radio-2-din'],
@@ -43,16 +50,16 @@
     const panel = document.createElement('details');
     panel.className = 'catalog-panel';
     const heading = document.createElement('summary');
-    heading.textContent = 'Product Categories';
+    heading.textContent = isVehicle ? 'Browse by Vehicle' : 'Product Categories';
     const nav = document.createElement('nav');
-    nav.setAttribute('aria-label', 'Product categories');
+    nav.setAttribute('aria-label', isVehicle ? 'Vehicle categories' : 'Product categories');
     const createLink = (label, href) => {
       const a = document.createElement('a');
       a.href = href;
       a.textContent = label;
       return a;
     };
-    const all = createLink('All Products', '/products/');
+    const all = createLink(isVehicle ? 'All Vehicles' : 'All Products', rootUrl);
     all.className = 'catalog-all';
     nav.append(all);
     groups.forEach(([label, href, children], i) => {
@@ -97,7 +104,7 @@
       const matches = candidates.filter(a => {
         const u = new URL(a.href);
         return u.hash ? u.pathname === path && u.hash === location.hash
-          : path === u.pathname || (u.pathname !== '/products/' && path.startsWith(u.pathname));
+          : path === u.pathname || (u.pathname !== rootUrl && path.startsWith(u.pathname));
       });
       const selected = matches.sort((a,b) => b.getAttribute('href').length - a.getAttribute('href').length)[0];
       if (selected) { selected.classList.add('catalog-active'); selected.setAttribute('aria-current', 'location'); }

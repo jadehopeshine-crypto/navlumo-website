@@ -46,7 +46,9 @@
       });
       items.forEach(([label, anchor]) => {
         const child = document.createElement('a');
-        child.href = `/products/#${anchor}`;
+        child.href = anchor === 'universal-car-camera'
+          ? '/products/rear-view-camera/universal-car-camera/'
+          : `/products/#${anchor}`;
         child.className = mobile ? 'block hover:text-white' : 'block py-1.5 hover:text-teal';
         child.textContent = label;
         submenu.append(child);

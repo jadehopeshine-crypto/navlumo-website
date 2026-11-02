@@ -4,22 +4,6 @@
     document.querySelectorAll('header a').forEach(link => {
       if (link.textContent.trim() === 'Universal Car Camera') link.href = universalCameraUrl;
     });
-    document.querySelectorAll('header a[href="/products/#car-reversing-aid"]').forEach((link, index) => {
-      const header = link.closest('header');
-      const container = link.closest('#mobile-menu') || link.parentElement;
-      if ([...container.querySelectorAll('a')].some(a => a.textContent.trim() === 'Universal Car Camera')) return;
-      const group = document.createElement('details');
-      group.style.cssText = 'padding:10px 20px;';
-      const summary = document.createElement('summary');
-      summary.textContent = 'Rear View Camera';
-      summary.style.cursor = 'pointer';
-      const child = document.createElement('a');
-      child.href = universalCameraUrl;
-      child.textContent = 'Universal Car Camera';
-      child.style.cssText = 'display:block;padding:10px 0 0 12px;font-size:13px;';
-      group.append(summary, child);
-      link.before(group);
-    });
   };
   document.addEventListener('DOMContentLoaded', connectCameraCategory, {once:true});
   const connectRenaultCategory = () => {

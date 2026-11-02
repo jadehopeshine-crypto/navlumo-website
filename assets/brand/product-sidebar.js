@@ -8,9 +8,7 @@
     const rootUrl = isVehicle ? '/by-vehicle/' : '/products/';
     const brands = ['Audi','BMW','Benz','Tesla','Toyota','Honda','Lexus','Hyundai','Nissan','VW','Kia','Ford','Mazda','Chevrolet','Buick','Suzuki','Mitsubishi','Peugeot','Fiat','Jeep','Renault','Subaru','Volvo'];
     const groups = isVehicle ? brands.map(brand => brand === 'Renault'
-      ? ['Renault / Dacia', '/by-vehicle/renault/', [
-        ['8 Inch Car Radio for Dacia 2013–2017', '/by-vehicle/renault/android-car-radio/'],
-        ['8 Inch Medianav Car Stereo for Dacia', '/by-vehicle/renault/dacia-8-inch-medianav-android-car-stereo/']]]
+      ? ['Renault / Dacia', '/by-vehicle/renault/']
       : [brand, `/by-vehicle/#${brand.toLowerCase()}`]) : [
       ['Android Car Radio', android, [
         ['WIFI Core Car Radio 1 DIN', android + '#wifi-core-car-radio-1-din'],

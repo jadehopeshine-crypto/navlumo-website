@@ -1,4 +1,11 @@
 (() => {
+  const redirectCameraCategory = () => {
+    if (/^\/products\/?$/.test(location.pathname) && location.hash === '#rear-view-camera') {
+      location.replace('/products/rear-view-camera/');
+    }
+  };
+  redirectCameraCategory();
+  window.addEventListener('hashchange', redirectCameraCategory);
   const universalCameraUrl = '/products/rear-view-camera/universal-car-camera/';
   const connectCameraCategory = () => {
     document.querySelectorAll('header a').forEach(link => {

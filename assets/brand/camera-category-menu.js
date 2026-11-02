@@ -13,9 +13,11 @@
     ]]
   ];
   groups.forEach(([name, id, items]) => {
-    document.querySelectorAll(`header a[href="/products/#${id}"]`).forEach((link, index) => {
+    const categoryUrl = id === 'rear-view-camera' ? '/products/rear-view-camera/' : `/products/#${id}`;
+    document.querySelectorAll(`header a[href="/products/#${id}"], header a[href="${categoryUrl}"]`).forEach((link, index) => {
       if (link.dataset.cameraMenuAdded) return;
       link.dataset.cameraMenuAdded = 'true';
+      link.href = categoryUrl;
       const mobile = Boolean(link.closest('#mobile-menu'));
       const submenu = document.createElement('div');
       submenu.id = `${id}-subcategories-${index}`;
@@ -48,7 +50,7 @@
         const child = document.createElement('a');
         child.href = anchor === 'universal-car-camera'
           ? '/products/rear-view-camera/universal-car-camera/'
-          : `/products/#${anchor}`;
+          : id === 'rear-view-camera' ? `/products/rear-view-camera/#${anchor}` : `/products/#${anchor}`;
         child.className = mobile ? 'block hover:text-white' : 'block py-1.5 hover:text-teal';
         child.textContent = label;
         submenu.append(child);

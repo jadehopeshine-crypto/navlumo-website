@@ -1,0 +1,26 @@
+.catalog-host.pd-wrap{max-width:1580px;padding-left:24px;padding-right:24px}
+.catalog-layout{display:grid;grid-template-columns:238px minmax(0,1fr);gap:30px;max-width:1580px;margin:0 auto;padding:28px 24px 48px;align-items:start}
+.catalog-host>.catalog-layout{padding:0;max-width:none}
+.catalog-content{min-width:0}
+.catalog-sidebar{position:sticky;top:96px;min-width:0}
+.catalog-panel{border:1px solid #dfe7e3;border-radius:10px;background:#fff;overflow:hidden;color:#253b33}
+.catalog-panel>summary{padding:18px;font-size:16px;font-weight:600;cursor:pointer;background:#f3f7f5;color:#01544b}
+.catalog-panel>nav{padding:10px;max-height:calc(100vh - 190px);overflow:auto}
+.catalog-panel a{display:block;padding:11px 10px;font-size:13px;line-height:1.5;border-radius:5px;color:#33483f;text-decoration:none;overflow-wrap:anywhere}
+.catalog-panel a:hover{background:#f0f6f3;color:#01544b}
+.catalog-panel .catalog-all{font-weight:600;border-bottom:1px solid #e4ebe7;border-radius:0;margin-bottom:6px}
+.catalog-row{display:flex;align-items:center;gap:4px}
+.catalog-row>a{flex:1;min-width:0;font-weight:500}
+.catalog-row>button{border:0;background:transparent;color:#01544b;padding:8px;width:32px;flex:none;cursor:pointer}
+.catalog-children{margin:2px 0 7px 12px;padding-left:9px;border-left:1px solid #dce7e1}
+.catalog-children[hidden]{display:none}
+.catalog-children a{font-size:12px;padding:9px 8px}
+.catalog-panel a.catalog-active{background:#e7f2ec;color:#01544b;font-weight:600;border-left:3px solid #01544b}
+.catalog-parent-active>a{color:#01544b;font-weight:600}
+.catalog-panel a:focus-visible,.catalog-panel button:focus-visible,.catalog-panel summary:focus-visible{outline:2px solid #168774;outline-offset:1px}
+.catalog-content .max-w-\[1180px\]{max-width:100%;padding-left:0;padding-right:0}
+.catalog-content .product-overview{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+.catalog-content .product-overview>.quote-panel{grid-column:1/-1}
+@media(min-width:1100px){.catalog-panel>summary{list-style:none;cursor:default;pointer-events:none}.catalog-panel>summary::-webkit-details-marker{display:none}}
+@media(max-width:1099px){.catalog-layout{grid-template-columns:minmax(0,1fr);gap:24px}.catalog-sidebar{position:static}.catalog-panel>nav{max-height:65vh}}
+@media(max-width:767px){.catalog-layout{padding:20px 16px 36px}.catalog-host.pd-wrap{padding-left:20px;padding-right:20px}.catalog-content .product-overview{grid-template-columns:minmax(0,1fr)}.catalog-content .quote-panel{grid-column:auto}.catalog-content .rear-camera-grid{grid-template-columns:minmax(0,1fr)}}

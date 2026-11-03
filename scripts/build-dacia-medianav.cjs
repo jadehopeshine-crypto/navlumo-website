@@ -8,7 +8,7 @@ const url=(slug,w)=>'/assets/products/dacia-medianav-8-inch/dacia-medianav-8-inc
 const pictures=[['front','8 Inch Android Car Radio for Dacia'],['carplay-android-auto','CarPlay, Android Auto and Mirror Link'],['dsp-audio','DSP audio system and equalizer'],['front-rear-side','Front, rear and side views']];
 const wa='https://wa.me/8617620780022?text='+encodeURIComponent('Hello Navlumo, I would like a quote for the '+title+' (Renault Dacia 2013-2017, push-button model). Vehicle model: __. Year: __. Quantity: __. Country: __. Please confirm fitment and available configurations.');
 let base=fs.readFileSync(path.join(root,'by-vehicle/renault/android-car-radio/index.html'),'utf8');
-let overview=base.match(/<section class="product-overview"[\s\S]*?<\/aside><\/section>/)[0];
+let overview=base.match(/<section class="product-overview"[\s\S]*?<\/section>/)[0];
 const gallery='<div class="product-gallery"><div class="gallery-stage"><img id="product-main-image" src="'+url('front',1000)+'" srcset="'+url('front',400)+' 400w, '+url('front',800)+' 800w, '+url('front',1000)+' 1000w" sizes="(max-width:767px) calc(100vw - 40px), 600px" alt="'+pictures[0][1]+'" width="1000" height="1000" fetchpriority="high" decoding="async"></div><div class="gallery-thumbs" role="group" aria-label="Product image gallery">'+pictures.map(([slug,alt],i)=>'<button type="button"'+(i===0?' class="selected"':'')+' aria-pressed="'+(i===0)+'" data-src="'+url(slug,1000)+'" data-srcset="'+url(slug,400)+' 400w, '+url(slug,800)+' 800w, '+url(slug,1000)+' 1000w"><img src="'+url(slug,160)+'" alt="'+esc(alt)+'" title="'+esc(alt)+'" width="160" height="160" loading="lazy" decoding="async"></button>').join('')+'</div></div>';
 overview=overview.replace(/<div class="product-gallery">[\s\S]*?(?=<div class="product-summary">)/,gallery);
 overview=overview.replace(/<h1 id="product-title">[\s\S]*?<\/h1>/,'<h1 id="product-title">'+title+'</h1>');
@@ -34,3 +34,5 @@ if(!base.includes(title)||!base.includes('10pcs')||(base.match(/data-src=/g)||[]
 for(const [slug] of pictures)for(const w of [160,400,800,1000])if(!fs.existsSync(path.join(root,url(slug,w))))throw Error('Missing image');
 if((category.match(/<article/g)||[]).length!==2)throw Error('Expected two cards');
 console.log('Validated second product, 4 gallery images, 7 supplied specifications, 2 category cards and sitemap entry.');
+
+require('./apply-renault-direct-contact.cjs');

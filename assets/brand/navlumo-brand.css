@@ -58,3 +58,7 @@ header .logo::before {
     background-size: 1.5rem 1.5rem;
   }
 }
+
+/* Shared floating WhatsApp size. */
+a.fixed[href^="https://wa.me/"] { width:72px !important; height:72px !important; }
+a.fixed[href^="https://wa.me/"] > svg { width:40px !important; height:40px !important; }

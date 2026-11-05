@@ -1,4 +1,11 @@
 (() => {
+  const redirectLegacyVehicleCategory = () => {
+    if (/^\/by-vehicle\/?$/.test(location.pathname) && location.hash.toLowerCase() === '#jeep') {
+      location.replace('/by-vehicle/jeep/');
+    }
+  };
+  redirectLegacyVehicleCategory();
+  window.addEventListener('hashchange', redirectLegacyVehicleCategory);
   const redirectCameraCategory = () => {
     if (/^\/products\/?$/.test(location.pathname) && location.hash === '#rear-view-camera') {
       location.replace('/products/rear-view-camera/');

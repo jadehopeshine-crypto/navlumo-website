@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="/assets/brand/navlumo-brand.css">
-<script defer src="/assets/brand/product-category-menu.js?v=20261105-jeep"></script>
+<script defer src="/assets/brand/product-category-menu.js?v=20261105-jeep-links2"></script>
 <link rel="icon" type="image/webp" href="/assets/brand/navlumo-mark.webp?v=2">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -175,8 +175,8 @@
 
 <script>
   const vehicleCategories = ['Audi','BMW','Benz','Tesla','Toyota','Honda','Lexus','Hyundai','Nissan','VW','Kia','Ford','Mazda','Chevrolet','Buick','Suzuki','Mitsubishi','Peugeot','Fiat','Jeep','Renault','Subaru'];
-  document.querySelectorAll('.vehicle-menu').forEach(menu => { menu.innerHTML = vehicleCategories.map(brand => `<a href="/by-vehicle/#${brand.toLowerCase()}" class="px-4 py-2.5 hover:bg-gray-50 hover:text-teal">For ${brand}</a>`).join(''); });
-  document.querySelectorAll('.vehicle-menu-mobile').forEach(menu => { menu.innerHTML = vehicleCategories.map(brand => `<a href="/by-vehicle/#${brand.toLowerCase()}">For ${brand}</a>`).join(''); });
+  document.querySelectorAll('.vehicle-menu').forEach(menu => { menu.innerHTML = vehicleCategories.map(brand => `<a href="${brand.toLowerCase() === 'jeep' ? '/by-vehicle/jeep/' : '/by-vehicle/#' + brand.toLowerCase()}" class="px-4 py-2.5 hover:bg-gray-50 hover:text-teal">For ${brand}</a>`).join(''); });
+  document.querySelectorAll('.vehicle-menu-mobile').forEach(menu => { menu.innerHTML = vehicleCategories.map(brand => `<a href="${brand.toLowerCase() === 'jeep' ? '/by-vehicle/jeep/' : '/by-vehicle/#' + brand.toLowerCase()}">For ${brand}</a>`).join(''); });
   const header = document.getElementById('site-header');
   const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 24);
   window.addEventListener('scroll', onScroll); onScroll();

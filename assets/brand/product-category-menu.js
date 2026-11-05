@@ -14,6 +14,9 @@
   };
   document.addEventListener('DOMContentLoaded', connectCameraCategory, {once:true});
   const connectRenaultCategory = () => {
+    document.querySelectorAll('header a[href="/by-vehicle/#jeep"]').forEach(link => {
+      link.href = '/by-vehicle/jeep/';
+    });
     document.querySelectorAll('header a[href="/by-vehicle/#renault"]').forEach((link) => {
       link.href = "/by-vehicle/renault/";
     });

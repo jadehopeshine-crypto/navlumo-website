@@ -9,7 +9,7 @@
     const brands = ['Audi','BMW','Benz','Tesla','Toyota','Honda','Lexus','Hyundai','Nissan','VW','Kia','Ford','Mazda','Chevrolet','Buick','Suzuki','Mitsubishi','Peugeot','Fiat','Jeep','Renault','Subaru','Volvo'];
     const groups = isVehicle ? brands.map(brand => brand === 'Renault'
       ? ['Renault / Dacia', '/by-vehicle/renault/']
-      : [brand, `/by-vehicle/#${brand.toLowerCase()}`]) : [
+      : [brand, brand === 'Jeep' ? '/by-vehicle/jeep/' : `/by-vehicle/#${brand.toLowerCase()}`]) : [
       ['Android Car Radio', android, [
         ['WIFI Core Car Radio 1 DIN', android + '#wifi-core-car-radio-1-din'],
         ['WIFI Core Car Radio 2 DIN', android + '#wifi-core-car-radio-2-din'],

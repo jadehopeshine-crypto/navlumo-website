@@ -40,9 +40,10 @@
     ["4G LTE Car Radio 2 DIN", "/products/android-car-radio/#4g-lte-car-radio-2-din"]
   ];
 
-  document.querySelectorAll('header a[href="/products/#android-car-radio"]').forEach((link, index) => {
+  document.querySelectorAll('header a[href="/products/#android-car-radio"], header a[href="/products/android-car-radio/"]').forEach((link, index) => {
     if (link.dataset.categoryMenuAdded) return;
     link.dataset.categoryMenuAdded = "true";
+    link.href = "/products/android-car-radio/";
 
     const submenu = document.createElement("div");
     const isMobile = Boolean(link.closest("#mobile-menu"));

@@ -102,6 +102,33 @@
           children.append(child);
         });
         submenu.append(children);
+        const sizeRow = document.createElement('div');
+        sizeRow.style.cssText = 'display:flex;align-items:center;gap:4px';
+        categoryLink.before(sizeRow);
+        categoryLink.style.flex = '1';
+        const sizeToggle = toggle.cloneNode(true);
+        children.id = `wifi-radio-sizes-${index}`;
+        sizeToggle.setAttribute('aria-controls', children.id);
+        const expandSizes = expanded => {
+          children.hidden = !expanded;
+          children.style.display = expanded ? '' : 'none';
+          sizeToggle.setAttribute('aria-expanded', String(expanded));
+          sizeToggle.setAttribute('aria-label', `${expanded ? 'Collapse' : 'Expand'} WIFI Car Radio 1 DIN sizes`);
+          sizeToggle.querySelector('svg').style.transform = expanded ? 'rotate(180deg)' : '';
+        };
+        expandSizes(false);
+        sizeToggle.addEventListener('click', event => {
+          event.stopPropagation();
+          expandSizes(children.hidden);
+        });
+        children.addEventListener('keydown', event => {
+          if (event.key === 'Escape') {
+            event.stopPropagation();
+            expandSizes(false);
+            sizeToggle.focus();
+          }
+        });
+        sizeRow.append(categoryLink, sizeToggle);
       }
     });
 

@@ -76,6 +76,28 @@
           const nested = document.createElement('div');
           nested.className = 'catalog-children';
           sizes.forEach(([label, id]) => nested.append(createLink(label, '/products/android-car-radio/#' + id)));
+          const sizeRow = document.createElement('div');
+          sizeRow.className = 'catalog-row';
+          const sizeLink = list.lastElementChild;
+          sizeLink.before(sizeRow);
+          const sizeToggle = document.createElement('button');
+          sizeToggle.type = 'button';
+          nested.id = `catalog-wifi-sizes-${i}`;
+          sizeToggle.setAttribute('aria-controls', nested.id);
+          const expand = value => {
+            nested.hidden = !value;
+            sizeToggle.textContent = value ? '⌃' : '⌄';
+            sizeToggle.setAttribute('aria-expanded', String(value));
+            sizeToggle.setAttribute('aria-label', `${value ? 'Collapse' : 'Expand'} WIFI Car Radio 1 DIN sizes`);
+          };
+          expand(false);
+          sizeToggle.addEventListener('click', () => expand(nested.hidden));
+          nested.addEventListener('keydown', event => {
+            if (event.key === 'Escape') { expand(false); sizeToggle.focus(); }
+          });
+          sizeRow.append(sizeLink, sizeToggle);
+          sizeRow.expand = expand;
+          sizeRow.categoryHref = target;
           list.append(nested);
         }
       });

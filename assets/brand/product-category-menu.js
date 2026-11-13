@@ -34,7 +34,7 @@
     connectRenaultCategory();
   }
   const categories = [
-    ["WIFI Core Car Radio 1 DIN", "/products/android-car-radio/#wifi-core-car-radio-1-din"],
+    ["WIFI Car Radio 1 DIN", "/products/android-car-radio/#wifi-core-car-radio-1-din"],
     ["WIFI Core Car Radio 2 DIN", "/products/android-car-radio/#wifi-core-car-radio-2-din"],
     ["4G LTE Car Radio 1 DIN", "/products/android-car-radio/#4g-lte-car-radio-1-din"],
     ["4G LTE Car Radio 2 DIN", "/products/android-car-radio/#4g-lte-car-radio-2-din"]
@@ -90,6 +90,19 @@
         : "block py-1.5 hover:text-teal";
       categoryLink.textContent = label;
       submenu.append(categoryLink);
+      if (label === "WIFI Car Radio 1 DIN") {
+        const sizes = [["9 Inch Android Car Radio","wifi-car-radio-1-din-9-inch"],["10.1 Inch Android Car Radio","wifi-car-radio-1-din-10-1-inch"]];
+        const children = document.createElement('div');
+        children.style.cssText = 'margin:2px 8px 8px 10px;padding-left:10px;border-left:1px solid #cbd5d1';
+        sizes.forEach(([name, id]) => {
+          const child = document.createElement('a');
+          child.href = '/products/android-car-radio/#' + id;
+          child.textContent = name;
+          child.style.cssText = 'display:block;padding:8px 0;font-size:12px;line-height:1.5';
+          children.append(child);
+        });
+        submenu.append(children);
+      }
     });
 
     link.before(row);

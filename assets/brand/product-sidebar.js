@@ -11,7 +11,7 @@
       ? ['Renault / Dacia', '/by-vehicle/renault/']
       : [brand, brand === 'Jeep' ? '/by-vehicle/jeep/' : `/by-vehicle/#${brand.toLowerCase()}`]) : [
       ['Android Car Radio', android, [
-        ['WIFI Core Car Radio 1 DIN', android + '#wifi-core-car-radio-1-din'],
+        ['WIFI Car Radio 1 DIN', android + '#wifi-core-car-radio-1-din'],
         ['WIFI Core Car Radio 2 DIN', android + '#wifi-core-car-radio-2-din'],
         ['4G LTE Car Radio 1 DIN', android + '#4g-lte-car-radio-1-din'],
         ['4G LTE Car Radio 2 DIN', android + '#4g-lte-car-radio-2-din']]],
@@ -69,7 +69,16 @@
       const list = document.createElement('div');
       list.className = 'catalog-children';
       list.id = `catalog-children-${i}`;
-      children.forEach(([name, target]) => list.append(createLink(name, target)));
+      children.forEach(([name, target]) => {
+        list.append(createLink(name, target));
+        if (name === 'WIFI Car Radio 1 DIN') {
+          const sizes = [["9 Inch Android Car Radio","wifi-car-radio-1-din-9-inch"],["10.1 Inch Android Car Radio","wifi-car-radio-1-din-10-1-inch"]];
+          const nested = document.createElement('div');
+          nested.className = 'catalog-children';
+          sizes.forEach(([label, id]) => nested.append(createLink(label, '/products/android-car-radio/#' + id)));
+          list.append(nested);
+        }
+      });
       const button = document.createElement('button');
       button.type = 'button';
       button.textContent = '⌄';

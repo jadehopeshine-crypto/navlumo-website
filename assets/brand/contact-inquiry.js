@@ -19,7 +19,8 @@
   field('vehicle').value = (query.get('vehicle') || '').slice(0, 150);
   const source = query.get('source');
   field('source').value = source && /^\/(?!\/)[^?#]*$/.test(source) ? source : '';
-  let endpoint = '';
+  const configured = form.getAttribute('action') || '';
+  let endpoint = /^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/.test(configured) ? configured : '';
   let busy = false;
   const message = () => [...new FormData(form)].filter(([key,value]) => value && key !== '_gotcha').map(([key,value]) => `${key}: ${value}`).join('\n');
   const updateLinks = () => {
@@ -42,8 +43,7 @@
     if (busy || !form.reportValidity()) return;
     updateLinks();
     if (!endpoint) {
-      location.href = emailButton.href;
-      status.textContent = 'Your email app has been requested. Please press Send there to deliver your inquiry. If it does not open, use WhatsApp below. Your inquiry has not been submitted on this website.';
+      status.textContent = 'Online submission is temporarily unavailable. Your details are still here. Please try again or use WhatsApp / email below.';
       return;
     }
     busy = true;
@@ -54,6 +54,7 @@
     const timer = setTimeout(() => controller.abort(), 20000);
     try {
       const data = new FormData(form);
+      data.set('_subject', 'Navlumo Website Inquiry: ' + (field('product').value || field('vehicle').value || 'Product selection').slice(0,150));
       if (field('contact').value.includes('@')) data.set('email', field('contact').value.trim());
       const response = await fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' }, signal: controller.signal });
       const result = await response.json();

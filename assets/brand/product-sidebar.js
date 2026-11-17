@@ -75,7 +75,7 @@
           const sizes = name === "WiFi Car Radio 2 DIN" ? [["7 Inch Android Car Radio", "wifi-car-radio-2-din-7-inch"], ["9 Inch Android Car Radio", "wifi-car-radio-2-din-9-inch"], ["10.1 Inch Android Car Radio", "wifi-car-radio-2-din-10-1-inch"], ["10.8 Inch Android Car Radio", "wifi-car-radio-2-din-10-8-inch"], ["11.2 Inch Android Car Radio", "wifi-car-radio-2-din-11-2-inch"], ["11.5 Inch Android Car Radio", "wifi-car-radio-2-din-11-5-inch"], ["12.3 Inch Android Car Radio", "wifi-car-radio-2-din-12-3-inch"], ["13.1 Inch Android Car Radio", "wifi-car-radio-2-din-13-1-inch"]] : [["9 Inch Android Car Radio","wifi-car-radio-1-din-9-inch"],["10.1 Inch Android Car Radio","wifi-car-radio-1-din-10-1-inch"]];
           const nested = document.createElement('div');
           nested.className = 'catalog-children';
-          sizes.forEach(([label, id]) => nested.append(createLink(label, '/products/android-car-radio/#' + id)));
+          sizes.forEach(([label, id]) => nested.append(createLink(label, id === 'wifi-car-radio-2-din-9-inch' ? '/products/android-car-radio/wifi-car-radio-2-din/9-inch/' : '/products/android-car-radio/#' + id)));
           const sizeRow = document.createElement('div');
           sizeRow.className = 'catalog-row';
           const sizeLink = list.lastElementChild;

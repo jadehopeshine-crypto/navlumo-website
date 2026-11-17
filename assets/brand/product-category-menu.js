@@ -96,7 +96,7 @@
         children.style.cssText = 'margin:2px 8px 8px 10px;padding-left:10px;border-left:1px solid #cbd5d1';
         sizes.forEach(([name, id]) => {
           const child = document.createElement('a');
-          child.href = '/products/android-car-radio/#' + id;
+          child.href = id === 'wifi-car-radio-2-din-9-inch' ? '/products/android-car-radio/wifi-car-radio-2-din/9-inch/' : '/products/android-car-radio/#' + id;
           child.textContent = name;
           child.style.cssText = 'display:block;padding:8px 0;font-size:12px;line-height:1.5';
           children.append(child);

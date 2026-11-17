@@ -12,7 +12,7 @@
       : [brand, brand === 'Jeep' ? '/by-vehicle/jeep/' : `/by-vehicle/#${brand.toLowerCase()}`]) : [
       ['Android Car Radio', android, [
         ['WIFI Car Radio 1 DIN', android + '#wifi-core-car-radio-1-din'],
-        ['WIFI Core Car Radio 2 DIN', android + '#wifi-core-car-radio-2-din'],
+        ['WiFi Car Radio 2 DIN', android + '#wifi-core-car-radio-2-din'],
         ['4G LTE Car Radio 1 DIN', android + '#4g-lte-car-radio-1-din'],
         ['4G LTE Car Radio 2 DIN', android + '#4g-lte-car-radio-2-din']]],
       ['Portable CarPlay Screen', '/products/#portable-carplay-screen'],
@@ -71,8 +71,8 @@
       list.id = `catalog-children-${i}`;
       children.forEach(([name, target]) => {
         list.append(createLink(name, target));
-        if (name === 'WIFI Car Radio 1 DIN') {
-          const sizes = [["9 Inch Android Car Radio","wifi-car-radio-1-din-9-inch"],["10.1 Inch Android Car Radio","wifi-car-radio-1-din-10-1-inch"]];
+        if (name === "WIFI Car Radio 1 DIN" || name === "WiFi Car Radio 2 DIN") {
+          const sizes = name === "WiFi Car Radio 2 DIN" ? [["7 Inch Android Car Radio", "wifi-car-radio-2-din-7-inch"], ["9 Inch Android Car Radio", "wifi-car-radio-2-din-9-inch"], ["10.1 Inch Android Car Radio", "wifi-car-radio-2-din-10-1-inch"], ["10.8 Inch Android Car Radio", "wifi-car-radio-2-din-10-8-inch"], ["11.2 Inch Android Car Radio", "wifi-car-radio-2-din-11-2-inch"], ["11.5 Inch Android Car Radio", "wifi-car-radio-2-din-11-5-inch"], ["12.3 Inch Android Car Radio", "wifi-car-radio-2-din-12-3-inch"], ["13.1 Inch Android Car Radio", "wifi-car-radio-2-din-13-1-inch"]] : [["9 Inch Android Car Radio","wifi-car-radio-1-din-9-inch"],["10.1 Inch Android Car Radio","wifi-car-radio-1-din-10-1-inch"]];
           const nested = document.createElement('div');
           nested.className = 'catalog-children';
           sizes.forEach(([label, id]) => nested.append(createLink(label, '/products/android-car-radio/#' + id)));
@@ -82,13 +82,13 @@
           sizeLink.before(sizeRow);
           const sizeToggle = document.createElement('button');
           sizeToggle.type = 'button';
-          nested.id = `catalog-wifi-sizes-${i}`;
+          nested.id = `catalog-wifi-sizes-${i}-${name.includes("2 DIN") ? "2" : "1"}`;
           sizeToggle.setAttribute('aria-controls', nested.id);
           const expand = value => {
             nested.hidden = !value;
             sizeToggle.textContent = value ? '⌃' : '⌄';
             sizeToggle.setAttribute('aria-expanded', String(value));
-            sizeToggle.setAttribute('aria-label', `${value ? 'Collapse' : 'Expand'} WIFI Car Radio 1 DIN sizes`);
+            sizeToggle.setAttribute('aria-label', `${value ? 'Collapse' : 'Expand'} ${name} sizes`);
           };
           expand(false);
           sizeToggle.addEventListener('click', () => expand(nested.hidden));

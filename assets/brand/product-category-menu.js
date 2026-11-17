@@ -35,7 +35,7 @@
   }
   const categories = [
     ["WIFI Car Radio 1 DIN", "/products/android-car-radio/#wifi-core-car-radio-1-din"],
-    ["WIFI Core Car Radio 2 DIN", "/products/android-car-radio/#wifi-core-car-radio-2-din"],
+    ["WiFi Car Radio 2 DIN", "/products/android-car-radio/#wifi-core-car-radio-2-din"],
     ["4G LTE Car Radio 1 DIN", "/products/android-car-radio/#4g-lte-car-radio-1-din"],
     ["4G LTE Car Radio 2 DIN", "/products/android-car-radio/#4g-lte-car-radio-2-din"]
   ];
@@ -90,8 +90,8 @@
         : "block py-1.5 hover:text-teal";
       categoryLink.textContent = label;
       submenu.append(categoryLink);
-      if (label === "WIFI Car Radio 1 DIN") {
-        const sizes = [["9 Inch Android Car Radio","wifi-car-radio-1-din-9-inch"],["10.1 Inch Android Car Radio","wifi-car-radio-1-din-10-1-inch"]];
+      if (label === "WIFI Car Radio 1 DIN" || label === "WiFi Car Radio 2 DIN") {
+        const sizes = label === "WiFi Car Radio 2 DIN" ? [["7 Inch Android Car Radio", "wifi-car-radio-2-din-7-inch"], ["9 Inch Android Car Radio", "wifi-car-radio-2-din-9-inch"], ["10.1 Inch Android Car Radio", "wifi-car-radio-2-din-10-1-inch"], ["10.8 Inch Android Car Radio", "wifi-car-radio-2-din-10-8-inch"], ["11.2 Inch Android Car Radio", "wifi-car-radio-2-din-11-2-inch"], ["11.5 Inch Android Car Radio", "wifi-car-radio-2-din-11-5-inch"], ["12.3 Inch Android Car Radio", "wifi-car-radio-2-din-12-3-inch"], ["13.1 Inch Android Car Radio", "wifi-car-radio-2-din-13-1-inch"]] : [["9 Inch Android Car Radio","wifi-car-radio-1-din-9-inch"],["10.1 Inch Android Car Radio","wifi-car-radio-1-din-10-1-inch"]];
         const children = document.createElement('div');
         children.style.cssText = 'margin:2px 8px 8px 10px;padding-left:10px;border-left:1px solid #cbd5d1';
         sizes.forEach(([name, id]) => {
@@ -107,13 +107,13 @@
         categoryLink.before(sizeRow);
         categoryLink.style.flex = '1';
         const sizeToggle = toggle.cloneNode(true);
-        children.id = `wifi-radio-sizes-${index}`;
+        children.id = `wifi-radio-sizes-${index}-${label.includes("2 DIN") ? "2" : "1"}`;
         sizeToggle.setAttribute('aria-controls', children.id);
         const expandSizes = expanded => {
           children.hidden = !expanded;
           children.style.display = expanded ? '' : 'none';
           sizeToggle.setAttribute('aria-expanded', String(expanded));
-          sizeToggle.setAttribute('aria-label', `${expanded ? 'Collapse' : 'Expand'} WIFI Car Radio 1 DIN sizes`);
+          sizeToggle.setAttribute('aria-label', `${expanded ? 'Collapse' : 'Expand'} ${label} sizes`);
           sizeToggle.querySelector('svg').style.transform = expanded ? 'rotate(180deg)' : '';
         };
         expandSizes(false);
